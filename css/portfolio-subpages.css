@@ -1,3 +1,8 @@
+.background-block {
+    border: rgb(194, 216, 230) 2px solid;
+    border-radius: 25px;
+    margin: 5%;
+}
 
 .row {
     flex: 1;
@@ -8,6 +13,7 @@
     padding: 1%;
     margin: 3%;
     border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow with desired values */
 }
 
 .title {

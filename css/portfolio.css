@@ -1,4 +1,13 @@
 /* Common styles */
+
+.title {
+    color: black;
+    margin-left: 8%;
+    margin-top: 4%;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
 .parent {
     display: flex;
     justify-content: space-between;

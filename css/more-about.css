@@ -86,46 +86,42 @@ p {
 /* READING */
 
 .book1 {
-    background: url("images/the_alchemist.jpg") no-repeat center;
+    background: url("../images/the_alchemist.jpg") no-repeat center;
 }
 
 .book2 {
-    background: url("images/perksof.jpg") no-repeat center;
+    background: url("../images/perksof.jpg") no-repeat center;
 }
 
 .book3 {
-    background: url("images/songof.jpg") no-repeat center;
+    background: url("../images/songof.jpg") no-repeat center;
 }
 
 /* LISTENING */
 
 .song1 {
-    background: url("images/sunburn.jpg") no-repeat center;
+    background: url("../images/sunburn.jpg") no-repeat center;
 }
 
 .song2 {
-    background: url("images/barbie.jpg") no-repeat center;
+    background: url("../images/barbie.jpg") no-repeat center;
 }
 
 .song3 {
-    background: url("images/rubyfields.jpg") no-repeat center;
+    background: url("../images/rubyfields.jpg") no-repeat center;
 }
 
 .song4 {
-    background: url("images/ghosting.jpg") no-repeat center;
+    background: url("../images/ghosting.jpg") no-repeat center;
 }
 
 .song5 {
-    background: url("images/brol.jpg") no-repeat center;
-}
-
-.song6 {
-    background: url("images/bruise.jpg") no-repeat center;
+    background: url("../images/bruise.jpg") no-repeat center;
 }
 
 /* other important stuff */
 
-.book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5, .song6 {
+.book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5 {
     transition: 0.5s;
     display: flex;
     justify-content: center;
@@ -140,12 +136,12 @@ p {
     height: 250px;
 }
 
-.song1, .song2, .song3, .song4, .song5, .song6 {
+.song1, .song2, .song3, .song4, .song5 {
     width: 70%;
     height: 250px;
 }
 
-.book1 p, .book2 p, .book3 p, .song1 p, .song2 p, .song3 p, .song4 p, .song5 p, .song6 p {
+.book1 p, .book2 p, .book3 p, .song1 p, .song2 p, .song3 p, .song4 p, .song5 p {
     opacity: 0;
     transform: scale(0);
     transition: 0.8s;
@@ -182,15 +178,10 @@ p {
 }
 
 .song5:hover {
-    box-shadow: 0 0 0 200px #86ccefe6 inset;
+    box-shadow: 0 0 0 200px #b8cad4e6 inset;
 }
 
-.song6:hover {
-    box-shadow: 0 0 0 200px #84979ce6 inset;
-}
-
-
-.book1:hover p, .book2:hover p, .book3:hover p, .song1:hover p, .song2:hover p, .song3:hover p, .song4:hover p, .song5:hover p, .song6:hover p {
+.book1:hover p, .book2:hover p, .book3:hover p, .song1:hover p, .song2:hover p, .song3:hover p, .song4:hover p, .song5:hover p {
     opacity: 1;
     transform: scale(1);
 }
@@ -233,7 +224,7 @@ h2 {
         margin-top: 3%;
     }
 
-    .book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5, .song6 {
+    .book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5 {
         flex: 0.5;
         /* border: 1px solid white; */
         margin: 1%;
@@ -244,7 +235,7 @@ h2 {
         height: 250px;
     }
     
-    .song1, .song2, .song3, .song4, .song5, .song6 {
+    .song1, .song2, .song3, .song4, .song5 {
         width: 100%;
         height: 200px;
     }
@@ -267,7 +258,7 @@ h2 {
         height: 300px;
     }
     
-    .song1, .song2, .song3, .song4, .song5, .song6 {
+    .song1, .song2, .song3, .song4, .song5 {
         height: 200px;
     }
 
