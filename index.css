@@ -1,0 +1,110 @@
+
+/* to center div, set margin to 0 auto */
+
+.background-block {
+    width: 95%;
+    background-color: #5D9BD6;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 7.5%;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+.intro p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    line-height: 24px;
+    color: whitesmoke;
+    padding-bottom: 10%;
+}
+
+/* set display to flex and justify-content to center to center an image */
+
+.window-flowers {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+.ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .ml11 .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+/* responsive design */
+
+/* tablet */
+
+@media (min-width: 768px) {
+
+    .intro {
+        display: flex;
+        gap: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .intro p {
+        text-align: left;
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .ml11 {
+        font-size: 55px;
+        font-weight: 1500;
+    }
+
+}
+
+/* regular laptop */
+
+@media (min-width: 992px) {
+
+}
+
+/* large laptop */
+
+@media (min-width: 1200px) {
+
+}
