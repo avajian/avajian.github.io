@@ -1,0 +1,290 @@
+
+
+/* to center div, set margin to 0 auto */
+
+.background-block {
+    width: 95%;
+    background-color: #a99fd0;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 12.5%;
+    color: whitesmoke;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    line-height: 24px;
+    color: whitesmoke;
+    padding-bottom: 10%;
+}
+
+.main {
+    padding-bottom: 5%;
+}
+
+.border {
+    border-bottom: 1px solid white;
+}
+
+.main ul {
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.main ul li {
+    list-style: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+}
+
+.main ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.listening a, .reading a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.listening, .reading {
+    text-align: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  
+    .book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5, .song6 {
+      display: inline-block;
+    }
+}
+
+.listening, .reading {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+/* READING */
+
+.book1 {
+    background: url("images/the_alchemist.jpg") no-repeat center;
+}
+
+.book2 {
+    background: url("images/perksof.jpg") no-repeat center;
+}
+
+.book3 {
+    background: url("images/songof.jpg") no-repeat center;
+}
+
+/* LISTENING */
+
+.song1 {
+    background: url("images/sunburn.jpg") no-repeat center;
+}
+
+.song2 {
+    background: url("images/barbie.jpg") no-repeat center;
+}
+
+.song3 {
+    background: url("images/rubyfields.jpg") no-repeat center;
+}
+
+.song4 {
+    background: url("images/ghosting.jpg") no-repeat center;
+}
+
+.song5 {
+    background: url("images/brol.jpg") no-repeat center;
+}
+
+.song6 {
+    background: url("images/bruise.jpg") no-repeat center;
+}
+
+/* other important stuff */
+
+.book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5, .song6 {
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    margin: 0 auto;
+    margin-bottom: 12.5%;
+}
+
+.book1, .book2, .book3 {
+    width: 60%;
+    height: 250px;
+}
+
+.song1, .song2, .song3, .song4, .song5, .song6 {
+    width: 70%;
+    height: 250px;
+}
+
+.book1 p, .book2 p, .book3 p, .song1 p, .song2 p, .song3 p, .song4 p, .song5 p, .song6 p {
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-wrap: hidden;
+}
+
+.book1:hover {
+    box-shadow: 0 0 0 200px #a22a2ae6 inset;
+}
+
+.book2:hover {
+    box-shadow: 0 0 0 200px #baca50e6 inset;
+}
+
+.book3:hover {
+    box-shadow: 0 0 0 200px #50b2cae6 inset;
+}
+
+.song1:hover {
+    box-shadow: 0 0 0 200px #a22a2ae6 inset;
+}
+
+.song2:hover {
+    box-shadow: 0 0 0 200px #de236ee6 inset;
+}
+
+.song3:hover {
+    box-shadow: 0 0 0 200px #84979ce6 inset;
+}
+
+.song4:hover {
+    box-shadow: 0 0 0 200px #bdbfc3e6 inset;
+}
+
+.song5:hover {
+    box-shadow: 0 0 0 200px #86ccefe6 inset;
+}
+
+.song6:hover {
+    box-shadow: 0 0 0 200px #84979ce6 inset;
+}
+
+
+.book1:hover p, .book2:hover p, .book3:hover p, .song1:hover p, .song2:hover p, .song3:hover p, .song4:hover p, .song5:hover p, .song6:hover p {
+    opacity: 1;
+    transform: scale(1);
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 7.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* responsive design */
+
+/* tablet */
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 38px;
+        padding-top: 7.5%;
+    }
+
+    h2 {
+        font-size: 50px;
+        padding-top: 7.5%;
+        padding-top: 5%;
+    }
+
+    p {
+        font-size: 20px;
+        padding-bottom: 5%;
+    }
+
+    .listening, .reading {
+        display: flex;
+        gap: 2%;
+        margin-top: 3%;
+    }
+
+    .book1, .book2, .book3, .song1, .song2, .song3, .song4, .song5, .song6 {
+        flex: 0.5;
+        /* border: 1px solid white; */
+        margin: 1%;
+    }
+
+    .book1, .book2, .book3 {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .song1, .song2, .song3, .song4, .song5, .song6 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .main ul li {
+        line-height: 40px;
+    }
+
+    .listening a, .reading a {
+        font-size: 20px;
+    }
+}
+
+/* regular laptop */
+
+@media (min-width: 992px) {
+
+    .book1, .book2, .book3 {
+        width: 25%;
+        height: 300px;
+    }
+    
+    .song1, .song2, .song3, .song4, .song5, .song6 {
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+}
+
+/* large laptop */
+
+@media (min-width: 1200px) {
+
+    /* .main {
+        gap: 10%;
+    } */
+
+    h2 {
+        font-size: 70px;
+    }
+}

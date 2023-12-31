@@ -1,0 +1,53 @@
+/* Common styles */
+.parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.code-block {
+    flex: 1;
+    margin: 3%;
+    overflow: hidden;
+}
+
+.portfolio-code,
+.design-code {
+    background-color: #5D9BD6;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s; /* Apply transition to all properties */
+}
+
+.portfolio-code:hover,
+.design-code:hover {
+    padding: 40px; /* Increase padding on hover */
+    border-radius: 30px; /* Increase border-radius on hover */
+    height: 400px;
+    background-color: skyblue;
+}
+
+h1 {
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .code-block {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

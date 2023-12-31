@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="nav-bars.css" />
+    <title>portfolio</title>
+</head>
+<body>
+
+    <div class="full-page">
+
+      <header>
+        <nav class="top-nav"> 
+          <ul>
+            <li class="move-left"><a href="index">👩🏻‍💻avajian</a></li>
+            <li class="move-right"><a href= "portfolio">portfolio</a></li>
+            <li class="move-right"><a href= "about">about</a></li>
+            <li class="move-right"><a href= "more-about">more</a></li>
+          </ul>
+        </nav> 
+      </header>
+  
+      <div class="background-block">
+        <div class = "intro">
+            <h1>  Mixture of projects over the years </h1>
+
+            <p> personal projects, class + club projects from the University of Michigan, 
+                and more</p>
+        </div>
+        
+        <div class="project-options">
+
+          <p class="title">  personal projects </p>
+
+        <div class="row">
+            
+            <div class="project">
+
+            <h1> This Website </h1>
+            <img src="project-photo" >
+            <p>  Personal website designed in figma and coded with HTML/CSS using vscode. Hosted on github and still being updated!
+                <br><br>
+                <a href="https://github.com/avajian/avajian.github.io">view</a>
+            </p>
+                
+            </div>
+            <div class="project">
+                <h1> Tripton Fell </h1>
+                <p> Produced an original song called "unbothered" with a friend under the name 
+                    Tripton Fell. We later released a cover of "Line without a hook". Both songs 
+                    recorded in a bedroom studio.
+                    <br><br>
+                    <a href="https://open.spotify.com/artist/3CSSiEGdTuhAvkYI53iqLA?si=i27CkwtvT2SyW5m3UP5rJA">view</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="project">
+            <h1> Photography </h1>
+                <p>   I've been taking photos for the past 5 years, starting on my highschool yearbook staff
+                    as a photographer, and later a photo editor. I have experience shooting sports, headshots,
+                    senior photos, group photos and more.
+                    <br><br>
+                    <a href="https://vanvanleary.wixsite.com/my-site-2" >view</a>
+                </p>         
+            </div>
+        </div>
+
+          <p class="title">  school projects </p>
+
+          <div class="row">
+                <div class="project">
+
+                    <h1> Machine Learning: Identifying ChatGPT News Articles (python) </h1>
+                    <p> UMICH OpenMI club project that identifies AI versus human generated News
+                        Articles. Simple sequential model that was trained + tested on 500 articles
+                        with around a 97% accuracy rate. Utilization of TensorFlow, python and google collab
+                        <br><br>
+                        <a href="https://www.linkedin.com/company/openmi-umich/">view</a>
+                    </p>
+                        
+                </div>
+
+                <div class="project">
+
+                    <h1> Fakebook (SQL, Java)</h1>
+                    <p>  EECS 484 class project. Designed a relational database to store information for the fictional social media platform Fakebook. Created an ER Diagram as well
+                        as a series of SQL scripts to create, load, and drop objects.  Utilized JDBC by creating a Java application that executes several SQL 
+                        queries against a relational database and places the results in special data structures.
+                        <br><br>
+                    </p>
+                        
+                </div>
+            </div>
+
+        <div class="row">
+          <div class="project">
+
+            <h1> Assembler, Cache + Pipeline Simulator (C) </h1>
+            <p>  EECS 370 class project coded in C. Created an assembler to convert code from LC2K to machine code, then a simulator 
+                 to carry out its instructions. Designed a pipeline simulator that handles data + control hazards. Created a cache 
+                 simulator that does writeback on store.
+                <br><br>
+            </p>    
+        </div>
+
+        <div class="project">
+
+          <h1> Traveling Salesmen (C++)</h1>
+          <p>  Designed a program using branch and bound algorithms to solve the traveling salesman permutation problem.
+            Created a dense graph and generated the Minimum Spanning tree using Prim's Algorithm to find the shortest path
+            <br><br>
+          </p>    
+      </div>
+    
+    </div>
+
+      </div>
+
+      </div>
+
+      <div class="lower-bar">
+        <header>
+            <nav class="add-bottom-border"> 
+              <ul>
+                <li><a href="index">home</a></li>
+                <li><a href= "portfolio">portfolio</a></li>
+                <li><a href= "about">about</a></li>
+                <li><a href= "more-about">more</a></li>
+              </ul>
+            </nav> 
+            <nav class="space-nav"> 
+              <ul>
+                <li><a href="index">Avajian@umich.edu</a></li>
+                <li><a href="https://github.com/avajian" class="fa fa-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/ava-jian-schmidt/" class="fa fa-linkedin"></a></li>
+                <li><a href="https://open.spotify.com/artist/3CSSiEGdTuhAvkYI53iqLA?si=i27CkwtvT2SyW5m3UP5rJA" class="fa fa-spotify"></a></li>
+                <li><a href="https://www.instagram.com/bruvava_/" class="fa fa-instagram"></a></li>
+              </ul>
+            <nav> 
+          </header>
+      </div>
+
+    </div>
+
+    <script>
+      // Select the divs you want to observe
+      const divsToObserve = document.querySelectorAll('.project');
+      
+      let activeDiv = null;
+
+      // Create a new Intersection Observer
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          const currentDiv = entry.target;
+
+          if (entry.isIntersecting && entry.intersectionRatio === 1) {
+            // The div is fully in the viewport
+            if (activeDiv !== currentDiv) {
+              // Remove background color from previous active div
+              if (activeDiv) {
+                activeDiv.classList.remove('in-viewport');
+              }
+
+              // Add background color to the current active div
+              currentDiv.classList.add('in-viewport');
+              activeDiv = currentDiv;
+            }
+          } else if (activeDiv === currentDiv) {
+            // The div is not fully in the viewport
+            currentDiv.classList.remove('in-viewport');
+            activeDiv = null;
+          }
+        });
+      }, { threshold: 1 });
+
+      // Start observing the divs
+      divsToObserve.forEach(div => {
+        observer.observe(div);
+      });
+    </script>
+
+</body>
+</html>

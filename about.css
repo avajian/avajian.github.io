@@ -1,0 +1,254 @@
+
+
+/* to center div, set margin to 0 auto */
+
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 3%;
+    padding-top: 5%;
+    border-bottom: 1px solid white;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.background-block {
+    width: 95%;
+    background-color: #A1A1C9;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 7.5%;
+    font-size: 30px;
+}
+
+.headshot img {
+    height: auto;
+    width: 100%;
+}
+
+.desc p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    line-height: 24px;
+    color: whitesmoke;
+    padding-bottom: 10%;
+}
+
+/* set display to flex and justify-content to center to center an image */
+
+.flowers {
+    display: flex;
+    justify-content: center;
+}
+
+.flowers img {
+    height: auto;
+    width: 100%;
+}
+
+.experience h1, .coursework h1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.experience, .coursework  {
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+    /* box-shadow: 7px 7px rgb(255, 255, 255); */
+    border-style: solid;
+    border-width: medium;
+    border-color: white;
+    display: grid;
+    justify-content: center;
+    margin: 5%;
+    border-radius: 20px;
+    margin-bottom: 8%;
+}
+
+.experience ul, .coursework ul {
+    padding: 0px;
+}
+
+.experience ul li, .coursework ul li {
+    list-style: none;
+}
+
+.coursework ul li p {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+}
+
+.experience ul li p {
+    color: white;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+}
+
+.experience ul li h1 {
+    color: white;
+    font-size: 20px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.desc p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.lang {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* responsive design */
+
+/* tablet */
+
+@media (min-width: 768px) {
+
+    /* TO DO: need to made .desc and .headshot side-by-side divs */
+
+    .intro p {
+        line-height: 32px;
+    }
+
+    .row p {
+        line-height: 32px;
+    }
+
+    .flowers {
+        background: url("https://lh3.googleusercontent.com/_OiX6POay_l_qmLAi2qrZvcvCtCX976FvaaZpXVYyhJcoeJwqstZp4fH-J7WJN1KqlVmuZi0dc36tt6f0TkTzv0q5zd1B-shECTC8mGaDhyk2ZDXczlRTI0tHpiomgqbyxTZ4Ph0KA=w2400?source=screenshot.guru") center repeat-x;
+        background-size: auto 100%;
+    }
+    
+    .flowers img {
+        height: auto;
+        width: 25%;
+        background-repeat: repeat-x;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .experience, .coursework {
+         box-shadow: 7px 7px rgb(255, 255, 255);
+    }
+
+    .experience {
+        float: left;
+        height: auto;
+        width: 100%;
+    }
+
+    .coursework {
+        float: right;
+        height: auto;
+        width: 100%;
+    }
+
+    .headshot img{
+        display: block;
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        box-shadow: 7px 7px rgb(255, 255, 255);
+        margin-left: 15%;
+    }
+
+    h3 {
+        font-size: 75px;
+    }
+
+    .experience ul li h1 {
+        font-size: 20px;
+    }
+
+    .experience ul li p, .coursework ul li p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .experience ul li {
+        padding-bottom: 10%;
+    }
+
+    .coursework h1 {
+        font-size: 20px;
+    }
+
+    .lang {
+        font-size: 20px;
+    }
+    
+}
+
+/* regular laptop */
+
+@media (min-width: 992px) {
+    
+    .intro {
+        gap: 5%;
+        width: 900px;
+    }
+
+    .flowers {
+        display: none;
+    }
+}
+
+/* large laptop */
+
+@media (min-width: 1200px) {
+
+    .intro {
+        gap: 5%;
+        width: 1300px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 100px;
+    }
+
+}
