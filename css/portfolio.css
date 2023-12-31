@@ -5,32 +5,36 @@
     margin-top: 20px;
 }
 
-.code-block {
-    flex: 1;
-    margin: 3%;
-    overflow: hidden;
-}
-
 .portfolio-code,
 .design-code {
-    background-color: #5D9BD6;
-    padding: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    height: 300px;
+    flex: 1;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out; /* Add smooth transition on hover */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    transition: all 0.3s; /* Apply transition to all properties */
+
+    background-color: #5D9BD6;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    margin: 5%;
+}
+
+.portfolio-code {
+    margin-left: 90px;
+}
+
+.design-code {
+    margin-right: 90px;
 }
 
 .portfolio-code:hover,
 .design-code:hover {
-    padding: 40px; /* Increase padding on hover */
-    border-radius: 30px; /* Increase border-radius on hover */
-    height: 400px;
-    background-color: skyblue;
+    transform: scale(1.1);
+    background-color: #719bc2;
 }
 
 h1 {

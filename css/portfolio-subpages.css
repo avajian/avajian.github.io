@@ -1,0 +1,36 @@
+
+.row {
+    flex: 1;
+}
+
+.project {
+    background-color:#8ab9e4;
+    padding: 1%;
+    margin: 3%;
+    border-radius: 25px;
+}
+
+.title {
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.description {
+    margin-left: 4%; 
+}
+
+.project h1 {
+   margin-left: 2%; 
+}
+
+.project p {
+    margin-left: 2%; 
+}
+
+.project p a {
+    color: black; 
+}
+
+.project p a:hover {
+    color: blue; 
+}
