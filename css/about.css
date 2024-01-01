@@ -4,15 +4,18 @@ h3 {
     color: black;
     font-size: 40px;
     margin-top: 4%;
-    border-bottom: 1px solid #A1A1C9;
     margin-left: 7%;
     margin-right: 7%;
     text-align: center;
 }
 
+h1 {
+    font-weight: 500;
+}
+
 /* create border */
 .background-block {
-    border: #A1A1C9 solid 1px;
+    border: lightblue solid 2px;
     border-radius: 25px;
     margin-left: 5%;
     margin-right: 5%;
@@ -34,6 +37,14 @@ h3 {
     color: black;
 }
 
+.desc p a:hover {
+    color: lightblue;
+}
+
+.desc p a {
+    color: black;
+}
+
 .desc {
     display: flex;
     justify-content: center;
@@ -43,6 +54,7 @@ h3 {
 .flowers {
     display: flex;
     justify-content: center;
+    margin-bottom: 7%;
 }
 
 .flowers img {
@@ -81,16 +93,23 @@ h3 {
 
     .intro {
         display: flex;
+        margin: 0 auto;
+        gap: 5%;
     }
 
     .headshot img {
-        width: 70%;
+        width: 100%;
     }
     
     .headshot {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .intro {
+        width: 70%;
+        margin-bottom: 10%;
     }
 }
 
@@ -99,13 +118,19 @@ h3 {
 @media (min-width: 992px) {
     
     .headshot img {
-        width: 50%;
+        width: 100%;
+    }
+
+    .intro {
+        width: 60%;
     }
 }
 
 /* large laptop */
 
 @media (min-width: 1200px) {
-
+    .intro {
+        width: 50%;
+    }
 
 }

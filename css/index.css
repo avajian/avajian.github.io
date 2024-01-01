@@ -18,7 +18,12 @@ h1 {
     font-weight: 400;
 }
 
-.intro p {
+.intro {
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+.description p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -26,7 +31,7 @@ h1 {
     margin-right: 7.5%;
     line-height: 24px;
     color: black;
-    padding-bottom: 10%;
+    margin-bottom: 10%;
 }
 
 /* set display to flex and justify-content to center to center an image */
@@ -38,7 +43,7 @@ h1 {
 }
 
 .ml11 {
-    font-weight: 700;
+    font-weight: 550;
     font-size: 3.5em;
   }
   
@@ -86,6 +91,25 @@ h1 {
     font-size: xx-large;
   }
 
+/* Define keyframe animation */
+@keyframes moveAcross {
+  0% {
+    opacity: 0;
+    transform: translateX(-500%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(500%);
+  }
+}
+
+/* Apply animation to the text */
+.ml11 .letters {
+  display: inline-block;
+  line-height: 1em;
+  animation: moveAcross 19s linear infinite; /* Adjust the duration as needed */
+}
+
 
 /* responsive design */
 
@@ -100,7 +124,7 @@ h1 {
         margin-right: 10%;
     }
 
-    .intro p {
+    .description p {
         text-align: left;
         font-size: 30px;
         line-height: 45px;
