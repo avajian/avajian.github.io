@@ -92,14 +92,18 @@ h1 {
   }
 
 /* Define keyframe animation */
-@keyframes moveAcross {
+@keyframes fadeInOut {
   0% {
     opacity: 0;
-    transform: translateX(-500%);
+    transform: translateY(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
   }
   100% {
-    opacity: 1;
-    transform: translateX(500%);
+    opacity: 0;
+    transform: translateY(50%);
   }
 }
 
@@ -107,8 +111,10 @@ h1 {
 .ml11 .letters {
   display: inline-block;
   line-height: 1em;
-  animation: moveAcross 19s linear infinite; /* Adjust the duration as needed */
+  animation: fadeInOut 10s ease-in-out infinite; /* Infinite loop with a total duration of 6 seconds (fade in for 3s, fade out for 3s) */
 }
+
+
 
 
 /* responsive design */
@@ -135,11 +141,22 @@ h1 {
         font-weight: 1500;
     }
 
+    .window-flowers {
+      width: 50%;
+  }
+
+  .description p {
+    font-size: 16px;
+}
+
 }
 
 /* regular laptop */
 
 @media (min-width: 992px) {
+  .description p {
+    font-size: 24px;
+}
 
 }
 
