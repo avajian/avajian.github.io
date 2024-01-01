@@ -18,16 +18,20 @@
         <nav class="top-nav"> 
           <ul>
             <li class="move-left"><a href="index">👩🏻‍💻avajian</a></li>
-            <li class="move-right"><a href= "portfolio">portfolio</a></li>
-            <li class="move-right"><a href= "about">about</a></li>
             <li class="move-right"><a href= "more-about">more</a></li>
+            <li class="move-right"><a href= "about">about</a></li>
+            <li class="move-right"><a href= "portfolio">portfolio</a></li>
           </ul>
         </nav> 
       </header>
   
       <div class="background-block">
         <h1 class="title"> code projects </h1>
-        <p class="description"> From relevant classes, clubs and ideas. </p>
+        <div class="description">
+          <p>languages: C++/C, Python, SQL, HTML, CSS </p>
+          <p>frameworks: React.js, Flask </p>
+          <p>technologies: VScode, Xcode, git </p>
+        </div>
 
           <div class="row">
             <div class="project">
@@ -130,43 +134,5 @@
       </div>
 
     </div>
-
-    <script>
-      // Select the divs you want to observe
-      const divsToObserve = document.querySelectorAll('.project');
-      
-      let activeDiv = null;
-
-      // Create a new Intersection Observer
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          const currentDiv = entry.target;
-
-          if (entry.isIntersecting && entry.intersectionRatio === 1) {
-            // The div is fully in the viewport
-            if (activeDiv !== currentDiv) {
-              // Remove background color from previous active div
-              if (activeDiv) {
-                activeDiv.classList.remove('in-viewport');
-              }
-
-              // Add background color to the current active div
-              currentDiv.classList.add('in-viewport');
-              activeDiv = currentDiv;
-            }
-          } else if (activeDiv === currentDiv) {
-            // The div is not fully in the viewport
-            currentDiv.classList.remove('in-viewport');
-            activeDiv = null;
-          }
-        });
-      }, { threshold: 1 });
-
-      // Start observing the divs
-      divsToObserve.forEach(div => {
-        observer.observe(div);
-      });
-    </script>
-
 </body>
 </html>

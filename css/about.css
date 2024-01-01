@@ -1,33 +1,20 @@
 
 
-/* to center div, set margin to 0 auto */
-
+/* main title */
 h3 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    color: black;
     font-size: 40px;
-    margin-top: 3%;
-    padding-top: 5%;
-    border-bottom: 1px solid white;
+    margin-top: 4%;
+    border-bottom: 1px solid #A1A1C9;
     margin-left: 7%;
     margin-right: 7%;
 }
 
+/* create border */
 .background-block {
-    width: 95%;
-    background-color: #A1A1C9;
-    padding: 0px;
-    border-radius: 20px;
-    margin: 0 auto;
-}
-
-h2 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 7.5%;
-    font-size: 30px;
+    border: #A1A1C9 solid 1px;
+    border-radius: 25px;
+    margin: 5%;
 }
 
 .headshot img {
@@ -37,12 +24,11 @@ h2 {
 
 .desc p {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 1%;
+    margin-right: 1%;
     line-height: 24px;
-    color: whitesmoke;
+    color: black;
     padding-bottom: 10%;
 }
 
@@ -56,76 +42,6 @@ h2 {
 .flowers img {
     height: auto;
     width: 100%;
-}
-
-.experience h1, .coursework h1 {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.experience, .coursework  {
-    padding-top: 5%;
-    padding-bottom: 2.5%;
-    /* box-shadow: 7px 7px rgb(255, 255, 255); */
-    border-style: solid;
-    border-width: medium;
-    border-color: white;
-    display: grid;
-    justify-content: center;
-    margin: 5%;
-    border-radius: 20px;
-    margin-bottom: 8%;
-}
-
-.experience ul, .coursework ul {
-    padding: 0px;
-}
-
-.experience ul li, .coursework ul li {
-    list-style: none;
-}
-
-.coursework ul li p {
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 5%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 32px;
-}
-
-.experience ul li p {
-    color: white;
-    text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 32px;
-}
-
-.experience ul li h1 {
-    color: white;
-    font-size: 20px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-}
-
-.desc p {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 20px;
-}
-
-.lang {
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* responsive design */
@@ -194,7 +110,7 @@ h2 {
     }
 
     h3 {
-        font-size: 75px;
+        font-size: 40px;
     }
 
     .experience ul li h1 {
