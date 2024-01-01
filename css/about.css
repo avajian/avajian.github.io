@@ -1,5 +1,4 @@
 
-
 /* main title */
 h3 {
     color: black;
@@ -8,13 +7,18 @@ h3 {
     border-bottom: 1px solid #A1A1C9;
     margin-left: 7%;
     margin-right: 7%;
+    text-align: center;
 }
 
 /* create border */
 .background-block {
     border: #A1A1C9 solid 1px;
     border-radius: 25px;
-    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .headshot img {
@@ -25,14 +29,16 @@ h3 {
 .desc p {
     text-align: center;
     font-size: 16px;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin: 7%;
     line-height: 24px;
     color: black;
-    padding-bottom: 10%;
 }
 
-/* set display to flex and justify-content to center to center an image */
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .flowers {
     display: flex;
@@ -44,109 +50,45 @@ h3 {
     width: 100%;
 }
 
+.intro {
+    margin-bottom: 10%;
+}
+
 /* responsive design */
 
 /* tablet */
 
 @media (min-width: 768px) {
 
-    /* TO DO: need to made .desc and .headshot side-by-side divs */
-
-    .intro p {
-        line-height: 32px;
-    }
-
-    .row p {
-        line-height: 32px;
-    }
-
     .flowers {
-        background: url("https://lh3.googleusercontent.com/_OiX6POay_l_qmLAi2qrZvcvCtCX976FvaaZpXVYyhJcoeJwqstZp4fH-J7WJN1KqlVmuZi0dc36tt6f0TkTzv0q5zd1B-shECTC8mGaDhyk2ZDXczlRTI0tHpiomgqbyxTZ4Ph0KA=w2400?source=screenshot.guru") center repeat-x;
-        background-size: auto 100%;
+        display: none;
     }
-    
-    .flowers img {
-        height: auto;
-        width: 25%;
-        background-repeat: repeat-x;
+
+    h3 {
+        text-align: left;
     }
 
     .intro {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
     }
 
-    .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .experience, .coursework {
-         box-shadow: 7px 7px rgb(255, 255, 255);
-    }
-
-    .experience {
-        float: left;
-        height: auto;
-        width: 100%;
-    }
-
-    .coursework {
-        float: right;
-        height: auto;
-        width: 100%;
-    }
-
-    .headshot img{
-        display: block;
-        width: 80%;
-        height: auto;
-        flex-direction: column;
-        display: flex;
-        box-shadow: 7px 7px rgb(255, 255, 255);
-        margin-left: 15%;
-    }
-
-    h3 {
-        font-size: 40px;
-    }
-
-    .experience ul li h1 {
-        font-size: 20px;
-    }
-
-    .experience ul li p, .coursework ul li p {
-        font-size: 16px;
-        text-align: left;
-    }
-
-    .experience ul li {
-        padding-bottom: 10%;
-    }
-
-    .coursework h1 {
-        font-size: 20px;
-    }
-
-    .lang {
-        font-size: 20px;
+    .headshot img {
+        width: 70%;
     }
     
+    .headshot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* regular laptop */
 
 @media (min-width: 992px) {
     
-    .intro {
-        gap: 5%;
-        width: 900px;
-    }
-
-    .flowers {
-        display: none;
+    .headshot img {
+        width: 50%;
     }
 }
 
@@ -154,17 +96,5 @@ h3 {
 
 @media (min-width: 1200px) {
 
-    .intro {
-        gap: 5%;
-        width: 1300px;
-    }
-
-    h2 {
-        font-size: 60px;
-    }
-
-    h3 {
-        font-size: 100px;
-    }
 
 }

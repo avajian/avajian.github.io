@@ -17,8 +17,7 @@
       <header>
         <nav class="top-nav"> 
           <ul>
-            <li class="move-left"><a href="index">👩🏻‍💻avajian</a></li>
-            <li class="move-right"><a href= "more-about">more</a></li>
+            <li class="move-left"><a href="index">home</a></li>
             <li class="move-right"><a href= "about">about</a></li>
             <li class="move-right"><a href= "portfolio">portfolio</a></li>
           </ul>
@@ -33,43 +32,6 @@
               <span class="letters">WELCOME</span>
             </span>
           </h1>
-          
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-        <script>
-            // Wrap every letter in a span
-            var textWrapper = document.querySelector('.ml11 .letters');
-            textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
-
-            anime.timeline({loop: true})
-            .add({
-                targets: '.ml11 .line',
-                scaleY: [0,1],
-                opacity: [0.5,1],
-                easing: "easeOutExpo",
-                duration: 700
-            })
-            .add({
-                targets: '.ml11 .line',
-                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
-                easing: "easeOutExpo",
-                duration: 700,
-                delay: 400
-            }).add({
-                targets: '.ml11 .letter',
-                opacity: [0,1],
-                easing: "easeOutExpo",
-                duration: 600,
-                offset: '-=775',
-                delay: (el, i) => 34 * (i+1)
-            }).add({
-                targets: '.ml11',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1400
-            });
-        </script>
 
         <div class = "intro">
 
@@ -77,39 +39,23 @@
                 <img src="https://lh3.googleusercontent.com/zB0XEKPgy6xM5LrgQC7w9-qjGRxLYafkvC4ke5q-TPMaGUreLKH-MDvr2zi3nmgRM4JPct8OIP0vAOxB2DhtuQjKp45PNp_9c1GW4Ikoo6ibxcMpf5mrGQ8BxXss7qW9HOV5MaqxNg=w2400">
             </div>
 
-            <p>  My name is Ava Schmidt and I am a rising junior at the University of Michigan
-            majoring in computer science x cognitive science and minoring in ux design. Welcome to my website and
-            thank you for stopping by ! <br> <br> connect w/ me: avajian@umich.edu </p>
+            <p>  hello. <br>
+                 my name is ava schmidt <br>
+                 welcome to my website <br>
+            </p>
         </div>
       </div>
-
-      <div class="lower-bar">
-        
-        <div class="left-side">
-            <nav class="add-bottom-border"> 
-              <ul>
-                <li><a href="index">home</a></li>
-                <li><a href= "portfolio">portfolio</a></li>
-                <li><a href= "about">about</a></li>
-                <li><a href= "more-about">more</a></li>
-              </ul>
-            </nav> 
-        </div>
-
-        <div class="right-side">
-            <nav class="space-nav"> 
-              <ul>
-                <li><a href="index">Avajian@umich.edu</a></li>
-                <li><a href="https://github.com/avajian" class="fa fa-github"></a></li>
-                <li><a href="https://www.linkedin.com/in/ava-jian-schmidt/" class="fa fa-linkedin"></a></li>
-                <li><a href="https://open.spotify.com/artist/3CSSiEGdTuhAvkYI53iqLA?si=i27CkwtvT2SyW5m3UP5rJA" class="fa fa-spotify"></a></li>
-                <li><a href="https://www.instagram.com/bruvava_/" class="fa fa-instagram"></a></li>
-              </ul>
-            <nav> 
-        </div>
-
-      </div>
-
     </div>
+    <header>
+      <nav class="space-nav"> 
+        <ul>
+          <li><a href="index">Avajian@umich.edu</a></li>
+          <li><a href="https://github.com/avajian" class="fa fa-github"></a></li>
+          <li><a href="https://www.linkedin.com/in/ava-jian-schmidt/" class="fa fa-linkedin"></a></li>
+          <li><a href="https://open.spotify.com/artist/3CSSiEGdTuhAvkYI53iqLA?si=i27CkwtvT2SyW5m3UP5rJA" class="fa fa-spotify"></a></li>
+          <li><a href="https://www.instagram.com/bruvava_/" class="fa fa-instagram"></a></li>
+        </ul>
+      <nav> 
+  </header>
 </body>
 </html>

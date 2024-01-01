@@ -13,7 +13,7 @@
     padding: 1%;
     margin: 3%;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow with desired values */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .title {

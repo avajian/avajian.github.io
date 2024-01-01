@@ -8,12 +8,6 @@
     font-weight: 700;
 }
 
-.parent {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
 .portfolio-code,
 .design-code {
     flex: 1;
@@ -27,17 +21,17 @@
 
     background-color: #5D9BD6;
     border-radius: 20px;
-    width: 500px;
-    height: 300px;
-    margin: 5%;
+    width: 300px;
+    height: 250px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
 }
 
-.portfolio-code {
-    margin-left: 90px;
-}
-
-.design-code {
-    margin-right: 90px;
+.code-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio-code:hover,
@@ -55,12 +49,8 @@ h1 {
 /* Responsive styles */
 @media (max-width: 767px) {
     .parent {
+        display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    .code-block {
-        margin-right: 0;
-        margin-bottom: 10px;
     }
 }
