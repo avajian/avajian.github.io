@@ -3,7 +3,7 @@
 
 .background-block {
     width: 95%;
-    background-color: #5D9BD6;
+    background-color: lightblue;
     padding: 0px;
     border-radius: 20px;
     margin: 0 auto;
@@ -14,7 +14,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     padding-top: 7.5%;
-    color: whitesmoke;
+    color: black;
     font-weight: 400;
 }
 
@@ -25,7 +25,7 @@ h1 {
     margin-left: 7.5%;
     margin-right: 7.5%;
     line-height: 24px;
-    color: whitesmoke;
+    color: black;
     padding-bottom: 10%;
 }
 
@@ -68,6 +68,22 @@ h1 {
   .ml11 .letter {
     display: inline-block;
     line-height: 1em;
+  }
+
+  .text-overlay {
+    /* Styles for the text overlay */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    z-index: 2; /* Ensure the overlay is on top of the clouds */
+  }
+
+  h2 {
+    font-weight: 520;
+    font-size: xx-large;
   }
 
 

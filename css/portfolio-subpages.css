@@ -1,7 +1,20 @@
 .background-block {
-    border: rgb(194, 216, 230) 2px solid;
+    border: lightblue solid 2px;
     border-radius: 25px;
     margin: 5%;
+    position: relative;
+    z-index: -1;
+}
+
+.text-overlay {
+    /* Styles for the text overlay */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+    z-index: 2; /* Ensure the overlay is on top of the clouds */
 }
 
 .row {
@@ -9,7 +22,7 @@
 }
 
 .project {
-    background-color:#8ab9e4;
+    background-color: lightblue;
     padding: 1%;
     margin: 3%;
     border-radius: 25px;
