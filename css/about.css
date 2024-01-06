@@ -64,6 +64,7 @@ h1 {
 
 .intro {
     margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 .text-overlay {
@@ -76,6 +77,15 @@ h1 {
     color: white; /* Text color */
     z-index: 2; /* Ensure the overlay is on top of the clouds */
 }
+
+.title {
+    font-weight: 600;
+}
+
+.resume {
+    margin: 10%;
+}
+
 
 /* responsive design */
 
@@ -110,6 +120,7 @@ h1 {
     .intro {
         width: 70%;
         margin-bottom: 10%;
+        margin-top: 10%;
     }
 }
 
