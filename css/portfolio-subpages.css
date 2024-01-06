@@ -23,8 +23,8 @@
 
 .project {
     background-color: lightblue;
-    padding: 1%;
-    margin: 3%;
+    padding: 7%;
+    margin: 4%;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -52,4 +52,13 @@
 
 .project p a:hover {
     color: blue; 
+}
+
+@media (min-width: 768px) {
+
+    .project {
+        margin: 3%;
+        padding: 1%;
+    }
+
 }

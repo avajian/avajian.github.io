@@ -43,9 +43,11 @@
 
                 <h1> Fullstack Instagram Clone </h1>
                 <p> 
-                    Implemented a static site generator, server + client-side dynamic pages to render templates
-                    when a user loads a page. Used Flask web framework to include features; creating, updating, 
-                    and deleting users, posts, comments, and likes
+                  Implemented interactive server-side dynamic pages that render HTML templates on-demand when
+                   a user loads a page (using JSON data). Features include creating, updating, and deleting users,
+                  posts, comments, and likes. Next, created client-side dynamic pages by refactoring code into a
+                  REST API. Wrote client application in JavaScript that runs in the browser and makes AJAX calls
+                  to the REST API. 
                     <br><br>
                     Python, React.js, HTML/CSS, SQlite
                 </p>
@@ -56,9 +58,9 @@
 
                 <h1> Search Engine </h1>
                 <p>  
-                    Created an inverted index via map and reduce program to organize tf-idf normalization 
-                     calculations — created an index server that takes inverted index as input and outputs
-                     document scores based on user queries from front-end server
+                  Created a segmented inverted index of web pages using a pipeline of MapReduce programs. 
+                  Then, built an Index server, a REST API app that returns search results in JSON format. 
+                  Finally, built a Search server, a user interface that returns search results just like Google or Bing.
                     <br><br>
                     Python, React.js, HTML/CSS, SQlite
                 </p>
@@ -94,10 +96,10 @@
 
         <div class="row">
           <div class="project">
-            <h1> Assembler, Cache + Pipeline Simulator </h1>
-            <p>  EECS 370 class project coded in C. Created an assembler to convert code from LC2K to machine code, then a simulator 
-                 to carry out its instructions. Designed a pipeline simulator that handles data + control hazards. Created a cache 
-                 simulator that does writeback on store.
+            <h1> Computer Hardware Simulators</h1>
+            <p>  Assembler: Program which takes as input an LC2K assembly file and outputs its correct machine code representation.
+               Pipeline: Cycle-accurate behavioral simulator for a pipelined implementation of the LC-2K, complete with data forwarding
+                and simple branch prediction. Cache: Program that simulates a variety of cache configurations.
                 <br><br>
                 C
             </p>    
