@@ -54,6 +54,15 @@
     color: blue; 
 }
 
+.image_search_engine {
+    width: 100%;
+    height: auto;
+}
+
+#read-more-btn:hover {
+    color: blue;
+}
+
 @media (min-width: 768px) {
 
     .project {
