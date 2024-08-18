@@ -1,77 +1,353 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/nav-bars.css" />
-    <link rel="stylesheet" href="./clouds.html">
-    <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <title>homepage</title>
-</head>
-<body>
+  <head>
+    <title>avajian</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
 
-    <div class="full-page">
-      <div class="text-overlay">
-        <h2> hello there! my name is ava, welcome to my website</h2>
-        <p>scroll down...</p>
+    <div class="sidebar">
+
+      <div class="left-side-bar">
+        <p class="sidebar-intro"> 
+          <br>
+          hello? <br><br>
+          oh, hi there! <br>
+          quite lovely to see <br>
+          you here. <br>
+          thanks for visiting <br>
+          i have so many <br>
+          things i want<br>
+          to share <br>
+          <br>
+          for starters, <br>
+          my name is Ava, <br>
+          i'm from <br>
+          East Lansing, MI <br>
+          and i have a love <br>
+          for creating things <br>
+          <br>
+          this includes: <br>
+          code, design <br>
+          and everything in <br>
+          between. check out <br>
+          my work, life and <br>
+          projects sections <br>
+          and explore other <br>
+          options on the <br>
+          menu bar <br>
+          <br>
+          and feel free to <br>
+          reach out! <br>
+
+          
+        </p>
       </div>
-      <header>
-        <nav class="top-nav"> 
+
+      <div class="vertical-bar"></div>
+
+      <div class="right-side-bar">
+        <nav class="sidebar-nav">
           <ul>
-            <li class="move-left"><a href="index">home</a></li>
-            <li class="move-right"><a href= "about">about</a></li>
-            <li class="move-left"><a href= "projects">projects</a></li>
+            <li><a href="#"><i class="fas fa-home"></i></a></li>
+            <li><a href="#"><i class="fas fa-compass"></i></a></li>
+            <li><a href="#"><i class="fas fa-inbox"></i></a></li>
+            <li><a href="#"><i class="fas fa-video"></i></a></li>
+            <li><a href="#"><i class="fas fa-user"></i></a></li>
+            <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
           </ul>
-        </nav> 
-      </header>
-  
-      <div class="background-block">
+        </nav>
 
-        <h1 class="ml11">
-            <span class="text-wrapper">
-              <span class="letters"> welcome </span>
-            </span>
-          </h1>
-
-        <div class = "intro">
-            <div class="window-flowers">
-                <img src="https://lh3.googleusercontent.com/zB0XEKPgy6xM5LrgQC7w9-qjGRxLYafkvC4ke5q-TPMaGUreLKH-MDvr2zi3nmgRM4JPct8OIP0vAOxB2DhtuQjKp45PNp_9c1GW4Ikoo6ibxcMpf5mrGQ8BxXss7qW9HOV5MaqxNg=w2400">
-            </div>
-
-            <div class="description">
-              <p>  Woah, hi again! <br><br>
-                I don't know how you found me,
-                but thank you for stopping by.
-                Feel free to take a look at my 
-                projects and about section! 
-                <br> <br>
-                Feel free to contact me
-                as well: avajian@umich.edu
-           </p>
-            </div>
-        </div>
+      <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
       </div>
     </div>
+
     <header>
-      <nav class="space-nav"> 
-        <ul>
-          <li><a href="index">Avajian@umich.edu</a></li>
-          <li><a href="https://github.com/avajian" class="fa fa-github"></a></li>
-          <li><a href="https://www.linkedin.com/in/ava-jian-schmidt/" class="fa fa-linkedin"></a></li>
-          <li><a href="https://open.spotify.com/artist/3CSSiEGdTuhAvkYI53iqLA?si=i27CkwtvT2SyW5m3UP5rJA" class="fa fa-spotify"></a></li>
-          <li><a href="https://www.instagram.com/bruvava_/" class="fa fa-instagram"></a></li>
-        </ul>
-      <nav> 
-  </header>
-  <div id="clouds">
-    <script>console.clear();</script>
+
+      <div class="content">
+
+        <div class="profile">
+
+          <div class="profile-image">
+
+            <img src="images/headshot2.jpg" alt="headshot">
+
+          </div>
+
+          <div class="profile-user-settings">
+
+            <h1 class="profile-user-name">Ava Schmidt</h1>
+
+          </div>
+
+          <!-- <div class="profile-stats">
+
+            <ul>
+              <li><span class="profile-stat-count">99</span> problems</li>
+              <li><span class="profile-stat-count">188</span> followers</li>
+              <li><span class="profile-stat-count">206</span> following</li>
+            </ul>
+
+          </div> -->
+
+          <div class="profile-bio">
+            <br>
+            <p><span class="profile-real-name"></span>rising senior @〽️ichigan studying cs+ux </p>
+            <p>combining code and design since '03</p>
+            <br>
+            <p>connect 👉 <a href="https://www.linkedin.com/in/ava-jian-schmidt/">Linkedin </a></p>
+            <p>contact 👉 <a href="https://www.linkedin.com/in/ava-jian-schmidt/">avajian@umich.edu </a></p>
+
+          </div>
+
+        </div>
+        <!-- End of profile section -->
+
+      </div>
+      <!-- End of container -->
+
+    </header>
+
+    
+    <main>
+
+      <div class="content2">
+
+              <!-- Tab Navigation -->
+      <div class="profile-tabs">
+        <div class="profile-tab active" data-target="work"><i class="fas fa-briefcase"></i> work </div>
+        <div class="profile-tab" data-target="projects"><i class="fas fa-code"></i> projects</div>
+        <div class="profile-tab" data-target="life"><i class="fas fa-heart"></i> life</div>
+      </div>
+      <!-- End Navigation -->
+
+
+
+
+        <!-- begin work -->
+      <div class="work">
+
+        <!-- Content for Saved Posts -->
+        <div class="fragment-links">
+          <ul>
+            <li><a href="#HRS">U.S Health and Retirement Study</a></li>
+            <li><a href="#DENSO">DENSO North America</a></li>
+            <li><a href="#OnRamp">University of Michigan OnRamp Camp</a></li>
+            <li><a href="#IBT">Innovative BioTherapies</a></li>
+            <li><a href="#Sparrow">Sparrow Lifeguard</a></li>
+          </ul>
+        </div>
+
+        <a name="HRS">
+        <h1 class="header-intro">U.S Health and Retirement Study</h1>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+        <a name="projects">
+        <h1 class="header-intro"> projects </h1>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end work -->
+
+
+
+
+      <!-- begin projects -->
+      <div class="projects">
+
+        <div class="fragment-links">
+          <ul>
+            <li><a href="#HRS">Fullstack Instagram Meta Clone</a></li>
+            <li><a href="#DENSO">Search Engine</a></li>
+          </ul>
+        </div>
+
+        <div class="gallery-item" tabindex="0">
+
+          <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end projects -->
+
+
+
+
+      <!-- begin life -->
+      <div class="life">
+
+        <h1 class="header-intro"> life at a glance </h1>
+        <h1 class="header-intro"> last updated: 8/17/24 </h1>
+
+                <!-- Content for Saved Posts -->
+      
+      
+                <div class="gallery-item" tabindex="0">
+      
+                  <img src="images/life/music.JPG" class="gallery-image" alt="">
+      
+                  <div class="gallery-item-type">
+      
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+      
+                  </div>
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">August 2024</span>
+                    <p> Lollapalooza music festival in Chicago! </p>
+                  </div>
+      
+                </div>
+      
+                <div class="gallery-item" tabindex="0">
+      
+                  <img src="images/life/beach.jpeg" class="gallery-image" alt="">
+      
+                  <div class="gallery-item-type">
+      
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+      
+                  </div>
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">July 2024</span>
+                    <p> Beach trip in western Michigan on July 4th. </p>
+                  </div>
+      
+                </div>
+      
+                <div class="gallery-item" tabindex="0">
+      
+                  <img src="images/life/arb.jpeg" class="gallery-image" alt="">
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">June 2024</span>
+                    <p> Rainy walks in Nichol's Arboretum in Ann Arbor. It was downpouring moments before this photo was taken.
+                      Luckily the sun had peeked out and a rainbow revealed itself.
+                    </p>
+                  </div>
+      
+                </div>
+
+                      
+                <div class="gallery-item" tabindex="0">
+      
+                  <img src="images/life/tennis.jpeg" class="gallery-image" alt="">
+      
+                  <div class="gallery-item-type">
+      
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+      
+                  </div>
+      
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">May 2024</span>
+                    <p> I love pickleball but recently have been getting into tennis as well</p>
+                  </div>
+      
+                </div>
+
+                <div class="gallery-item" tabindex="0">
+      
+                  <img src="images/life/nike.jpeg" class="gallery-image" alt="nike">
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">April 2024</span>
+                    <p> My homebase studying abroad was in Prague, Czech Republic. This day I sketched my Amsterdam travels 
+                      at a popular peacock garden nearby.</p>
+                  </div>
+      
+                </div>
+
+                <div class="gallery-item" tabindex="0">
+
+                  <img src="images/life/cinque_terre.JPG" class="gallery-image" alt="cinque_terre">
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">March 2024</span>
+                    <br>
+                    <p> Cinque Terre, Italy! This was by far my favorite city in Italy.
+                        My friends and I went hiking, explored the terrain and of course had to eat gelato (more than a few times).
+                    </p>
+                  </div>
+      
+                </div>
+
+                <div class="gallery-item" tabindex="0">
+
+                  <img src="images/life/cards.JPG" class="gallery-image" alt="cinque_terre">
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">February 2024</span>
+                    <br>
+                    <p> Playing cards (ERS) under the chain bridge in Budapest, Hungary
+                    </p>
+                  </div>
+      
+                </div>
+
+
+        </div>
+              <!-- end life -->
+
+      </div>
+      <!-- End of container -->
+
+    </main>
+
     <script>
-    !function(){function a(a,b){return a.zIndex===b.zIndex?0:a.zIndex<b.zIndex?-1:1}function b(){this.width=this.width?this.width:this.image.width,this.height=this.height?this.height:this.image.height}var c=window,d=document,e=d.documentElement,f=d.body,g=c.requestAnimationFrame||c.mozRequestAnimationFrame||c.webkitRequestAnimationFrame||c.msRequestAnimationFrame||c.oRequestAnimationFrame||function(a){c.setTimeout(a,20)},h=function(){},i={tracking:"scroll",trackingInvert:!1,x:0,y:0,damping:1,canvas:void 0,className:"",parent:document.body,elements:void 0,animating:!0,fullscreen:!0,preRender:h,postRender:h},j=!1,k=0,l=0,m=function(){k=e.scrollLeft||f.scrollLeft,l=e.scrollTop||f.scrollTop},n=!1,o=0,p=0,q=function(a){o=a.touches?a.touches[0].clientX:a.clientX,p=a.touches?a.touches[0].clientY:a.clientY};if(!c.CanvasRenderingContext2D)return c.Canvallax=function(){return!1};c.Canvallax=function s(a){if(!(this instanceof s))return new s(a);var b=this;return s.extend(this,i,a),b.canvas=b.canvas||d.createElement("canvas"),b.canvas.className+=" canvallax "+b.className,b.parent.insertBefore(b.canvas,b.parent.firstChild),b.fullscreen?(b.resizeFullscreen(),c.addEventListener("resize",b.resizeFullscreen.bind(b))):b.resize(b.width,b.height),b.ctx=b.canvas.getContext("2d"),b.elements=[],a&&a.elements&&b.addElements(a.elements),b.damping=!b.damping||b.damping<1?1:b.damping,b.render(),b},Canvallax.prototype={_x:0,_y:0,add:function(b){for(var c=b.length?b:arguments,d=c.length,e=0;d>e;e++)this.elements.push(c[e]);return this.elements.sort(a),this},remove:function(a){var b=this.elements.indexOf(a);return b>-1&&this.elements.splice(b,1),this},render:function(){var a=this,b=0,d=a.elements.length,e=0,f=0,h=a.fullscreen||"pointer"!==a.tracking;for(a.animating&&(a.animating=g(a.render.bind(a))),a.tracking&&("scroll"===a.tracking?(j||(j=!0,m(),c.addEventListener("scroll",m),c.addEventListener("touchmove",m)),a.x=k,a.y=l):"pointer"===a.tracking&&(n||(n=!0,c.addEventListener("mousemove",q),c.addEventListener("touchmove",q)),h||(e=a.canvas.offsetLeft,f=a.canvas.offsetTop,h=o>=e&&o<=e+a.width&&p>=f&&p<=f+a.height),h&&(a.x=-o+e,a.y=-p+f)),a.x=!h||a.trackingInvert!==!0&&"invertx"!==a.trackingInvert?a.x:-a.x,a.y=!h||a.trackingInvert!==!0&&"inverty"!==a.trackingInvert?a.y:-a.y),a._x+=(-a.x-a._x)/a.damping,a._y+=(-a.y-a._y)/a.damping,a.ctx.clearRect(0,0,a.width,a.height),a.preRender(a.ctx,a);d>b;b++)a.ctx.save(),a.elements[b]._render(a.ctx,a),a.ctx.restore();return a.postRender(a.ctx,a),this},resize:function(a,b){return this.width=this.canvas.width=a,this.height=this.canvas.height=b,this},resizeFullscreen:function(){return this.resize(c.innerWidth,c.innerHeight)},play:function(){return this.animating=!0,this.render()},pause:function(){return this.animating=!1,this}},Canvallax.createElement=function(){function a(a){var c=b(a);return a._pointCache&&a._pointChecksum===c||(a._pointCache=a.getTransformPoint(),a._pointChecksum=c),a._pointCache}function b(a){return[a.transformOrigin,a.x,a.y,a.width,a.height,a.size].join(" ")}var c=Math.PI/180,d={x:0,y:0,distance:1,fixed:!1,opacity:1,fill:!1,stroke:!1,lineWidth:!1,transformOrigin:"center center",scale:1,rotation:0,preRender:h,render:h,postRender:h,init:h,crop:!1,getTransformPoint:function(){var a=this,b=a.transformOrigin.split(" "),c={x:a.x,y:a.y};return"center"===b[0]?c.x+=a.width?a.width/2:a.size:"right"===b[0]&&(c.x+=a.width?a.width:2*a.size),"center"===b[1]?c.y+=a.height?a.height/2:a.size:"bottom"===b[1]&&(c.y+=a.height?a.height:2*a.size),c},_render:function(b,d){var e=this,f=e.distance||1,g=d._x,h=d._y,i=a(e);return e.preRender.call(e,b,d),e.blend&&(d.ctx.globalCompositeOperation=e.blend),d.ctx.globalAlpha=e.opacity,d.ctx.translate(i.x,i.y),e.scale===!1?(g*=f,h*=f):d.ctx.scale(f,f),e.fixed||d.ctx.translate(g,h),e.scale!==!1&&d.ctx.scale(e.scale,e.scale),e.rotation&&d.ctx.rotate(e.rotation*c),d.ctx.translate(-i.x,-i.y),e.crop&&(b.beginPath(),"function"==typeof e.crop?e.crop.call(e,b,d):b.rect(e.crop.x,e.crop.y,e.crop.width,e.crop.height),b.clip(),b.closePath()),e.outline&&(b.beginPath(),b.rect(e.x,e.y,e.width||2*e.size,e.height||2*e.size),b.closePath(),b.strokeStyle=e.outline,b.stroke()),e.render.call(e,b,d),this.fill&&(b.fillStyle=this.fill,b.fill()),this.stroke&&(this.lineWidth&&(b.lineWidth=this.lineWidth),b.strokeStyle=this.stroke,b.stroke()),e.postRender.call(e,b,d),e},clone:function(a){var a=Canvallax.extend({},this,a);return new this.constructor(a)}};return function(a){function b(a){return this instanceof b?(Canvallax.extend(this,a),this.init.apply(this,arguments),this):new b(a)}return b.prototype=Canvallax.extend({},d,a),b.prototype.constructor=b,b.clone=b.prototype.clone,b}}(),Canvallax.extend=function(a){a=a||{};var b=arguments.length,c=1;for(1===arguments.length&&(a=this,c=0);b>c;c++)if(arguments[c])for(var d in arguments[c])arguments[c].hasOwnProperty(d)&&(a[d]=arguments[c][d]);return a};var r=2*Math.PI;Canvallax.Circle=Canvallax.createElement({size:20,render:function(a){a.beginPath(),a.arc(this.x+this.size,this.y+this.size,this.size,0,r),a.closePath()}}),Canvallax.Element=Canvallax.createElement(),Canvallax.Image=Canvallax.createElement({src:null,image:null,width:null,height:null,init:function(a){this.image=this.image&&1===this.image.nodeType?this.image:a&&1===a.nodeType?a:new Image,b.bind(this)(),this.image.onload=b.bind(this),this.image.src=this.image.src||a.src||a},render:function(a){this.image&&a.drawImage(this.image,this.x,this.y,this.width,this.height)}});var r=2*Math.PI;Canvallax.Polygon=Canvallax.createElement({sides:6,size:20,render:function(a){var b=this.sides;for(a.translate(this.x+this.size,this.y+this.size),a.beginPath(),a.moveTo(this.size,0);b--;)a.lineTo(this.size*Math.cos(b*r/this.sides),this.size*Math.sin(b*r/this.sides));a.closePath()}}),Canvallax.Rectangle=Canvallax.createElement({width:100,height:100,render:function(a){a.beginPath(),a.rect(this.x,this.y,this.width,this.height),a.closePath()}})}();</script>
-    <script src='https://codepen.io/shshaw/pen/epmrgO.js'></script><script  src="./js/clouds.js"></script>
-  </div>
-</body>
+      // JavaScript to handle tab switching
+      document.querySelectorAll('.profile-tab').forEach(tab => {
+        tab.addEventListener('click', function() {
+          document.querySelectorAll('.profile-tab').forEach(item => item.classList.remove('active'));
+          document.querySelectorAll('.life, .work, .projects').forEach(item => item.classList.remove('active'));
+          
+          tab.classList.add('active');
+          document.querySelector('.' + tab.dataset.target).classList.add('active');
+        });
+      });
+
+      document.getElementById('sidebar-toggle').addEventListener('click', function() {
+        var sidebar = document.querySelector('.sidebar');
+        var content = document.querySelector('.content');
+        var content2 = document.querySelector('.content2');
+
+        sidebar.classList.toggle('closed');
+        content.classList.toggle('centered');
+        content2.classList.toggle('centered');
+      });
+    </script>
+
+  </body>
 </html>
