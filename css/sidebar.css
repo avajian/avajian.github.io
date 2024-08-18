@@ -26,11 +26,14 @@
     border-right: 1px solid #dbdbdb;
     padding: 20px;
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
     z-index: 1000;
     transform: translateX(0);
     transition: transform 0.3s ease;
+  }
+
+  .sidebar.closed {
+    transform: translateX(-67.5%);
   }
 
   .left-side-bar {
@@ -39,10 +42,6 @@
 
   .right-side-bar {
     flex: 1;
-  }
-  
-  .sidebar.closed {
-    transform: translateX(-67.5%);
   }
   
   .sidebar-logo {

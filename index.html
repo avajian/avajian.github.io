@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/game.css" />
   </head>
   <body>
 
@@ -26,13 +27,13 @@
           and i love <br>
           creating things <br>
           <br>
-          this includes: <br>
+          this includes <br>
           code, design <br>
           and everything in <br>
           between. <br> <br>
           check out <br>
-          my work, life and <br>
-          projects sections <br>
+          my work and <br>
+          project sections <br>
           and explore other <br>
           options on the <br>
           menu bar <br>
@@ -53,7 +54,7 @@
             <li><a href="life.html"><i class="fas fa-heart"></i></a></li>
             <li><a href="video.html"><i class="fas fa-video"></i></a></li>
             <li><a href="me.html"><i class="fas fa-user"></i></a></li>
-            <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+            <li><a href="soon.html"><i class="fas fa-ellipsis-h"></i></a></li>
           </ul>
         </nav>
 
@@ -61,7 +62,7 @@
       </div>
     </div>
 
-    <header>
+<div class="container">
 
       <div class="content">
 
@@ -86,21 +87,19 @@
             <br>
             <p>connect 👉 <a href="https://www.linkedin.com/in/ava-jian-schmidt/">Linkedin </a></p>
             <p>contact 👉 <a href="https://www.linkedin.com/in/ava-jian-schmidt/">avajian@umich.edu </a></p>
-
           </div>
-
         </div>
         <!-- End of profile section -->
-
       </div>
       <!-- End of container -->
 
-    </header>
-
-    
-    <main>
 
       <div class="content2">
+
+      <!-- <div id="game-container">
+        <div id="runner"></div>
+        <div id="obstacle"></div>
+      </div> -->
 
       <!-- Tab Navigation -->
       <div class="profile-tabs">
@@ -259,7 +258,8 @@
             <p class="modal-description">  
               The Selective Cytopheretic Device (SCD) is currently in clinical use to treat inflammatory disease conditions 
               including Acute Kidney Injury (AKI), Acute Respiratory Distress Syndrome (ARDS) and Multiple Organ Dysfunction 
-              (MOD) caused by various etiologies ranging from sepsis to COVID-19. <br><br>
+              (MOD) caused by various etiologies ranging from sepsis to COVID-19. The SCD was later tested by 150 ICU patients 
+              with over 800 sessions with consistent signals of clinical benefit<br><br>
               My responsibilities included attending studies as an assistant to record and observe, creating bacteria to be used
               in the study and use hemodialysis machines to conduct cather size testing. Additionally, I would create blood smears,
               count cells, perform data collation and complete various lab upkeep such as autoclaving and glassware. 
@@ -270,7 +270,7 @@
         <div class="grid-item" tabindex="0" onclick="openModal('modal4')">
           <img src="images/work/umich.jpg" class="gallery-image" alt="">
           <div class="gallery-item-info">
-            <p> Student Life Advisor <br> Membership Services Assistant</p>
+            <p> Student Life Advisor <br><br> Membership Services</p>
           </div>
         </div>
                 <!-- Modal Structure -->
@@ -305,7 +305,7 @@
         <div class="grid-item" tabindex="0" onclick="openModal('modal5')">
           <img src="images/work/sparrow.jpg" class="gallery-image" alt="">
           <div class="gallery-item-info">
-            <p> Lifeguard </p>
+            <p> Lifeguard <br> Fitness <br>Screener</p>
           </div>
         </div>
                 <!-- Modal Structure -->
@@ -324,7 +324,7 @@
         <div class="grid-item" tabindex="0" onclick="openModal('modal6')">
           <img src="images/work/jenna.jpeg" class="gallery-image" alt="">
           <div class="gallery-item-info">
-            <p> Freelance Photography </p>
+            <p> Photography </p>
           </div>
         </div>
                 <!-- Modal Structure -->
@@ -353,43 +353,168 @@
       <!-- begin projects -->
       <div class="projects">
         <div class="grid-container">
-          
-          <div class="grid-item" tabindex="0">
+
+          <div class="grid-item" tabindex="0" onclick="openModal('modal100')">
             <img src="images/projects/meta.webp" class="gallery-image" alt="">
             <div class="gallery-item-info">
               <p> Full-stack Meta Clone </p>
             </div>
           </div>
-          <div class="grid-item">
-            <img src="images/projects/GUI_2.png" class="gallery-image" alt="">
-              <div class="gallery-item-info">
-                <p> Search Engine </p>
-              </div>
-          </div>
-          <div class="grid-item">
-            <img src="images/projects/sense.png" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Scormium <br> UX/UI <br> Optimization </p>
+                  <!-- Modal Structure -->
+          <div id="modal100" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal('modal100')">&times;</span>
+  
+              <h2><span style="font-weight: bold; font-size: large;">Full-stack Meta Clone</span></h2><br>
+              <p class="modal-description">  
+                This was a three part project.
+                <br><br>
+                1. Write a Python program that takes as input HTML templates, JSON data and misc. static files (like images and CSS) 
+                and generates as output a web site of static content. Then, use your new tool to build a non-interactive website. 
+                Jekyll and Pelican are two examples of open source static site generators.
+                <br><br>
+                2. Build an interactive website using server-side dynamic pages. Reuse the templates from project 1, rendering them 
+                on-demand when a user loads a page. New features include creating, updating, and deleting users, posts, comments, and likes.
+                The learning goals of this project include server-side dynamic pages, CRUD (Create, Read, Update, Delete), sessions, and basic
+                SQL database usage.
+                <br><br>
+                3. Build an application using client-side dynamic pages and a REST API. Reuse server-side code from project 2, refactoring portions
+                of it into a REST API. Write a client application in JavaScript that runs in the browser and makes AJAX calls to the REST API.
+                The learning goals of this project are client-side dynamic pages, JavaScript programming, asynchronous programming (AJAX), and 
+                REST APIs. You’ll also gain more practice with the command line.
+                <br><br>
+                <img src="images/projects/meta-clone.png" class="gallery-image" alt="">
+              </p><br><br><br>
             </div>
           </div>
-          <div class="grid-item">
+          
+          <div class="grid-item" tabindex="0" onclick="openModal('modal101')">
+            <img src="images/projects/GUI_2.png" class="gallery-image" alt="">
+            <div class="gallery-item-info">
+              <p> Search Engine </p>
+            </div>
+          </div>
+                  <!-- Modal Structure -->
+          <div id="modal101" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal('modal101')">&times;</span>
+  
+              <h2><span style="font-weight: bold; font-size: large;">Search Engine</span></h2><br>
+              <p class="modal-description">  
+                Build a scalable search engine similar to Google or Bing. The learning goals of this project include information 
+                retrieval concepts like text analysis (tf-idf) and link analysis (PageRank), and parallel data processing with MapReduce. 
+                You’ll also gain experience using a Service-Oriented Architecture to scale dynamic pages and web search.
+                <br><br>
+                Create a segmented inverted index of web pages using a pipeline of MapReduce programs. Then, build an Index server, 
+                a REST API app that returns search results in JSON format. Finally, build a Search server, a user interface that returns 
+                search results just like Google or Bing.
+                <br><br>
+                <img src="images/projects/GUI_2.png" class="gallery-image" alt="">
+              </p><br><br><br>
+            </div>
+          </div>
+
+          <div class="grid-item" tabindex="0" onclick="openModal('modal102')">
+            <img src="images/projects/sense.png" class="gallery-image" alt="">
+            <div class="gallery-item-info">
+              <p> Sense4Code <br> UX/UI <br> Optimization </p>
+            </div>
+          </div>
+                  <!-- Modal Structure -->
+          <div id="modal102" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal('modal102')">&times;</span>
+  
+              <h2><span style="font-weight: bold; font-size: large;">Sense4Code UX/UI Optimization</span></h2><br>
+              <p class="modal-description">  
+                Sense4Code is a Czech company that uses Scormium's Learning Management System (LMS), a mobile application which serves as a pivotal 
+                tool for students, educators, and administrators in facilitating learning processes. This project focused on optimizing
+                the user experience and interface of the platform.
+                <br><br>
+                My team focused on optimizing the menu bar, audio options for accessibility and re-organizing the page layout for easy navigation.
+                <br><br><br>
+              </p>
+                <h2><span style="font-weight: bold; font-size: large;">Menu Bar</span></h2><br>
+              <p class="modal-description">  
+                The menu bar was not translated correctly from the Czech language so it produced two "courses" tabs. 
+                So first, we changed the categories to avoid any confusion, then created a drop-down menu from those options.
+                Pictured below is a before and after of the high-fidelity design.
+
+                <img src="images/projects/scormium-before.png" class="gallery-image" alt="">
+
+                <br>
+                <img src="images/projects/scormium-after.png" class="gallery-image" alt="">
+
+              </p><br><br><br>
+            </div>
+          </div>
+
+          <div class="grid-item" tabindex="0" onclick="openModal('modal103')">
             <img src="images/projects/chatgpt.webp" class="gallery-image" alt="">
             <div class="gallery-item-info">
               <p> ChatGPT <br> News Article Classifier </p>
-            </div>  
+            </div> 
           </div>
-          <div class="grid-item">
+                  <!-- Modal Structure -->
+          <div id="modal103" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal('modal103')">&times;</span>
+  
+              <h2><span style="font-weight: bold; font-size: large;">ChatGPT News Article Classifier</span></h2><br>
+              <p class="modal-description">  
+                Machine learning club project that classifies the difference between human and ChatGPT generated news articles.
+                Google Collab was used to create a simple sequential model that trained 500+ news articles to produce a 97% classification
+                accuracy rate. The figure below is a google collab screenshot of the accuracy rate and training data.
+                <br><br>
+                <img src="images/projects/google-collab.png" class="gallery-image" alt="">
+              </p><br><br><br>
+            </div>
+          </div>
+
+          <div class="grid-item" tabindex="0" onclick="openModal('modal104')">
             <img src="images/projects/amongus.png" class="gallery-image" alt="">
             <div class="gallery-item-info">
               <p> Among Us <br> Optimization Algorithms </p>
             </div>
           </div>
-          <div class="grid-item">
+                  <!-- Modal Structure -->
+          <div id="modal104" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal('modal104')">&times;</span>
+  
+              <h2><span style="font-weight: bold; font-size: large;">Optimization Algorithms</span></h2><br>
+              <p class="modal-description">  
+                Implementing optimization algorithms for the traveling salesman problem (TSP) by creating functions
+                to model the fastest, optimal and minimal path it takes to visit every city once and return to the origin city.
+                In addition, special rules were accounted for, following an Among Us theme.
+                <br><br>
+                <img src="images/projects/optimization.png" class="gallery-image" alt="">
+              </p><br><br><br>
+            </div>
+          </div>
+
+          <div class="grid-item" tabindex="0" onclick="openModal('modal105')">
             <img src="images/projects/cache.png" class="gallery-image" alt="">
             <div class="gallery-item-info">
               <p> Data Memory <br> and Cache Simulator </p>
             </div> 
           </div>
+                  <!-- Modal Structure -->
+          <div id="modal105" class="modal">
+            <div class="modal-content">
+              <span class="close-btn" onclick="closeModal('modal105')">&times;</span>
+  
+              <h2><span style="font-weight: bold; font-size: large;">Data Memory and Cache Simulator</span></h2><br>
+              <p class="modal-description">  
+                In this project, you will simulate a CPU cache (unified instruction/data) and integrate the cache into a Project 1 
+                (behavioral) simulator. As the processor simulator executes an assembly-language program, it will access instructions 
+                and data. These accesses will be serviced by the cache, which will transfer data to/from memory as needed.
+                <br><br>
+                <img src="images/projects/cache.png" class="gallery-image" alt="">
+              </p><br><br><br>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -397,8 +522,7 @@
 
       </div>
       <!-- End of container -->
-
-    </main>
+</div>
 
     <script>
       // JavaScript to handle tab switching
@@ -422,6 +546,6 @@
 
     </script>
      <script src="js/sidebar.js"></script>
-
+     <script src="js/game.js"></script>
   </body>
 </html>
