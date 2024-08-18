@@ -42,7 +42,7 @@
   }
   
   .sidebar.closed {
-    transform: translateX(-69%);
+    transform: translateX(-67.5%);
   }
   
   .sidebar-logo {

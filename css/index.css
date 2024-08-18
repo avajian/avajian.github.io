@@ -132,19 +132,12 @@
     margin-bottom: 5%;
   }
 
-  .fragment-links {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  .fragment-links a {
-    font-size: large;
-    color: black;
-    line-height: normal;
-  }
-
-  .fragment-links a:hover {
+  .links:hover {
     color: green;
+  }
+
+  .links {
+    color: black;
   }
 
   .work-description {
@@ -407,6 +400,7 @@
 
 /* The Modal (background) */
 .modal {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -428,7 +422,7 @@
   padding: 20px;
   width: 90%; /* Increased width to make the modal larger */
   max-width: 1200px; /* Set a max-width to prevent it from becoming too wide on very large screens */
-  height: 90vh; /* Set the height to cover a large portion of the screen */
+  height: 80vh; /* Set the height to cover a large portion of the screen */
   overflow-y: auto; /* Allows content to scroll if it exceeds the modal height */
   font-size: medium;
 }
