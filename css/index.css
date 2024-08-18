@@ -153,18 +153,19 @@
   
   .gallery-item {
     position: relative;
-    flex: 1 0 22rem;
-    margin: 1 rem;
-    color: #fff;
-    cursor: pointer;
+    width: 700px; /* Adjust the width as needed to shrink the images */
+    height: 700px; /* Set the height equal to the width to ensure a square shape */
+    overflow: hidden;
+    margin-bottom: 5%; /* Optional: Add margin for spacing between items */
   }
 
   .gallery-item-caption {
-    margin-bottom: 50px;
+    margin-bottom: 5%;
     margin-top: 10px;
     color: black;
     font-size: large;
     line-height: normal;
+    text-align: left;
   }
   
   .fa-clone,
@@ -175,11 +176,55 @@
   .gallery-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  
+
+  .column-container {
+    display: flex;
+    flex-direction: column; /* If you want items stacked vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 auto; /* Horizontally centers the column-container */
+  }
+
+/* Ensure the parent has position relative for proper positioning */
+.gallery-item {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* Initial state: Hide the info */
+.gallery-item-info {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D3D3D3;
+  z-index: 1; /* Ensure it's above other content */
+}
+
+/* Show the info on hover or focus */
+.grid-item:hover .gallery-item-info,
+.grid-item:focus .gallery-item-info {
+  display: flex;
+}
+
+.gallery-item-info p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+}
 
 
+.fa-clone,
+.fa-comment {
+  transform: rotateY(180deg);
+}
 
 
 /* tab navigation */
@@ -330,17 +375,15 @@
   margin-top: 20px;
 }
 
-/* Make each grid item a square */
 .grid-item {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 100%; /* This ensures the height is equal to the width, making it a square */
+  padding-bottom: 100%;
   overflow: hidden;
   border: #D3D3D3 1px solid;
 }
 
-/* Ensure images fill the grid item and maintain aspect ratio */
 .grid-item img {
   position: absolute;
   top: 0;
@@ -349,5 +392,60 @@
   height: 100%;
   object-fit: cover;
 }
+
+
+/* additional info (modal) */
+
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjust as needed for your desired size */
+  max-width: 750px; /* Adjust as needed */
+  padding: 20px;
+  background-color: white;
+  z-index: 1000; /* Ensure it's above all other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* Reduced margin for a larger box */
+  padding: 20px;
+  width: 90%; /* Increased width to make the modal larger */
+  max-width: 1200px; /* Set a max-width to prevent it from becoming too wide on very large screens */
+  height: 80vh; /* Set the height to cover a large portion of the screen */
+  overflow-y: auto; /* Allows content to scroll if it exceeds the modal height */
+  font-size: medium;
+}
+
+.modal-description {
+  line-height: normal;
+}
+
+/* Close Button */
+.close-btn {
+  color: #aaa;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 30px;
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
   
