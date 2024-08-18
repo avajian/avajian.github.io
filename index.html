@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
   </head>
   <body>
 
@@ -54,11 +55,9 @@
       <div class="right-side-bar">
         <nav class="sidebar-nav">
           <ul>
-            <li><a href="#"><i class="fas fa-home"></i></a></li>
-            <li><a href="#"><i class="fas fa-compass"></i></a></li>
-            <li><a href="#"><i class="fas fa-inbox"></i></a></li>
-            <li><a href="#"><i class="fas fa-video"></i></a></li>
-            <li><a href="#"><i class="fas fa-user"></i></a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="video.html"><i class="fas fa-video"></i></a></li>
+            <li><a href="me.html"><i class="fas fa-user"></i></a></li>
             <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
           </ul>
         </nav>
@@ -85,16 +84,6 @@
 
           </div>
 
-          <!-- <div class="profile-stats">
-
-            <ul>
-              <li><span class="profile-stat-count">99</span> problems</li>
-              <li><span class="profile-stat-count">188</span> followers</li>
-              <li><span class="profile-stat-count">206</span> following</li>
-            </ul>
-
-          </div> -->
-
           <div class="profile-bio">
             <br>
             <p><span class="profile-real-name"></span>rising senior @〽️ichigan studying cs+ux </p>
@@ -118,7 +107,7 @@
 
       <div class="content2">
 
-              <!-- Tab Navigation -->
+      <!-- Tab Navigation -->
       <div class="profile-tabs">
         <div class="profile-tab active" data-target="work"><i class="fas fa-briefcase"></i> work </div>
         <div class="profile-tab" data-target="projects"><i class="fas fa-code"></i> projects</div>
@@ -133,22 +122,60 @@
       <div class="work active">
 
         <!-- Content for Saved Posts -->
-        <div class="fragment-links">
-          <ul>
-            <li><a href="#HRS">U.S Health and Retirement Study</a></li>
-            <li><a href="#DENSO">DENSO North America</a></li>
-            <li><a href="#OnRamp">University of Michigan OnRamp Camp</a></li>
-            <li><a href="#IBT">Innovative BioTherapies</a></li>
-            <li><a href="#Sparrow">Sparrow Lifeguard</a></li>
-          </ul>
+
+      <div class="grid-container">
+        
+        <div class="grid-item">
+
+          <img src="images/work/denso.png" class="gallery-image" alt="">
+
         </div>
 
-        <a name="HRS">
-        <h1 class="header-intro">U.S Health and Retirement Study (HRS)</h1>
+        <div class="grid-item">
 
-        <p class="work-description"> HRS </p>
+          <img src="images/work/hrs.jpg" class="gallery-image" alt="">
 
-        <div class="gallery-item" tabindex="0">
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+        <div class="grid-item">
+
+          <img src="images/work/ibt.webp" class="gallery-image" alt="">
+
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+        <div class="grid-item">
+
+          <img src="images/work/umich.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+        <div class="grid-item">
+
+          <img src="images/work/sparrow.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-caption">
+            <span style="font-weight: bold;">July 2024</span>
+            <p> Beach trip in western Michigan on July 4th. </p>
+          </div>
+
+        </div>
+
+        <div class="grid-item">
 
           <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
 
@@ -158,20 +185,7 @@
           </div>
 
         </div>
-
-        <a name="DENSO">
-        <h1 class="header-intro"> DENSO North America </h1>
-
-        <div class="gallery-item" tabindex="0">
-
-          <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
-
-          <div class="gallery-item-caption">
-            <span style="font-weight: bold;">July 2024</span>
-            <p> Beach trip in western Michigan on July 4th. </p>
-          </div>
-
-        </div>
+      </div>
 
       </div>
       <!-- end work -->
@@ -319,6 +333,19 @@
       
                 </div>
 
+                <div class="gallery-item" tabindex="0">
+
+                  <img src="images/life/dog.jpeg" class="gallery-image" alt="cinque_terre">
+
+                  <div class="gallery-item-caption">
+                    <span style="font-weight: bold;">January 2024</span>
+                    <br>
+                    <p> Sheepadoodle in Chicago!
+                    </p>
+                  </div>
+      
+                </div>
+
 
         </div>
               <!-- end life -->
@@ -339,17 +366,8 @@
           document.querySelector('.' + tab.dataset.target).classList.add('active');
         });
       });
-
-      document.getElementById('sidebar-toggle').addEventListener('click', function() {
-        var sidebar = document.querySelector('.sidebar');
-        var content = document.querySelector('.content');
-        var content2 = document.querySelector('.content2');
-
-        sidebar.classList.toggle('closed');
-        content.classList.toggle('centered');
-        content2.classList.toggle('centered');
-      });
     </script>
+     <script src="js/sidebar.js"></script>
 
   </body>
 </html>

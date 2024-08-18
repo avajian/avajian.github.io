@@ -1,0 +1,121 @@
+:root {
+    font-size: 10px;
+  }
+
+    
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+  }
+
+.sidebar-intro {
+    font-size: medium;
+    line-height: normal;
+}
+
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #dbdbdb;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    z-index: 1000;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .left-side-bar {
+    flex: 4;
+  }
+
+  .right-side-bar {
+    flex: 1;
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-69%);
+  }
+  
+  .sidebar-logo {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #262626;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .sidebar-nav ul li {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  .sidebar-nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #262626;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+
+  .sidebar-nav ul li a:hover {
+    color: green;
+  }
+  
+  .sidebar-nav ul li a i {
+    font-size: 2rem;
+  }
+
+  .sidebar-toggle {
+    font-size: 4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 2;
+  }
+  
+  .sidebar-toggle:hover {
+    color: green;
+  }
+
+
+@media screen and (max-width: 40rem) {
+
+.sidebar {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .sidebar-nav ul li a span {
+    display: none;
+  }
+
+  .sidebar-nav ul li a i {
+    font-size: 1.8rem;
+    margin-right: 0;
+  }
+
+  .sidebar.closed {
+    transform: translateX(-73%);
+  }
+
+}
