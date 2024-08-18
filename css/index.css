@@ -259,11 +259,11 @@
     border-bottom: 2px solid black;
   }
 
-  .life, .projects, .work {
+  .projects, .work {
     display: none;
   }
 
-  .life.active, .projects.active, .work.active {
+  .projects.active, .work.active {
     display: block;
   }
 
@@ -460,5 +460,9 @@
   cursor: pointer;
 }
 
-
-  
+.pdf {
+  width: 100%;
+  max-width: 700px; /* Set a max width to prevent it from becoming too large */
+  height: 850px; /* Adjust the height as needed */
+  margin: 0 auto; /* Center the iframe */
+}
