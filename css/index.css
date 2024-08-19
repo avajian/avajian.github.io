@@ -394,7 +394,16 @@
   margin-top: 5%;
 }
 
+.video-item h1 {
+  font-size: large;
+  margin-bottom: 2%;
+}
 
+.me-introduction {
+  font-size: large;
+  text-align: center;
+  margin: 5%;
+}
 
 
   /* Media Query */
@@ -487,3 +496,4 @@
     }
 
   }
+
