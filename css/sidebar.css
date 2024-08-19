@@ -114,7 +114,7 @@
   }
 
   .sidebar.closed {
-    transform: translateX(-73%);
+    transform: translateX(-70%);
   }
 
 }

@@ -55,10 +55,6 @@
 
   /* profile */
   
-  .profile {
-    padding: 5rem 0;
-  }
-  
   .profile::after {
     content: "";
     display: block;
@@ -282,79 +278,6 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-
-
-
-
-  /* Media Query */
-  
-  @media screen and (max-width: 40rem) {
-
-      .content {
-        margin-left: 200px;
-        border: blue solid 2px;
-      }
-
-    .content2 {
-      margin-left: 200px;
-      border: 2px solid red;
-    }
-    
-      .content.centered, .content2.centered {
-        margin-left: 54px;
-      }
-
-    .profile {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 4rem 0;
-    }
-  
-    .profile::after {
-        display: none;
-    }
-  
-    .profile-image,
-    .profile-user-settings,
-    .profile-bio,
-    .profile-stats {
-        float: none;
-        width: auto;
-    }
-  
-    .profile-image img {
-        width: 7.7rem;
-    }
-  
-    .profile-user-settings {
-        flex-basis: calc(100% - 10.7rem);
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 1rem;
-    }
-  
-    .profile-user-name {
-        font-size: 2.2rem;
-    }
-  
-    .profile-bio {
-        font-size: 1.4rem;
-        margin-top: 1.5rem;
-        flex-basis: 100%;
-    }
-
-    .gallery-item {
-        flex: 1 0 100%; /* Make each gallery item take full width */
-    }
-
-    .gallery-item-caption {
-        font-size: medium; /* Adjust font size for captions */
-        margin-bottom: 30px;
-        margin-top: 5px;
-    }
-
-  }
 
   /* grid layout */
 
@@ -470,3 +393,97 @@
 .video-item {
   margin-top: 5%;
 }
+
+
+
+
+  /* Media Query */
+  
+  @media screen and (max-width: 40rem) {
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .content2 {
+      margin-left: 200px;
+    }
+    
+    .content.centered, .content2.centered {
+        margin-left: 54px;
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+      justify-content: center; /* Center items vertically */
+      padding: 4rem 0;
+      text-align: center; /* Center text within the profile elements */
+    }
+  
+  
+    .profile::after {
+        display: none;
+    }
+  
+    .profile-image,
+    .profile-user-settings,
+    .profile-bio {
+        float: none;
+        width: auto;
+    }
+  
+    .profile-image {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically if necessary */
+      width: 100%; /* Make sure the container takes up the full width */
+      margin-right: 0rem;
+    }
+  
+    .profile-image img {
+      width: 25rem;
+    }
+
+    .profile-user-settings {
+        flex-basis: calc(100% - 10.7rem);
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+  
+    .profile-user-name {
+        font-size: 2.2rem;
+    }
+  
+    .profile-bio {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        flex-basis: 100%;
+    }
+
+    .gallery-item {
+        flex: 1 0 100%; /* Make each gallery item take full width */
+    }
+
+    .gallery-item-caption {
+        font-size: medium; /* Adjust font size for captions */
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+
+    /* For the grid layout under the tabs */
+    .grid-container {
+      display: flex;
+      flex-direction: column; /* Stack items in a single column */
+      align-items: stretch; /* Make items take full width */
+    }
+  
+    .grid-item {
+      width: 100%; /* Ensure each grid item takes the full width */
+      margin-bottom: 1rem; /* Optional: Add space between items */
+    }
+
+  }
