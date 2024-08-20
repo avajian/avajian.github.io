@@ -44,12 +44,6 @@
     flex: 1;
   }
   
-  .sidebar-logo {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #262626;
-  }
-  
   .sidebar-nav ul {
     list-style: none;
     padding: 0;
@@ -96,25 +90,63 @@
     color: green;
   }
 
-
-@media screen and (max-width: 40rem) {
-
-.sidebar {
-    width: 200px;
-    padding: 10px;
-  }
-
-  .sidebar-nav ul li a span {
+  #sidebar-toggle {
     display: none;
   }
 
+
+
+/* Mobile version: Transform sidebar into a horizontal menu */
+@media screen and (max-width: 40rem) {
+  .sidebar {
+      width: 100%; /* Make the sidebar fill the top width of the screen */
+      height: auto; /* Adjust height based on content */
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-right: none; /* Remove right border */
+      border-bottom: 1px solid #dbdbdb; /* Add a bottom border */
+      padding: 15px;
+      display: flex;
+      flex-direction: row; /* Arrange items horizontally */
+      align-items: center;
+      justify-content: space-between; /* Space items evenly across */
+      z-index: 1000;
+  }
+
+  .sidebar-nav ul {
+      display: flex; /* Align list items in a row */
+      width: 100%; /* Ensure the ul spans the full width */
+      justify-content: space-around; /* Evenly space out items */
+      padding: 0; /* Remove padding to align with horizontal layout */
+  }
+
+  .sidebar-nav ul li {
+      margin-bottom: 0;
+  }
+
   .sidebar-nav ul li a i {
-    font-size: 1.8rem;
-    margin-right: 0;
+      font-size: 2rem; /* Adjust icon size for mobile */
   }
 
   .sidebar.closed {
-    transform: translateX(-70%);
+      transform: translateX(0%); /* Hide by moving it up */
   }
 
+  .sidebar-toggle {
+      top: 0px; /* Adjust position for mobile */
+      right: 0px; /* Adjust position for mobile */
+  }
+
+  .left-side-bar {
+    flex: 0;
+  }
+
+  .sidebar-intro {
+    text-align: center;
+  }
+
+  /* .life {
+    margin-top: 10%;
+  } */
 }

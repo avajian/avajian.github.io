@@ -24,6 +24,10 @@
     display: block;
   }
   
+  .content {
+    margin-top: 2.5%;
+  }
+
   .content, .content2 {
     max-width: 94rem;
   }
@@ -411,15 +415,12 @@
   @media screen and (max-width: 40rem) {
 
     .content {
-        margin-left: 200px;
+        margin: 0;
+        margin-top: 10%;
     }
 
     .content2 {
-      margin-left: 200px;
-    }
-    
-    .content.centered, .content2.centered {
-        margin-left: 54px;
+      margin: 0;
     }
 
     .profile {
