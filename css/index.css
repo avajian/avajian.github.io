@@ -406,7 +406,13 @@
 .me-introduction {
   font-size: large;
   text-align: center;
-  margin: 5%;
+  margin-top: 5%;
+}
+
+.more-information h1 {
+  font-size: large;
+  text-align: center;
+  margin-top: 5%;
 }
 
 
