@@ -17,3 +17,9 @@ function toggleNav() {
   // Save state in localStorage
   localStorage.setItem("sidebarCollapsed", isCollapsed);
 }
+
+document.querySelectorAll('.experience-flip').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
