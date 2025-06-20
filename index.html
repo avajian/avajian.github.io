@@ -7,503 +7,176 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
-    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="static/style.css" />
   </head>
   <body>
 
-    <div class="sidebar closed">
+      <!-- Sidebar -->
+  <div id="mySidenav" class="sidenav">
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#projects" class="nav-link">Projects</a>
+  </div>
 
-      <div class="left-side-bar">
+  <!-- Toggle -->
+  <div id="sidebarToggle" class="sidebar-toggle" onclick="toggleNav()">☰</div>
 
-      </div>
+<div id="main">
+  <div class="resume-layout">
+    
+    <div class="left-column">
+      <div class="photo-stack">
+        
+        <div class="photo-tooltip">
+          <img src="images/headshot.JPG" alt="headshot" />
+          <span class="tooltip-text"> I'm a recent CS and Cogsci graduate from umich</span>
+        </div>
+        
+        <div class="photo-tooltip">
+          <img src="images/prague.jpeg" alt="headshot" />
+          <span class="tooltip-text"> I did a tech career accelerator in prague, czech republic</span>
+        </div>
 
-      <div class="right-side-bar">
-        <nav class="sidebar-nav">
-          <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-            <!-- <li><a href="life.html"><i class="fas fa-heart"></i></a></li>
-            <li><a href="video.html"><i class="fas fa-video"></i></a></li>
-            <li><a href="me.html"><i class="fas fa-user"></i></a></li> -->
-            <li><a href="soon.html"><i class="fas fa-ellipsis-h"></i></a></li>
-          </ul>
-        </nav>
-
-      <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+        <div class="photo-tooltip">
+          <img src="images/draw.jpeg" alt="headshot" />
+          <span class="tooltip-text"> I like drawing, pickleball, skateboarding and laying in the grass</span>
+        </div>
+      
       </div>
     </div>
-
-<div class="container">
-
-      <div class="content">
-
-        <div class="profile">
-          <div class="profile-image">
-            <img src="images/headshot2.jpg" alt="headshot">
-          </div>
-
-          <div class="profile-user-settings">
-            <h1 class="profile-user-name">Ava Schmidt</h1>
-          </div>
-
-          <div class="profile-bio">
-            <br>
-            <p><span class="profile-real-name"></span>rising senior @〽️ichigan studying cs+ux </p>
-            <br>
-            <p>connect 👉 <a href="https://www.linkedin.com/in/ava-jian-schmidt/">Linkedin </a></p>
-            <p>contact 👉 <a href="mailto:avajian@umich.edu">avajian@umich.edu </a></p>
-          </div>
-
-        </div>
-        <!-- End of profile section -->
-
-        <div class="intro">
-          <p class="sidebar-intro"> 
-            <br>
-            Thank you for visiting! My name is Ava and i'm from East Lansing, MI. I enjoy code, design 
-            and everything in between. Check out my work + project sections and feel free to explore other options on the menu bar.
-          </p>
-        </div>
-
-      </div>
-      <!-- End of container -->
-
-      <div class="content2">
-
-      <!-- Tab Navigation -->
-      <div class="profile-tabs">
-        <div class="profile-tab active" data-target="work"><i class="fas fa-briefcase"></i> work </div>
-        <div class="profile-tab" data-target="projects"><i class="fas fa-code"></i> projects</div>
-      </div>
-      <!-- End Navigation -->
-
-
-
-
-        <!-- begin work -->
-      <div class="work active">
-
-        <!-- Content for Saved Posts -->
-
-      <div class="grid-container">
-        
-        <div class="grid-item" tabindex="0" onclick="openModal('modal1')">
-          <img src="images/work/denso.png" class="gallery-image" alt="">
-          <div class="gallery-item-info">
-            <p> UX/UI Co-op </p>
-          </div>
-        </div>
-                <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
-            <h2><span style="font-weight: bold; font-size: large;">DENSO North America 2024 UX/UI Co-op</span></h2><br>
-            <p class="modal-description">
-              DENSO is a global company focused on advanced mobility that positively changes how the world moves and contributes
-              to greater well-being. They are a global Fortune 500 company, with a broad product portfolio and widespread global impact.
-              <br><br><br>
-            </p>
-
-            <h2><span style="font-weight: bold; font-size: large;">DENSO NA Collaboration Center</span></h2><br>
-            <p class="modal-description">
-              I became familiar with DENSO’s Product Lifecycle Management (PLM) system, the DENSO NA Collaboration Center (built 
-              upon Aras Innovator) to complete assigned user stories. User stories are a set of requirements to satisfy.<br> <br>
-              Using Azure DevOps, a Microsoft service to help contributers collaborate on developing software, I developed, designed and
-              tested two user stories with a focus on form design usability and accessibility. <br><br><br>
-            </p>
-
-            <h2><span style="font-weight: bold; font-size: large;">Refresh Cost Planning Sheet Form</span></h2><br>
-            <p class="modal-description">  
-              The cost planning sheet form helps DENSO Supplier Portal users organize and calculate costs for different types of parts. 
-              It significantly reduced data entry time per user, with an anticipated user count of
-              200-300. The final design was presented and approved by DENSO purchasing department to be deployed by the development team. 
-              <br><br>
-            </p>
-            <!-- <img src="images/work/denso_1.png" class="gallery-image" alt=""><br><br> -->
-
-            <p class="modal-description">
-              Tools & Technologies: HTML, CSS, Aras tools
-            </p><br><br><br>
-
-            <h2><span style="font-weight: bold; font-size: large;">Enhancements to Generate Reports Form</span></h2><br>
-            <p class="modal-description">  
-              This form is used to generate reports for specified user roles in DENSO NA. I completed various technical requirements such as
-              adding two user options within the PLM system, alphabetizing the list values and re-designing the form. This reduced look-up time
-              to create reports and was handed over to the development team for deployment.
-              <br><br>
-            </p>
-            <!-- <img src="images/work/denso_2.png" class="gallery-image" alt=""><br><br> -->
-
-            <p class="modal-description">
-              Tools & Technologies: HTML, CSS, JavaScript, Aras tools
-            </p><br><br><br>
-
-            <h2><span style="font-weight: bold; font-size: large;">Sales Portal Testing</span></h2><br>
-            <p class="modal-description">  
-              I supported the request for quote (RFQ) feature on the DENSO Sales Portal by conducting testing. I created a series of RFQ's
-              on the platform and checked whether data was properly being populated across the system. These findings were recorded in Excel.
-            </p>
-
-          </div>
-        </div>
-
-        <div class="grid-item" tabindex="0" onclick="openModal('modal2')">
-          <img src="images/work/hrs.jpg" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Research Assistant</p>
-            </div>
-        </div>
-                <!-- Modal Structure -->
-        <div id="modal2" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
-            <h2><span style="font-weight: bold; font-size: large;">U.S Health and Retirement Study</span></h2><br>
-            <p class="modal-description">
-              The University of Michigan Health and Retirement Study (HRS) is a longitudinal panel study that surveys a 
-              representative sample of approximately 20,000 people in America, supported by the National Institute on 
-              Aging (NIA U01AG009740) and the Social Security Administration. <br><br><br>
-            </p>
-
-            <h2><span style="font-weight: bold; font-size: large;">Dissemination</span></h2><br>
-            <p class="modal-description">  
-              I manage the HRS bibliography by keeping 2500+ citations up to date to be annually reviewed by the National Institutes of Health (NIH). 
-              Responsibilites include creating and deleting citations, organizing and recording specific studies and tracking publications by the HRS staff.
-            </p><br><br><br>
-
-            <h2><span style="font-weight: bold; font-size: large;">Accessing CMS Data Graphic</span></h2><br>
-            <p class="modal-description">  
-              Research files created by the NIA Data LINKAGE Program (LINKAGE) link HRS data to detailed information about 
-              health care utilization from records maintained by the Centers for Medicare & Medicaid Services (CMS). <br><br>Multiple
-              rounds of application and approval are circulated between organizations for access to CMS data. I was in charge of creating
-              a flowchart graphic to capture this process to be posted on the <a class="links" href="https://hrs.isr.umich.edu/data-products/restricted-data/cms-data" >HRS website</a>.
-            </p>
-
-            <img src="images/work/hrs_cms.png" class="gallery-image" alt="">
-
-            <p class="modal-description">
-              Tools & Technologies: Adobe Illustrator
-            </p><br><br><br>
-
-            <h2><span style="font-weight: bold; font-size: large;">Getting Started HRS Guidebook</span></h2><br>
-            <p class="modal-description">  
-              HRS is creating a new guidebook to help facilitate user participation within the study. My responsibilities in this project
-              include re-designing and converting 20+ figures to be used in the official print version.
-              <br><br>
-              Tools & Technologies: Adobe Illustrator, Adobe Photoshop, HTML, CSS
-            </p><br><br><br>
-
-            <h2><span style="font-weight: bold; font-size: large;">Cover Pages</span></h2><br>
-            <p class="modal-description">  
-              User Guides and Documentation Reports are designed to provide analysts with documentation about the concepts, 
-              measures and questions in the HRS surveys. These reports expand upon the information found in codebooks, questionnaires 
-              and data descriptions.
-              <br><br>
-              I was in charge of standardizing the cover pages on each of these guidebooks to provide consistent information reflected
-              by HRS. This is an ongoing project being actively updated on the <a class="links" href="https://hrs.isr.umich.edu/documentation/user-guides" >HRS website</a>
-              <br><br>
-              Tools & Technologies: Adobe Acrobat
-            </p>
-          </div>
-        </div>
-
-        <div class="grid-item" tabindex="0" onclick="openModal('modal3')">
-          <img src="images/work/ibt.webp" class="gallery-image" alt="">
-          <div class="gallery-item-info">
-            <p> Laboratory <br> Research Assistant </p>
-          </div>
-        </div>
-                <!-- Modal Structure -->
-        <div id="modal3" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
-            
-            <h2><span style="font-weight: bold; font-size: large;">Innovative BioTherapies</span></h2><br>
-            <p class="modal-description">
-              Innovative BioTherapies (IBT) is a small biotechnology company located in Ann Arbor, MI, 
-              focused on developing medical devices to solve unmet medical needs. <br><br><br>
-            </p>
-
-            <h2><span style="font-weight: bold; font-size: large;">Selective Cytopheretic Device (SCD)</span></h2><br>
-            <p class="modal-description">  
-              The Selective Cytopheretic Device (SCD) is currently in clinical use to treat inflammatory disease conditions 
-              including Acute Kidney Injury (AKI), Acute Respiratory Distress Syndrome (ARDS) and Multiple Organ Dysfunction 
-              (MOD) caused by various etiologies ranging from sepsis to COVID-19. The SCD was later tested by 150 ICU patients 
-              with over 800 sessions with consistent signals of clinical benefit<br><br>
-              My responsibilities included attending studies as an assistant to record and observe, creating bacteria to be used
-              in the study and use hemodialysis machines to conduct catheter size testing. Additionally, I would create blood smears,
-              count cells, perform data collation and complete various lab upkeep such as autoclaving and glassware. 
-            </p><br><br><br>
-          </div>
-        </div>
-
-        <div class="grid-item" tabindex="0" onclick="openModal('modal4')">
-          <img src="images/work/umich.jpg" class="gallery-image" alt="">
-          <div class="gallery-item-info">
-            <p> Student Life Advisor <br><br> Membership Services</p>
-          </div>
-        </div>
-                <!-- Modal Structure -->
-        <div id="modal4" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
-
-            <h2><span style="font-weight: bold; font-size: large;">Engineering OnRamp Camps</span></h2><br>
-            <p class="modal-description">  
-              Engineering OnRamp (EO) offers a collection of programs for a diverse group of middle and high school students. 
-              We strive to provide greater educational opportunities for young people including individuals from educational, cultural, 
-              geographic, or socioeconomic backgrounds considered to be underrepresented in engineering. EO serves as a pathway for students 
-              to discover engineering as a profession and choose Michigan Engineering as the place where they want to prepare for their future.
-              <br><br>
-              As a Student Life advisor I participate in the implementation of experiential activities with the summer participants. Manage all 
-              extracurricular activities related to engineering, science enrichment, departmental tours, cultural enrichment, social networking, 
-              recreation, and career and professional development.
-
-            </p><br><br><br>
-
-            <h2><span style="font-weight: bold; font-size: large;">Central Campus Recreation Building</span></h2><br>
-            <p class="modal-description">  
-              Membership Services Assistants monitor patrons entering and exiting the facilities including, but not limited to verifying patron 
-              identification and membership upon entering the facilities, conducting Fusion transactions, cleaning fitness equipment, and program 
-              registration. Membership Services Assistants oversee all Fitness, Cardio, and Multi-Purpose spaces throughout Rec Sports facilities.
-              <br><br>
-              CPR/AED Certified 2022
-            </p><br><br><br>
-          </div>
-        </div>
-
-        <div class="grid-item" tabindex="0" onclick="openModal('modal5')">
-          <img src="images/work/sparrow.jpg" class="gallery-image" alt="">
-          <div class="gallery-item-info">
-            <p> Lifeguard <br> Fitness <br>Screener</p>
-          </div>
-        </div>
-                <!-- Modal Structure -->
-        <div id="modal5" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
-
-            <h2><span style="font-weight: bold; font-size: large;">Michigan Athletic Center</span></h2><br>
-            <p class="modal-description">  
-              Lifeguard Certified 2021<br>
-              CPR/AED Certified 2021
-            </p><br><br><br>
-          </div>
-        </div>
-
-        <div class="grid-item" tabindex="0" onclick="openModal('modal6')">
-          <img src="images/work/jenna.jpeg" class="gallery-image" alt="">
-          <div class="gallery-item-info">
-            <p> Photography </p>
-          </div>
-        </div>
-                <!-- Modal Structure -->
-        <div id="modal6" class="modal">
-          <div class="modal-content">
-            <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
-            
-            <h2><span style="font-weight: bold; font-size: large;"></span></h2><br>
-            <p class="modal-description">
-
-              <iframe class="pdf" src="images/work/photo_portfolio.pdf" width="700" height="850"></iframe>
-  
-            </p>
+    
+    <div class="right-column">
+      <div id="intro" class="info">
+        <!-- Horizontal row for name + icons -->
+        <div class="name-row">
+          <h1 class="my-name">Ava Schmidt</h1>
+          <div class="social-icons">
+            <a href="mailto:avajian@umich.edu" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://avajian.github.io" target="_blank" title="Website"><i class="fas fa-globe"></i></a>
+            <a href="https://linkedin.com/in/ava-jian-schmidt" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/avajian" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
       </div>
 
+  <section>
+    <p>Hi! Welcome to my page. This website is purely academic and professional. More to come soon...
+    </p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    
+    <p><strong>DENSO North America</strong> — User Experience Internship<br></p>
+
+    <p><strong>Institute for Social Research</strong> — Research Assistant<br></p>
+
+    <p><strong>Engineering OnRamp</strong> — Student Life Advisor<br></p>
+
+    <p><strong>Innovative BioTherapies</strong> — Lab Research Assistant<br></p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-category">
+      <div class="skills-list">
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">C++/C</span>
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">SQL</span>
+        <span class="skill-chip">Git</span>
+        <span class="skill-chip">Django</span>
+        <span class="skill-chip">Flask</span>
       </div>
-      <!-- end work -->
+    </div>
+  </section>
 
 
+  <section id="projects">
+    <h2>CS Projects</h2>
 
+    <div class="project-links">
+      <a href="https://avajian.pythonanywhere.com" class="project-card" target="_blank">
+        <h3>Spotify Statistics</h3>
+        <p class="project-description">
+          Connect your Spotify and view stats for your top songs and artists
+        </p>
+        <p class="project-tech">Python, Flask, HTML/CSS, Spotify API</p>
+      </a>
+    </div>
 
+    <div class="project-links">
+      <a href="https://eecs485.org/syllabus.html#projects" class="project-card" target="_blank">
+        <h3>Fullstack Meta Clone</h3>
+        <p class="project-description">
+          Features include liking, commenting, following, posting...etc
+        </p>
+        <p class="project-tech">React, Flask, Python, HTML/CSS, JavaScript, SQLite</p>
+      </a>
+    </div>
 
+    <div class="project-links">
+      <a href="https://eecs485staff.github.io/p5-search-engine/" class="project-card" target="_blank">
+        <h3>Search Engine</h3>
+        <p class="project-description">
+          Using google's search algorithm
+        </p>
+        <p class="project-tech">React, Flask, Python, HTML/CSS, JavaScript, SQLite</p>
+      </a>
+    </div>
 
-      <!-- begin projects -->
-      <div class="projects">
-        <div class="grid-container">
+    <div class="project-links">
+      <a href="https://eecs281staff.github.io/eecs281.org/#projects" class="project-card" target="_blank">
+        <h3>Traveling Salesman</h3>
+        <p class="project-description">
+          Implementing optimization algorithms
+        </p>
+        <p class="project-tech">C++</p>
+      </a>
+    </div>
 
-          <div class="grid-item" tabindex="0" onclick="openModal('modal100')">
-            <img src="images/projects/meta.webp" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Full-stack Meta Clone </p>
-            </div>
-          </div>
-                  <!-- Modal Structure -->
-          <div id="modal100" class="modal">
-            <div class="modal-content">
-              <span class="close-btn" onclick="closeModal('modal100')">&times;</span>
+    <div class="project-links">
+      <a href="https://eecs370.github.io/" class="project-card" target="_blank">
+        <h3>LC2K Assembler, Linker, Cache Simulator</h3>
+        <p class="project-description">
+          Implementing optimization algorithms
+        </p>
+        <p class="project-tech">C</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>UX Projects</h2>
+    
+    <div class="project-links">
+      <a href="https://hrs.isr.umich.edu/documentation/new-user-guide" class="project-card" target="_blank">
+        <h3> HRS User Guide </h3>
+        <p class="project-description">
+          30+ figure designs for the U.S Health and Retirement Study
+        </p>
+        <p class="project-tech">Adobe Photoshop, Adobe Illustrator</p>
+      </a>
+    </div>
+
+    <div class="project-links">
+      <a href="https://www.denso.com/us-ca/en/" class="project-card" target="_blank">
+        <h3> Product Lifecycle Management Forms </h3>
+        <p class="project-description">
+          Redesigning cost planning and generate reports forms for DENSO's product lifecycle management system
+        </p>
+        <p class="project-tech">HTML, CSS, JavaScript</p>
+      </a>
+    </div>
+  </section>
   
-              <h2><span style="font-weight: bold; font-size: large;">Full-stack Meta Clone</span></h2><br>
-              <p class="modal-description">  
-                This was a three part project.
-                <br><br>
-                1. Write a Python program that takes as input HTML templates, JSON data and misc. static files (like images and CSS) 
-                and generates as output a web site of static content. Then, use your new tool to build a non-interactive website. 
-                Jekyll and Pelican are two examples of open source static site generators.
-                <br><br>
-                2. Build an interactive website using server-side dynamic pages. Reuse the templates from project 1, rendering them 
-                on-demand when a user loads a page. New features include creating, updating, and deleting users, posts, comments, and likes.
-                The learning goals of this project include server-side dynamic pages, CRUD (Create, Read, Update, Delete), sessions, and basic
-                SQL database usage.
-                <br><br>
-                3. Build an application using client-side dynamic pages and a REST API. Reuse server-side code from project 2, refactoring portions
-                of it into a REST API. Write a client application in JavaScript that runs in the browser and makes AJAX calls to the REST API.
-                The learning goals of this project are client-side dynamic pages, JavaScript programming, asynchronous programming (AJAX), and 
-                REST APIs. You’ll also gain more practice with the command line.
-                <br><br>
-                <img src="images/projects/meta-clone.png" class="gallery-image" alt="">
-              </p><br><br><br>
-            </div>
-          </div>
-          
-          <div class="grid-item" tabindex="0" onclick="openModal('modal101')">
-            <img src="images/projects/GUI_2.png" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Search Engine </p>
-            </div>
-          </div>
-                  <!-- Modal Structure -->
-          <div id="modal101" class="modal">
-            <div class="modal-content">
-              <span class="close-btn" onclick="closeModal('modal101')">&times;</span>
-  
-              <h2><span style="font-weight: bold; font-size: large;">Search Engine</span></h2><br>
-              <p class="modal-description">  
-                Build a scalable search engine similar to Google or Bing. The learning goals of this project include information 
-                retrieval concepts like text analysis (tf-idf) and link analysis (PageRank), and parallel data processing with MapReduce. 
-                You’ll also gain experience using a Service-Oriented Architecture to scale dynamic pages and web search.
-                <br><br>
-                Create a segmented inverted index of web pages using a pipeline of MapReduce programs. Then, build an Index server, 
-                a REST API app that returns search results in JSON format. Finally, build a Search server, a user interface that returns 
-                search results just like Google or Bing.
-                <br><br>
-                <img src="images/projects/GUI_2.png" class="gallery-image" alt="">
-              </p><br><br><br>
-            </div>
-          </div>
-
-          <div class="grid-item" tabindex="0" onclick="openModal('modal102')">
-            <img src="images/projects/sense.png" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Sense4Code <br> UX/UI <br> Optimization </p>
-            </div>
-          </div>
-                  <!-- Modal Structure -->
-          <div id="modal102" class="modal">
-            <div class="modal-content">
-              <span class="close-btn" onclick="closeModal('modal102')">&times;</span>
-  
-              <h2><span style="font-weight: bold; font-size: large;">Sense4Code UX/UI Optimization</span></h2><br>
-              <p class="modal-description">  
-                Sense4Code is a Czech company that uses Scormium's Learning Management System (LMS), a mobile application which serves as a pivotal 
-                tool for students, educators, and administrators in facilitating learning processes. This project focused on optimizing
-                the user experience and interface of the platform.
-                <br><br>
-                My team focused on optimizing the menu bar, audio options for accessibility and re-organizing the page layout for easy navigation.
-                <br><br><br>
-              </p>
-            </div>
-          </div>
-
-          <div class="grid-item" tabindex="0" onclick="openModal('modal103')">
-            <img src="images/projects/chatgpt.webp" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> ChatGPT <br> News Article Classifier </p>
-            </div> 
-          </div>
-                  <!-- Modal Structure -->
-          <div id="modal103" class="modal">
-            <div class="modal-content">
-              <span class="close-btn" onclick="closeModal('modal103')">&times;</span>
-  
-              <h2><span style="font-weight: bold; font-size: large;">ChatGPT News Article Classifier</span></h2><br>
-              <p class="modal-description">  
-                Machine learning club project that classifies the difference between human and ChatGPT generated news articles.
-                Google Collab was used to create a simple sequential model that trained 500+ news articles to produce a 97% classification
-                accuracy rate. The figure below is a google collab screenshot of the accuracy rate and training data.
-                <br><br>
-                <img src="images/projects/google-collab.png" class="gallery-image" alt="">
-              </p><br><br><br>
-            </div>
-          </div>
-
-          <div class="grid-item" tabindex="0" onclick="openModal('modal104')">
-            <img src="images/projects/amongus.png" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Among Us <br> Optimization Algorithms </p>
-            </div>
-          </div>
-                  <!-- Modal Structure -->
-          <div id="modal104" class="modal">
-            <div class="modal-content">
-              <span class="close-btn" onclick="closeModal('modal104')">&times;</span>
-  
-              <h2><span style="font-weight: bold; font-size: large;">Optimization Algorithms</span></h2><br>
-              <p class="modal-description">  
-                Implementing optimization algorithms for the traveling salesman problem (TSP) by creating functions
-                to model the fastest, optimal and minimal path it takes to visit every city once and return to the origin city.
-                In addition, special rules were accounted for, following an Among Us theme.
-                <br><br>
-                <img src="images/projects/optimization.png" class="gallery-image" alt="">
-              </p><br><br><br>
-            </div>
-          </div>
-
-          <div class="grid-item" tabindex="0" onclick="openModal('modal105')">
-            <img src="images/projects/cache.png" class="gallery-image" alt="">
-            <div class="gallery-item-info">
-              <p> Data Memory <br> and Cache Simulator </p>
-            </div> 
-          </div>
-                  <!-- Modal Structure -->
-          <div id="modal105" class="modal">
-            <div class="modal-content">
-              <span class="close-btn" onclick="closeModal('modal105')">&times;</span>
-  
-              <h2><span style="font-weight: bold; font-size: large;">Data Memory and Cache Simulator</span></h2><br>
-              <p class="modal-description">  
-                In this project, you will simulate a CPU cache (unified instruction/data) and integrate the cache into a Project 1 
-                (behavioral) simulator. As the processor simulator executes an assembly-language program, it will access instructions 
-                and data. These accesses will be serviced by the cache, which will transfer data to/from memory as needed.
-                <br><br>
-                <img src="images/projects/cache.png" class="gallery-image" alt="">
-              </p><br><br><br>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-      <!-- end projects -->
-
-      </div>
-      <!-- End of container -->
+</div>
+</div>
 </div>
 
-    <script>
-      // JavaScript to handle tab switching
-      document.querySelectorAll('.profile-tab').forEach(tab => {
-        tab.addEventListener('click', function() {
-          document.querySelectorAll('.profile-tab').forEach(item => item.classList.remove('active'));
-          document.querySelectorAll('.work, .projects').forEach(item => item.classList.remove('active'));
-          
-          tab.classList.add('active');
-          document.querySelector('.' + tab.dataset.target).classList.add('active');
-        });
-      });
-
-      function openModal(modalId) {
-        document.getElementById(modalId).style.display = "block";
-      }
-
-      function closeModal(modalId) {
-        document.getElementById(modalId).style.display = "none";
-      }
-
-    </script>
-     <script src="js/sidebar.js"></script>
-     <script src="js/game.js"></script>
+  <script src="static/script.js"></script>
   </body>
 </html>
