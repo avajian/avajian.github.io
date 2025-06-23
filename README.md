@@ -1,3 +1,3 @@
 # avajian.github.io
 
-personal website
+personal website, purely academic and professional
