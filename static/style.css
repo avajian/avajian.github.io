@@ -1,8 +1,9 @@
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Sidebar container */
+/* Sidebar container for tablet and computer */
 .sidenav {
   height: 100%;
   width: 250px;
@@ -341,11 +342,13 @@ section {
 
 .experience-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 60px 25px;
   margin-top: 20px;
   margin-bottom: 70px;
+  justify-content: center;
 }
+
 
 .experience-card:hover {
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
@@ -423,3 +426,5 @@ section {
   gap: 20px;
   padding: 20px;
 }
+
+/* desktop first approach 🤮 */
