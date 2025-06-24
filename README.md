@@ -1,3 +1,8 @@
 # avajian.github.io
 
-personal website, purely academic and professional
+personal website
+
+features
+✅ responsive
+✅ flippable cards
+✅ top & side nav
