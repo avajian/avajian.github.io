@@ -23,3 +23,20 @@ document.querySelectorAll('.experience-flip').forEach(card => {
     card.classList.toggle('flipped');
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("hamburger-toggle");
+  const dropdownMenu = document.getElementById("mobileDropdown");
+
+  toggleButton.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("collapsed");
+  });
+
+  // Optional: auto-close when clicking a link
+  dropdownMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      dropdownMenu.classList.add("collapsed");
+    });
+  });
+});

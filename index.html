@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="static/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
       <!-- Sidebar -->
   <div id="mySidenav" class="sidenav">
+    <a href="#about" class="nav-link">Photos</a>
     <a href="#experience" class="nav-link">Experience</a>
     <a href="#skills" class="nav-link">Skills</a>
     <a href="#csprojects" class="nav-link">CS Projects</a>
@@ -22,25 +24,40 @@
   <!-- Toggle -->
   <div id="sidebarToggle" class="sidebar-toggle" onclick="toggleNav()">☰</div>
 
+  <!-- Mobile Hamburger Menu Button -->
+  <button id="hamburger-toggle">☰</button>
+
+  <!-- Mobile Dropdown Menu -->
+  <nav id="mobileDropdown" class="mobile-dropdown collapsed">
+    <a href="#about" class="nav-link">Photos</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#csprojects" class="nav-link">CS Projects</a>
+    <a href="#uxprojects" class="nav-link">UX Projects</a>
+  </nav>
+
+<!-- <div class="page-wrapper"></div> -->
 <div id="main">
   <div class="resume-layout">
     
-    <div class="left-column">
+    <div class="left-column" id="about">
       <div class="photo-stack">
         
         <div class="photo-tooltip">
           <img src="images/headshot.JPG" alt="headshot" />
-          <span class="tooltip-text"> I'm a recent CS and Cogsci graduate from umich</span>
+          <span class="tooltip-text"> CS + Cogsci + UX</span>
+          <p>University of Michigan '25</p>
         </div>
         
         <div class="photo-tooltip">
           <img src="images/prague.jpeg" alt="headshot" />
-          <span class="tooltip-text"> I did a tech career accelerator in prague, czech republic</span>
+          <span class="tooltip-text"> IFSA Tech Career Accelerator</span>
+          <p>Prague, Czech Republic</p>
         </div>
 
         <div class="photo-tooltip">
           <img src="images/draw.jpeg" alt="headshot" />
-          <span class="tooltip-text"> I like drawing, pickleball, skateboarding and laying in the grass</span>
+          <span class="tooltip-text"> canada</span>
         </div>
       
       </div>
@@ -61,7 +78,7 @@
       </div>
 
   <section>
-    <p>Hi! Welcome to my page. This website is purely academic and professional. More to come soon...
+    <p>Hi! Welcome to my page.
     </p>
   </section>
 
