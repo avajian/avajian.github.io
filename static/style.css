@@ -30,7 +30,6 @@ a:hover {
 #main {
   margin-left: 0;
   padding: 20px;
-  transition: margin-left 0.3s ease;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -437,6 +436,15 @@ section {
 
 @media (min-width:641px)  { 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  
+  #main {
+    margin-left: 200px; /* reserve space for sidebar on the right */
+    transition: margin-left 0.3s ease;
+  }
+
+  .sidenav.collapsed ~ #main {
+    margin-left: 50px; /* when collapsed */
+  }
   
   #hamburger-toggle,
   .mobile-dropdown {
