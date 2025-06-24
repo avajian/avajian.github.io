@@ -4,6 +4,13 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 32px;
   font-weight: 600;
@@ -28,6 +35,7 @@ a:hover {
 
 #main {
   margin: 2.5% auto 0 auto;
+  margin-left: 0;
   padding: 20px;
   max-width: 100%;
   width: 100%;
@@ -363,7 +371,7 @@ section {
 #hamburger-toggle {
   position: fixed;
   top: 15px;
-  right: 15px;
+  right: 30px;
   z-index: 1500;
   background: #111;
   color: white;
