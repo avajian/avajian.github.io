@@ -26,20 +26,23 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Layout fix for centering */
 #main {
-  margin-left: 0;
+  margin: 2.5% auto 0 auto;
   padding: 20px;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
-  margin-top: 2.5%;
+  min-height: 100vh;
 }
 
-.sidenav.collapsed ~ #main {
-  margin-left: 50px; /* collapsed sidebar width */
+
+.main-inner {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 /* Intro section layout */
@@ -50,15 +53,6 @@ a:hover {
   gap: 40px;
   margin-bottom: 40px;
   flex-wrap: wrap;
-}
-
-/* Crop and size the image */
-.intro .photo img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact info */
