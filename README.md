@@ -1,8 +1,9 @@
 # avajian.github.io
 
-personal website
+💻 personal website \
+more to come soon...
 
-features
-✅ responsive
-✅ flippable cards
+features: \
+✅ responsive \
+✅ flippable cards \
 ✅ top & side nav
