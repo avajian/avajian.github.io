@@ -502,6 +502,7 @@ section {
     left: 160px;
   }
 
+
 }
 
 @media (max-width: 640px) {
@@ -511,6 +512,12 @@ section {
 
   .sidenav.mobile-open {
     left: 0; /* ✅ Slide in when open */
+  }
+
+
+  .sidenav p {
+    left: 12px;
+    font-size: small;
   }
 }
 
@@ -524,6 +531,11 @@ section {
 
  .sidenav {
     width: 200px;
+  }
+
+  .sidenav p {
+    left: 22px;
+    font-size: small;
   }
 
   .sidenav.collapsed ~ #main {
@@ -594,9 +606,18 @@ section {
     left: 250px; /* default sidebar width */
   }
 
+  .sidenav p {
+    left: 45px;
+    font-size: small;
+  }
+
 }
 
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    .sidenav p {
+    left: 50px;
+    font-size: small;
+  }
 }
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */ }
