@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mapbox GL JS map</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.14.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYXZhamlhbiIsImEiOiJjbHlsbGN1amIwOXZ1MmxwdGViNjViMnJ5In0.sVYPr8-7GCyerx3GDZP8gw';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        center: [-74.5, 40], // starting position [lng, lat]. Note that lat must be set between -90 and 90
+        zoom: 2 // starting zoom
+    });
+
+const visitedCountries = [
+    "United States of America", "Canada", "Mexico", "Belize", "Dominican Republic", "Puerto Rico",
+    "Italy", "France", "Spain", "Germany", "Poland", "Netherlands", "Czech Republic", "Austria", "Hungary", "United Kingdom", "Ireland",
+    "China", "Taiwan", "Vietnam", "Thailand", "Japan",
+    "Australia",
+    "United Republic of Tanzania", "South Africa"
+
+];
+
+map.on('load', () => {
+    // Load GeoJSON from external file
+    fetch('static/countries.geo.json')
+        .then(response => response.json())
+        .then(data => {
+            // Add as source
+            map.addSource('countries', {
+                'type': 'geojson',
+                'data': data
+            });
+
+            // Fill layer for visited
+            map.addLayer({
+                'id': 'visited-fill',
+                'type': 'fill',
+                'source': 'countries',
+                'paint': {
+                    'fill-color': '#ff7f50',
+                    'fill-opacity': 0.6
+                },
+                // Filter by "name" property
+                'filter': ['in', ['get', 'name'], ['literal', visitedCountries]]
+            });
+
+            // Outline for visited
+            map.addLayer({
+                'id': 'visited-outline',
+                'type': 'line',
+                'source': 'countries',
+                'paint': {
+                    'line-color': 'white',
+                    'line-width': 2
+                },
+                'filter': ['in', ['get', 'name'], ['literal', visitedCountries]]
+            });
+        });
+});
+
+</script>
+
+</body>
+</html>

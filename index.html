@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="static/style.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -295,6 +297,17 @@
 </div>
 </div>
 <section id="extra">
+  
+  <div class="places-container">
+    <a href="places.html" class="map-preview-link">
+      <div class="map-preview-wrapper">
+        <div id="map-preview"></div>
+          <div class="map-overlay-left">Places I</div>
+          <div class="map-overlay-right">have been</div>
+      </div>
+    </a>
+  </div>
+
   <div class="faq-container">
   <h2>Frequently asked Questions</h2>
     <div class="faq-item">
@@ -330,6 +343,7 @@
 </section>
 </div>
 </div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <script src="static/script.js"></script>
   </body>
 </html>
