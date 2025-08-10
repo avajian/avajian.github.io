@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-  function toggleNav() {
-    const sidenav = document.getElementById("mySidenav");
-    const isCollapsed = sidenav.classList.toggle("collapsed");
-    localStorage.setItem("sidebarCollapsed", isCollapsed);
-  }
+
+function toggleNav() {
+  const sidenav = document.getElementById("mySidenav");
+  const isCollapsed = sidenav.classList.toggle("collapsed");
+  localStorage.setItem("sidebarCollapsed", isCollapsed);
+}
 
 
 document.querySelectorAll('.experience-flip').forEach(card => {
@@ -35,3 +36,15 @@ document.querySelectorAll('.experience-flip').forEach(card => {
     card.classList.toggle('flipped');
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const faqItem = question.closest('.faq-item');
+      faqItem.classList.toggle('active');
+    })
+  })
+})
