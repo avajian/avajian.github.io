@@ -32,23 +32,36 @@ const visitedCountries = [
 
 const cities = [
   // Michigan
-  { name: "East Lansing", coords: [-84.4822, 42.7360] },
-  { name: "Ann Arbor", coords: [-83.7430, 42.2808] },
+  { name: "East Lansing", description: "hometown", coords: [-84.4822, 42.7360] },
+  { name: "Ann Arbor", description: "college town", coords: [-83.7430, 42.2808] },
   { name: "Grand Rapids", coords: [-85.6681, 42.9634] },
   { name: "Traverse City", coords: [-85.6206, 44.7631] },
   { name: "Detroit", coords: [-83.0458, 42.3314] },
   { name: "Kalamazoo", coords: [-85.5872, 42.2917] },
+  { name: "Mackinaw Island", coords: [-89.4012, 43.0731] },
+  { name: "Pictured Rocks National Lakeshore", coords: [-89.4012, 43.0731] },
 
-  // USA & Canada
+  // USA
   { name: "Chicago", coords: [-87.6298, 41.8781] },
-  { name: "Calgary", coords: [-114.0719, 51.0447] },
-  { name: "Banff", coords: [-115.5708, 51.1784] },
   { name: "Jasper", coords: [-118.0814, 52.8734] },
   { name: "Vancouver", coords: [-123.1216, 49.2827] },
   { name: "Richmond", coords: [-123.1360, 49.1666] },
   { name: "Washington, DC", coords: [-77.0369, 38.9072] },
   { name: "Fort Lauderdale", coords: [-80.1373, 26.1224] },
   { name: "Madison", coords: [-89.4012, 43.0731] },
+
+  { name: "Las Vegas", coords: [-115.14861, 36.16722] },
+  { name: "Denver", coords: [ -104.9849, 39.7392] },
+  { name: "Santa Fe", coords: [-105.94418, 35.69154] },
+  { name: "Albuquerque", coords: [-106.65028, 35.08444] },
+  { name: "Grand Canyon National Park", coords: [-112.36381, 36.26603] },
+  { name: "Houston", coords: [-95.35842, 29.74991] },
+  { name: "Scranton", coords: [-75.66525, 41.41184] },
+  { name: "Cincinnati", coords: [-84.51202, 39.10312] },
+    
+  // Canada
+  { name: "Calgary", coords: [-114.0719, 51.0447] },
+  { name: "Banff", coords: [-115.5708, 51.1784] },
   { name: "Toronto", coords: [-79.3832, 43.6532] },
 
   // Europe
@@ -97,7 +110,7 @@ map.on('load', () => {
                 'type': 'fill',
                 'source': 'countries',
                 'paint': {
-                    'fill-color': '#ff7f50',
+                    'fill-color': '#ffb0bc',
                     'fill-opacity': 0.6
                 },
                 // Filter by "name" property
@@ -120,15 +133,30 @@ map.on('load', () => {
     // Add markers for each city
     cities.forEach(city => {
     const el = document.createElement('div');
-    el.textContent = '📍'; // your emoji marker
-    el.style.fontSize = '24px'; // adjust marker size
+    if (city.description) {
+        el.textContent = '📍';
+    }
+    else {
+        el.textContent = '📍';
+    }
+    el.style.fontSize = '24px';
     el.style.cursor = 'pointer';
 
     new mapboxgl.Marker(el)
         .setLngLat(city.coords)
-        .setPopup(new mapboxgl.Popup().setText(city.name)) // optional: show city name on click
         .addTo(map);
-    });
+    
+    if (city.description) {
+    new mapboxgl.Marker(el)
+        .setLngLat(city.coords)
+        .setPopup(new mapboxgl.Popup().setText(city.description))
+        .addTo(map);
+
+    }}
+
+
+);
+
 });
 
 </script>
