@@ -30,6 +30,56 @@ const visitedCountries = [
 
 ];
 
+const cities = [
+  // Michigan
+  { name: "East Lansing", coords: [-84.4822, 42.7360] },
+  { name: "Ann Arbor", coords: [-83.7430, 42.2808] },
+  { name: "Grand Rapids", coords: [-85.6681, 42.9634] },
+  { name: "Traverse City", coords: [-85.6206, 44.7631] },
+  { name: "Detroit", coords: [-83.0458, 42.3314] },
+  { name: "Kalamazoo", coords: [-85.5872, 42.2917] },
+
+  // USA & Canada
+  { name: "Chicago", coords: [-87.6298, 41.8781] },
+  { name: "Calgary", coords: [-114.0719, 51.0447] },
+  { name: "Banff", coords: [-115.5708, 51.1784] },
+  { name: "Jasper", coords: [-118.0814, 52.8734] },
+  { name: "Vancouver", coords: [-123.1216, 49.2827] },
+  { name: "Richmond", coords: [-123.1360, 49.1666] },
+  { name: "Washington, DC", coords: [-77.0369, 38.9072] },
+  { name: "Fort Lauderdale", coords: [-80.1373, 26.1224] },
+  { name: "Madison", coords: [-89.4012, 43.0731] },
+  { name: "Toronto", coords: [-79.3832, 43.6532] },
+
+  // Europe
+  { name: "Prague", coords: [14.4378, 50.0755] },
+  { name: "London", coords: [-0.1276, 51.5072] },
+  { name: "Edinburgh", coords: [-3.1883, 55.9533] },
+  { name: "Galway", coords: [-9.0489, 53.2707] },
+  { name: "Dublin", coords: [-6.2603, 53.3498] },
+  { name: "Berlin", coords: [13.4050, 52.5200] },
+  { name: "Dresden", coords: [13.7373, 51.0504] },
+  { name: "Amsterdam", coords: [4.9041, 52.3676] },
+  { name: "Madrid", coords: [-3.7038, 40.4168] },
+  { name: "Rome", coords: [12.4964, 41.9028] },
+  { name: "Florence", coords: [11.2558, 43.7699] },
+  { name: "Pilsen", coords: [13.3776, 49.7384] },
+  { name: "Brno", coords: [16.6068, 49.1951] },
+  { name: "Krakow", coords: [19.9445, 50.0647] },
+  { name: "Budapest", coords: [19.0402, 47.4979] },
+  { name: "Paris", coords: [2.3522, 48.8566] },
+
+  // Asia
+  { name: "Hanoi", coords: [105.8544, 21.0285] },
+  { name: "Taipei", coords: [121.5654, 25.0330] },
+  { name: "Taichung", coords: [120.6844, 24.1477] },
+  { name: "Bangkok", coords: [100.5018, 13.7563] },
+  { name: "Merida (Mexico)", coords: [-89.5926, 20.9674] },
+  { name: "Beijing", coords: [116.4074, 39.9042] },
+  { name: "Tokyo", coords: [139.6917, 35.6895] },
+  { name: "Sydney", coords: [151.2093, -33.8688] },
+];
+
 map.on('load', () => {
     // Load GeoJSON from external file
     fetch('static/countries.geo.json')
@@ -66,6 +116,19 @@ map.on('load', () => {
                 'filter': ['in', ['get', 'name'], ['literal', visitedCountries]]
             });
         });
+
+    // Add markers for each city
+    cities.forEach(city => {
+    const el = document.createElement('div');
+    el.textContent = '📍'; // your emoji marker
+    el.style.fontSize = '24px'; // adjust marker size
+    el.style.cursor = 'pointer';
+
+    new mapboxgl.Marker(el)
+        .setLngLat(city.coords)
+        .setPopup(new mapboxgl.Popup().setText(city.name)) // optional: show city name on click
+        .addTo(map);
+    });
 });
 
 </script>
