@@ -1,371 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <title>avajian</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
     <link rel="stylesheet" href="static/style.css" />
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-
-      <!-- Sidebar -->
-  <div id="mySidenav" class="sidenav">
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#skills" class="nav-link">Skills</a>
-    <a href="#notes" class="nav-link">Notes</a>
-    <a href="#csprojects" class="nav-link">CS Projects</a>
-    <a href="#uxprojects" class="nav-link">UX Projects</a>
-    <a href="#places" class="nav-link">Places</a>
-    <a href="#FAQs" class="nav-link">FAQs</a>
-    <p class="nav-link">© 2025 Ava Schmidt</p>
-  </div>
-
-  <!-- Toggle -->
-  <div id="sidebarToggle" class="sidebar-toggle" onclick="toggleNav()">☰</div>
-
-  <!-- Mobile Hamburger Menu Button -->
-  <button id="hamburger-toggle">☰</button>
-
-<!-- <div class="page-wrapper"></div> -->
-<div id="main">
-  <div class="main-inner">
-  <div class="resume-layout">
-    
-    <div class="left-column" id="about">
-      <div class="photo-stack">
-        
-        <div class="photo-tooltip">
-          <img src="images/headshot.JPG" alt="headshot" />
-          <span class="tooltip-text"> C&sup2 & UX</span>
-          <p>University of Michigan '25</p>
-        </div>
-        
-        <div class="photo-tooltip">
-          <img src="images/prague.jpeg" alt="headshot" />
-          <span class="tooltip-text"> IFSA Tech Career Accelerator</span>
-          <p>Prague, Czech Republic</p>
-        </div>
-
-        <div class="photo-tooltip">
-          <img src="images/draw.jpeg" alt="headshot" />
-          <span class="tooltip-text"> drawing in my sketchbook</span>
-          <p>Sketchbook</p>
-        </div>
-
-        <div class="photo-tooltip">
-          <img src="images/skateboard.jpeg" alt="headshot" />
-          <span class="tooltip-text">down parking structures</span>
-          <p>Skateboarding</p>
-        </div>
-
-        <div class="photo-tooltip">
-          <img src="images/hugo.jpeg" alt="headshot" />
-          <span class="tooltip-text"> Hugoooo</span>
-          <p>My dog</p>
-        </div>
-
-        <div class="photo-tooltip">
-          <img src="images/triptonfell.jpeg" alt="headshot" />
-          <span class="tooltip-text"> created an <a href="https://open.spotify.com/track/6dJGJmNehWo8j0k0vGBFeF?si=8ef65e585a2244e6" style="color: white; text-decoration: underline;">original song</a></span>
-          <p>Tripton Fell</p>
-        </div>
-      
-      </div>
+    <!-- Sidebar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#notes" class="nav-link">Notes</a>
+      <a href="#csprojects" class="nav-link">CS Projects</a>
+      <a href="#uxprojects" class="nav-link">UX Projects</a>
+      <a href="#places" class="nav-link">Places</a>
+      <a href="#FAQs" class="nav-link">FAQs</a>
+      <p class="nav-link">© 2025 Ava Schmidt</p>
     </div>
-    
-    <div class="right-column">
-      <div id="intro" class="info">
-        <!-- Horizontal row for name + icons -->
-        <div class="name-row">
-          <h1 class="my-name">Ava Schmidt</h1>
-          <div class="social-icons">
-            <a href="mailto:avajian@umich.edu" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/ava-jian-schmidt" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/avajian" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+
+    <!-- Toggle -->
+    <div id="sidebarToggle" class="sidebar-toggle" onclick="toggleNav()">
+      ☰
+    </div>
+
+    <!-- Mobile Hamburger Menu Button -->
+    <button id="hamburger-toggle">☰</button>
+
+    <!-- <div class="page-wrapper"></div> -->
+    <div id="main">
+      <div class="main-inner">
+        <div class="resume-layout">
+          <div class="left-column" id="about">
+            <div class="photo-stack">
+              <div class="photo-tooltip">
+                <img src="images/headshot.JPG" alt="headshot" />
+                <span class="tooltip-text"> C&sup2 & UX</span>
+                <p>University of Michigan '25</p>
+              </div>
+
+              <div class="photo-tooltip">
+                <img src="images/prague.jpeg" alt="headshot" />
+                <span class="tooltip-text"> IFSA Tech Career Accelerator</span>
+                <p>Prague, Czech Republic</p>
+              </div>
+
+              <div class="photo-tooltip">
+                <img src="images/draw.jpeg" alt="headshot" />
+                <span class="tooltip-text"> drawing in my sketchbook</span>
+                <p>Sketchbook</p>
+              </div>
+
+              <div class="photo-tooltip">
+                <img src="images/skateboard.jpeg" alt="headshot" />
+                <span class="tooltip-text">down parking structures</span>
+                <p>Skateboarding</p>
+              </div>
+
+              <div class="photo-tooltip">
+                <img src="images/triptonfell.jpeg" alt="headshot" />
+                <span class="tooltip-text">
+                  created an
+                  <a
+                    href="https://open.spotify.com/track/6dJGJmNehWo8j0k0vGBFeF?si=8ef65e585a2244e6"
+                    style="color: white; text-decoration: underline"
+                    >original song</a
+                  ></span
+                >
+                <p>Tripton Fell</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-column">
+            <div id="intro" class="info">
+              <!-- Horizontal row for name + icons -->
+              <div class="name-row">
+                <h1 class="my-name">Ava Schmidt</h1>
+                <div class="social-icons">
+                  <a href="mailto:avajian@umich.edu" title="Email"
+                    ><i class="fas fa-envelope"></i
+                  ></a>
+                  <a
+                    href="https://linkedin.com/in/ava-jian-schmidt"
+                    target="_blank"
+                    title="LinkedIn"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                  <a
+                    href="https://github.com/avajian"
+                    target="_blank"
+                    title="GitHub"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://hot-somersault-eb8.notion.site/My-computer-science-degree-22bee4072937800ead79e49a1dda7e1f?pvs=143"
+                    target="_blank"
+                    title="Notes"
+                    ><i class="fas fa-sticky-note"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <section>
+              <p>avajian@umich.edu</p>
+            </section>
+
+            <section id="experience">
+              <h2>Experience</h2>
+
+              <div class="experience-cards">
+                <div class="experience-flip">
+                  <div class="experience-card">
+                    <div class="card-front">
+                      <img
+                        src="images/edustaff.jpg"
+                        alt="edustaff Logo"
+                        class="company-logo"
+                      />
+                      <div class="experience-info">
+                        <h3>Edustaff</h3>
+                        <p>Software Developer</p>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <p>
+                        Features and bugs <br />
+                        <br />
+                        2025-present
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="experience-flip">
+                  <div class="experience-card">
+                    <div class="card-front">
+                      <img
+                        src="images/denso-logo.webp"
+                        alt="DENSO Logo"
+                        class="company-logo"
+                      />
+                      <div class="experience-info">
+                        <h3>DENSO North America</h3>
+                        <p>User Experience Intern</p>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <p>
+                        Redesigned internal tools for DENSO's product lifecycle
+                        management system <br />
+                        <br />
+                        2024
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="experience-flip">
+                  <div class="experience-card">
+                    <div class="card-front">
+                      <img
+                        src="images/isr-logo.png"
+                        alt="ISR Logo"
+                        class="company-logo"
+                      />
+                      <div class="experience-info">
+                        <h3>Institute for Social Research</h3>
+                        <p>Research Assistant</p>
+                      </div>
+                    </div>
+                    <div class="card-back">
+                      <p>
+                        Dissemination, design, accessibility for the U.S Health
+                        and Retirement Study <br />
+                        <br />
+                        2023 - 2025
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="skills">
+              <h2>👩🏻‍💻 Programming & More</h2>
+
+              <div class="skill-category">
+                <div class="skills-list">
+                  <span class="skill-chip">Python</span>
+                  <span class="skill-chip">C++/C</span>
+                  <span class="skill-chip">HTML/CSS</span>
+                  <span class="skill-chip">Type/JavaScript</span>
+                  <span class="skill-chip">SQL</span>
+                  <span class="skill-chip">Git</span>
+                  <span class="skill-chip">Django</span>
+                  <span class="skill-chip">Flask</span>
+                  <span class="skill-chip">React</span>
+                  <span class="skill-chip">GraphQL</span>
+                </div>
+              </div>
+            </section>
+
+            <section id="csprojects">
+              <h2>👾 CS Projects</h2>
+
+              <div class="project-links">
+                <a
+                  href="https://avajian.pythonanywhere.com"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>Spotify Statistics</h3>
+                  <p class="project-description">
+                    Connect your Spotify and view stats for your top songs and
+                    artists
+                  </p>
+                  <p class="project-tech">
+                    Python, Flask, HTML/CSS, Spotify API
+                  </p>
+                </a>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://eecs485.org/syllabus.html#projects"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>Fullstack Meta Clone</h3>
+                  <p class="project-description">
+                    Features include liking, commenting, following,
+                    posting...etc
+                  </p>
+                  <p class="project-tech">
+                    React, Flask, Python, HTML/CSS, JavaScript, SQLite
+                  </p>
+                </a>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://eecs485staff.github.io/p5-search-engine/"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>Search Engine</h3>
+                  <p class="project-description">
+                    Using google's search algorithm
+                  </p>
+                  <p class="project-tech">
+                    React, Flask, Python, HTML/CSS, JavaScript, SQLite
+                  </p>
+                </a>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://eecs281staff.github.io/eecs281.org/#projects"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>Traveling Salesman</h3>
+                  <p class="project-description">
+                    Implementing optimization algorithms
+                  </p>
+                  <p class="project-tech">C++</p>
+                </a>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://eecs370.github.io/"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>LC2K Assembler, Linker, Cache Simulator</h3>
+                  <p class="project-description">
+                    Implementing optimization algorithms
+                  </p>
+                  <p class="project-tech">C</p>
+                </a>
+              </div>
+            </section>
+
+            <section id="uxprojects">
+              <h2>❦ UX Projects</h2>
+
+              <div class="project-links">
+                <a
+                  href="https://hrs.isr.umich.edu/documentation/new-user-guide"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>HRS User Guide</h3>
+                  <p class="project-description">
+                    30+ figure designs for the U.S Health and Retirement Study
+                  </p>
+                  <p class="project-tech">Adobe Photoshop, Adobe Illustrator</p>
+                </a>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://www.denso.com/us-ca/en/"
+                  class="project-card"
+                  target="_blank"
+                >
+                  <h3>Product Lifecycle Management Forms</h3>
+                  <p class="project-description">
+                    Redesigning cost planning and generate reports forms for
+                    DENSO's product lifecycle management system
+                  </p>
+                  <p class="project-tech">HTML, CSS, JavaScript</p>
+                </a>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
 
-  <section>
-    <p>contact avajian@umich.edu</p>
-  </section>
+        <section id="places">
+          <div class="places-container">
+            <a href="places.html" class="map-preview-link">
+              <div class="map-preview-wrapper">
+                <div id="map-preview"></div>
+                <div class="map-overlay-left">Places I</div>
+                <div class="map-overlay-right">have been</div>
+              </div>
+            </a>
+          </div>
+        </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-
-  <div class="experience-cards">
-
-  <div class="experience-flip">
-    <div class="experience-card">
-      <div class="card-front">
-        <img src="images/edustaff.jpg" alt="edustaff Logo" class="company-logo">
-        <div class="experience-info">
-          <h3>Edustaff</h3>
-          <p>Software Developer</p>
-        </div>
-      </div>
-      <div class="card-back">
-        <p> Features and bugs
-          <br> <br>
-          2025-present
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="experience-flip">
-    <div class="experience-card">
-      <div class="card-front">
-        <img src="images/denso-logo.webp" alt="DENSO Logo" class="company-logo">
-        <div class="experience-info">
-          <h3>DENSO North America</h3>
-          <p>User Experience Intern</p>
-        </div>
-      </div>
-      <div class="card-back">
-        <p> Redesigned internal tools for DENSO's product lifecycle management system
-          <br> <br>
-          2024
-        </p>
+        <section id="FAQs">
+          <div class="faq-container">
+            <h2>Frequently asked Questions</h2>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Michigan or MSU ?</h3>
+                <span class="icon">↘️</span>
+              </div>
+              <div class="faq-answer">
+                <p>I love MSU and East Lansing but U〽️ich all the way</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>What is C&sup2?</h3>
+                <span class="icon">↘️</span>
+              </div>
+              <div class="faq-answer">
+                <p>Computer science & cognitive science</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </div>
-
-  <div class="experience-flip">
-    <div class="experience-card">
-      <div class="card-front">
-      <img src="images/isr-logo.png" alt="ISR Logo" class="company-logo">
-        <div class="experience-info">
-        <h3>Institute for Social Research</h3>
-        <p>Research Assistant</p>
-        </div>
-      </div>
-      <div class="card-back">
-        <p>Dissemination, design, accessibility for the U.S Health and Retirement Study
-          <br> <br>
-          2023 - 2025
-        </p>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="experience-flip">
-    <div class="experience-card">
-      <div class="card-front">
-      <img src="images/onramp-logo.png" alt="OnRamp Logo" class="company-logo">
-        <div class="experience-info">
-        <h3>Engineering OnRamp</h3>
-        <p>Student Life Advisor</p>
-        </div>
-      </div>
-      <div class="card-back">
-        <p> Pathway for pre-college students to discover engineering as a profession 
-          <br> <br>
-          2023
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="experience-flip">
-    <div class="experience-card">
-      <div class="card-front">
-      <img src="images/ibt-logo.jpg" alt="Innovative BioTherapies Logo" class="company-logo">
-        <div class="experience-info">
-        <h3>Innovative BioTherapies</h3>
-        <p>Lab Research Assistant</p>
-        </div>
-      </div>
-      <div class="card-back">
-        <p>Research for creating bio-artificial organs
-        <br> <br> <br>
-        2022
-      </p>
-      </div>
-    </div>
-  </div>
-
-  </div>
-</section>
-
-
-  <section id="skills">
-    <h2>👩🏻‍💻 Programming & More</h2>
-
-    <div class="skill-category">
-      <div class="skills-list">
-        <span class="skill-chip">Python</span>
-        <span class="skill-chip">C++/C</span>
-        <span class="skill-chip">HTML/CSS</span>
-        <span class="skill-chip">Type/JavaScript</span>
-        <span class="skill-chip">SQL</span>
-        <span class="skill-chip">Git</span>
-        <span class="skill-chip">Django</span>
-        <span class="skill-chip">Flask</span>
-        <span class="skill-chip">React</span>
-        <span class="skill-chip">Adobe Illustrator</span>
-        <span class="skill-chip">Adobe Premiere Pro</span>
-      </div>
-    </div>
-  </section>
-
-      <section id="notes">
-    <h2>📑 C&sup2 Notes</h2>
-    
-    <div class="project-links">
-      <a href="https://hot-somersault-eb8.notion.site/My-computer-science-degree-22bee4072937800ead79e49a1dda7e1f?pvs=143" class="project-card" target="_blank">
-        <h3> Computer science </h3>
-        <p class="project-tech">data structures & algorithms, cybersecurity, web systems, databases...</p>
-      </a>
-    </div>
-
-        <div class="project-links">
-      <a href="https://hot-somersault-eb8.notion.site/My-cognitive-science-degree-267ee407293780a287adf72c19f3af0a" class="project-card" target="_blank">
-        <h3> Cognitive science </h3>
-        <p class="project-tech">pyschology, neuroscience, computer science, artificial intelligence...</p>
-      </a>
-    </div>
-  </section>
-
-
-  <section id="csprojects">
-    <h2> 👾 CS Projects</h2>
-
-    <div class="project-links">
-      <a href="https://avajian.pythonanywhere.com" class="project-card" target="_blank">
-        <h3>Spotify Statistics</h3>
-        <p class="project-description">
-          Connect your Spotify and view stats for your top songs and artists
-        </p>
-        <p class="project-tech">Python, Flask, HTML/CSS, Spotify API</p>
-      </a>
-    </div>
-
-    <div class="project-links">
-      <a href="https://eecs485.org/syllabus.html#projects" class="project-card" target="_blank">
-        <h3>Fullstack Meta Clone</h3>
-        <p class="project-description">
-          Features include liking, commenting, following, posting...etc
-        </p>
-        <p class="project-tech">React, Flask, Python, HTML/CSS, JavaScript, SQLite</p>
-      </a>
-    </div>
-
-    <div class="project-links">
-      <a href="https://eecs485staff.github.io/p5-search-engine/" class="project-card" target="_blank">
-        <h3>Search Engine</h3>
-        <p class="project-description">
-          Using google's search algorithm
-        </p>
-        <p class="project-tech">React, Flask, Python, HTML/CSS, JavaScript, SQLite</p>
-      </a>
-    </div>
-
-    <div class="project-links">
-      <a href="https://eecs281staff.github.io/eecs281.org/#projects" class="project-card" target="_blank">
-        <h3>Traveling Salesman</h3>
-        <p class="project-description">
-          Implementing optimization algorithms
-        </p>
-        <p class="project-tech">C++</p>
-      </a>
-    </div>
-
-    <div class="project-links">
-      <a href="https://eecs370.github.io/" class="project-card" target="_blank">
-        <h3>LC2K Assembler, Linker, Cache Simulator</h3>
-        <p class="project-description">
-          Implementing optimization algorithms
-        </p>
-        <p class="project-tech">C</p>
-      </a>
-    </div>
-  </section>
-
-  <section id="uxprojects">
-    <h2>❦ UX Projects</h2>
-    
-    <div class="project-links">
-      <a href="https://hrs.isr.umich.edu/documentation/new-user-guide" class="project-card" target="_blank">
-        <h3> HRS User Guide </h3>
-        <p class="project-description">
-          30+ figure designs for the U.S Health and Retirement Study
-        </p>
-        <p class="project-tech">Adobe Photoshop, Adobe Illustrator</p>
-      </a>
-    </div>
-
-    <div class="project-links">
-      <a href="https://www.denso.com/us-ca/en/" class="project-card" target="_blank">
-        <h3> Product Lifecycle Management Forms </h3>
-        <p class="project-description">
-          Redesigning cost planning and generate reports forms for DENSO's product lifecycle management system
-        </p>
-        <p class="project-tech">HTML, CSS, JavaScript</p>
-      </a>
-    </div>
-  </section>
-  
-</div>
-</div>
-
-<section id="places">
-  <div class="places-container">
-    <a href="places.html" class="map-preview-link">
-      <div class="map-preview-wrapper">
-        <div id="map-preview"></div>
-          <div class="map-overlay-left">Places I</div>
-          <div class="map-overlay-right">have been</div>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section id="FAQs">
-  <div class="faq-container">
-  <h2>Frequently asked Questions</h2>
-    <div class="faq-item">
-    <div class="faq-question">
-      <h3>Michigan or MSU ?</h3>
-      <span class="icon">↘️</span>
-    </div>
-    <div class="faq-answer">
-      <p>I love MSU and East Lansing but U〽️ich all the way</p>
-    </div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-question">
-      <h3>What does C&sup2 stand for?</h3>
-      <span class="icon">↘️</span>
-    </div>
-    <div class="faq-answer">
-      <p>Computer science & cognitive science, my majors in undergrad</p>
-    </div>
-  </div>
-    <div class="faq-item">
-    <div class="faq-question">
-      <h3>Why computer science?</h3>
-      <span class="icon">↘️</span>
-    </div>
-    <div class="faq-answer">
-      <p>
-        Coding as a tool to build anything sounded pretty cool. So, I majored in CS at the University of Michigan, took core programming classes in C++, upper levels mostly in Python, and a UX design senior project
-      </p>
-    </div>
-  </div>
-</div>
-</section>
-</div>
-</div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-  <script src="static/script.js"></script>
+    <script src="static/script.js"></script>
   </body>
 </html>
