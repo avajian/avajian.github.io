@@ -1,0 +1,774 @@
+/* main theme styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#main {
+  margin: 2.5% auto 0 auto;
+  margin-left: 0;
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.main-inner {
+  max-width: 1000px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.intro-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5%;
+  margin-bottom: 2.5%;
+  flex-wrap: wrap;
+}
+
+/* Left column: image */
+.left-column img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column: name and all content */
+.right-column {
+  display: flex;
+  flex-direction: column; /* Stacks layout elements top-to-bottom */
+  justify-content: space-between; /* Creates separation between top and bottom blocks */
+
+  flex: 1;
+  max-width: 800px;
+  border: rgb(209, 209, 209) solid 1px;
+  border-radius: 12px;
+  padding: 24px; /* Slightly adjusted padding for vertical breathing room */
+  height: 300px;
+  width: 260px;
+  box-sizing: border-box; /* Crucial to keep the fixed 260px from expanding out */
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.right-column:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  background-color: #ffffff;
+}
+
+/* New wrapper style to vertically center the paragraph text block */
+.about-text {
+  display: flex;
+  align-items: center; /* Vertically centers the text content */
+  flex-grow: 1; /* Claims the center space to push icons down */
+}
+
+.right-column p {
+  margin: 0; /* Clear default margins to ensure true alignment centering */
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+
+.right-column a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.right-column a:hover {
+  text-decoration: underline;
+}
+
+/* Resume sections */
+section {
+  margin-top: 40px;
+}
+
+/* Layout Wrapper: Forces layout parts side-by-side */
+.row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Forces project-card to match the tallest flip card */
+  gap: 20px;
+  width: 100%;
+}
+
+/* Experience Layout Group */
+.experience-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Synchronized spacing */
+}
+
+.experience-flip {
+  perspective: 1000px;
+  width: 150px; /* Default size for desktop */
+  height: 150px; /* Default size for desktop */
+  position: relative;
+  box-sizing: border-box;
+}
+
+.experience-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #cbdaf1;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  transform-style: preserve-3d;
+  transition:
+    transform 0.6s,
+    box-shadow 0.3s ease;
+}
+
+.experience-flip.flipped .experience-card {
+  transform: rotateY(180deg);
+}
+
+.experience-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; /* Added to force width behavior inside absolute container */
+  bottom: 0; /* Added to force height behavior inside absolute container */
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  text-align: left;
+  background-color: #e8f0fe;
+  overflow: hidden; /* Prevents long text from leaking out on small screens */
+}
+
+.card-back h3 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #111;
+}
+
+.card-back p {
+  margin: 0;
+  font-size: 11px;
+  color: #333;
+  line-height: 1.3;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Project Links Wrapper: Instructed to claim extra row space */
+.project-links {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Individual project card optimized for background images */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically balances contents */
+  width: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  box-sizing: border-box;
+
+  /* Background Image Layout Specs */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Project typography updated for high text contrast over images */
+.project-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.project-description {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #f0f0f0;
+  line-height: 1.4;
+}
+
+.project-tech {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #cccccc;
+  font-style: italic;
+}
+
+/* Header & Profile Components */
+.name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my-name {
+  margin: 0;
+  font-size: 42px;
+  white-space: nowrap;
+}
+
+.about-icons {
+  padding-top: 15px; /* Minimal padding to stay separated from text above */
+  width: 100%;
+}
+
+/* Cleaner icon grid row wrap properties */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap; /* Allows your 11 icons to wrap smoothly if they overflow */
+  gap: 12px; /* Slightly reduced gap so icons fit better in 260px width */
+}
+
+.social-icons a {
+  color: #00274c;
+  font-size: 24px; /* Scaled down slightly so more icons fit in one row */
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+  transform: translateY(-3px);
+}
+
+/* Tooltip Framework Core Modifiers */
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.message-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background: #0073e6;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  z-index: 10;
+}
+
+.message-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #0073e6;
+}
+
+.icon-container:hover .message-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Horizontal Photo Gallery Module */
+.photo-stack {
+  max-width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.photo-stack:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.photo-stack > * {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.photo-stack img {
+  width: 80vw;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.photo-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive Media Query: Safely stacks cards vertically on mobile viewports */
+@media (max-width: 820px) {
+  .row-container {
+    flex-direction: column;
+  }
+  .experience-cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .project-card {
+    min-height: 150px; /* Guarantees standard space when stacked alone */
+  }
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0; /* ✅ Visible by default */
+  width: 175px;
+  height: 100%;
+  background-color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #ccc;
+}
+
+.sidenav p {
+  position: absolute;
+  bottom: 75px;
+  left: 35px;
+  text-align: center;
+}
+
+.sidenav.mobile-open {
+  left: 0; /* slide in when open */
+}
+
+#hamburger-toggle {
+  display: block;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1500;
+  background: #111;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.sidebar-toggle {
+  display: none; /* hide the desktop toggle button */
+}
+
+.sidenav a:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidenav a {
+  font-size: 18px;
+}
+
+.sidenav.collapsed .nav-link {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  font-size: 0;
+  transition: opacity 0.9s ease;
+}
+
+.sidenav .nav-link {
+  display: block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  text-align: center;
+}
+
+.places-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.places-container {
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Match FAQ container width */
+  height: 190px; /* Adjust globe height */
+}
+
+.map-preview-wrapper {
+  position: relative; /* allows absolute children */
+  width: 100%;
+  height: 225px; /* match your preview height */
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+#map-preview {
+  width: 100%;
+  height: 100%;
+}
+
+.map-overlay-left {
+  position: absolute;
+  top: 45%; /* center vertically */
+  left: 20%; /* center horizontally */
+  transform: translate(-50%, -50%);
+  color: white; /* text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* makes text readable */
+  pointer-events: none; /* lets clicks go through to the map if needed */
+}
+
+.map-overlay-right {
+  position: absolute;
+  top: 45%; /* center vertically */
+  left: 80%; /* center horizontally */
+  transform: translate(-50%, -50%);
+  color: white; /* text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* makes text readable */
+  pointer-events: none; /* lets clicks go through to the map if needed */
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  #main {
+    margin-left: 160px;
+    padding: 20px;
+  }
+
+  .sidenav {
+    width: 200px;
+  }
+
+  .sidebar-toggle {
+    left: 160px;
+  }
+}
+
+@media (max-width: 320px) {
+  .map-overlay-left {
+    display: none;
+  }
+
+  .map-overlay-right {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .map-overlay-left {
+    left: 45%;
+    font-size: larger;
+  }
+
+  .map-overlay-right {
+    left: 50%;
+    font-size: larger;
+  }
+}
+
+@media (max-width: 640px) {
+  .sidenav {
+    left: -250px; /* ❌ Start hidden ONLY on mobile */
+  }
+
+  .sidenav.mobile-open {
+    left: 0; /* ✅ Slide in when open */
+  }
+
+  .sidenav p {
+    left: 12px;
+    font-size: small;
+  }
+  .map-overlay-left {
+    left: 35%;
+    color: rgb(14, 35, 120);
+  }
+
+  .map-overlay-right {
+    left: 65%;
+    color: rgb(14, 35, 120);
+  }
+}
+
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+
+  #main {
+    margin-left: 200px; /* reserve space for sidebar on the right */
+    transition: margin-left 0.3s ease;
+  }
+
+  .sidenav {
+    width: 200px;
+  }
+
+  .sidenav p {
+    left: 22px;
+    font-size: small;
+  }
+
+  .sidenav.collapsed ~ #main {
+    margin-left: 50px; /* when collapsed */
+  }
+
+  #hamburger-toggle,
+  .mobile-dropdown {
+    display: none;
+  }
+
+  .sidenav,
+  .sidebar-toggle {
+    display: block;
+  }
+
+  .sidenav.collapsed {
+    width: 50px;
+  }
+
+  /* Toggle button */
+  .sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 200px; /* default sidebar width */
+    z-index: 1100;
+    background-color: #111;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar-toggle:hover {
+    background-color: rgb(81, 81, 81);
+  }
+
+  /* Move toggle with collapsed sidebar */
+  .sidenav.collapsed + .sidebar-toggle {
+    left: 50px;
+  }
+
+  .sidenav.collapsed ~ #main {
+    margin-left: 50px;
+  }
+
+  .map-overlay-left {
+    left: 15%; /* center horizontally */
+  }
+
+  .map-overlay-right {
+    left: 85%; /* center horizontally */
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .photo-stack {
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: visible;
+    scroll-snap-type: none;
+    max-width: 100vw; /* constrain to viewport width */
+  }
+
+  .photo-stack > * {
+    flex: unset;
+  }
+
+  .sidenav {
+    width: 250px;
+  }
+
+  .sidebar-toggle {
+    left: 250px; /* default sidebar width */
+  }
+
+  .sidenav p {
+    left: 45px;
+    font-size: small;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .sidenav p {
+    left: 50px;
+    font-size: small;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+
+/* Responsive Media Query: Expands card sizes on mobile viewports */
+@media (max-width: 820px) {
+  .row-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .experience-cards {
+    flex-direction: column; /* Stack the three experience cards vertically */
+    width: 100%;
+    gap: 15px;
+  }
+
+  /* Make the experience cards large and touch-friendly on mobile */
+  .experience-flip {
+    width: 100%; /* Forces cards to stretch full width of the screen */
+    height: 180px; /* Taller height gives text breathing room */
+    max-width: 450px; /* Prevents them from getting ridiculously wide on tablets */
+    margin: 0 auto; /* Centers them nicely on the screen */
+  }
+
+  /* Scales up the back card typography slightly for mobile readability */
+  .card-back h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .card-back p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .project-card {
+    min-height: 180px; /* Matches experience card height scale */
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}

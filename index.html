@@ -10,13 +10,16 @@
     />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.4.0/css/all.css"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
-    <link rel="stylesheet" href="static/style.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/timeline.css" />
+    <link rel="stylesheet" href="static/css/landing-page.css" />
+
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
@@ -27,14 +30,10 @@
   <body>
     <!-- Sidebar -->
     <div id="mySidenav" class="sidenav">
-      <a href="#experience" class="nav-link">Experience</a>
-      <a href="#skills" class="nav-link">Skills</a>
-      <a href="#notes" class="nav-link">Notes</a>
-      <a href="#csprojects" class="nav-link">CS Projects</a>
-      <a href="#uxprojects" class="nav-link">UX Projects</a>
-      <a href="#places" class="nav-link">Places</a>
-      <a href="#FAQs" class="nav-link">FAQs</a>
-      <p class="nav-link">© 2025 Ava Schmidt</p>
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#timeline" class="nav-link">Timeline</a>
+      <p class="nav-link">© 2026 Ava Schmidt</p>
     </div>
 
     <!-- Toggle -->
@@ -47,297 +46,207 @@
 
     <!-- <div class="page-wrapper"></div> -->
     <div id="main">
-      <div class="main-inner">
-        <div class="resume-layout">
+      <div class="main-inner" id="home">
+        <div class="landing-section">
+          <div class="background-landing">
+            <img
+              src="static/images/black_white_yellow.png"
+              alt="graduation on a sunny day"
+            />
+          </div>
+          <div id="intro">
+            <!-- Horizontal row for name + icons -->
+            <div class="name-row">
+              <div class="social-icons">
+                <a href="mailto:avajian@umich.edu" title="Email"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/in/ava-jian-schmidt"
+                  target="_blank"
+                  title="LinkedIn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/avajian"
+                  target="_blank"
+                  title="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://hot-somersault-eb8.notion.site/My-computer-science-degree-22bee4072937800ead79e49a1dda7e1f?pvs=143"
+                  target="_blank"
+                  title="Notes"
+                  ><i class="fas fa-sticky-note"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div id="sparkle-name" class="sparkle">
+            <a href="#">
+              <!-- Drop as many sparkles in as you need and scope the speed -->
+              <svg
+                viewBox="0 0 96 96"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                  fill="#000"
+                />
+              </svg>
+              <svg
+                viewBox="0 0 96 96"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                  fill="#000"
+                />
+              </svg>
+              <svg
+                viewBox="0 0 96 96"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                  fill="#000"
+                />
+              </svg>
+              <svg
+                viewBox="0 0 96 96"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                  fill="#000"
+                />
+              </svg>
+              <svg
+                viewBox="0 0 96 96"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M93.781 51.578C95 50.969 96 49.359 96 48c0-1.375-1-2.969-2.219-3.578 0 0-22.868-1.514-31.781-10.422-8.915-8.91-10.438-31.781-10.438-31.781C50.969 1 49.375 0 48 0s-2.969 1-3.594 2.219c0 0-1.5 22.87-10.406 31.781-8.908 8.913-31.781 10.422-31.781 10.422C1 45.031 0 46.625 0 48c0 1.359 1 2.969 2.219 3.578 0 0 22.873 1.51 31.781 10.422 8.906 8.911 10.406 31.781 10.406 31.781C45.031 95 46.625 96 48 96s2.969-1 3.562-2.219c0 0 1.523-22.871 10.438-31.781 8.913-8.908 31.781-10.422 31.781-10.422Z"
+                  fill="#000"
+                />
+              </svg>
+              <!-- End sparkles -->
+              <span>Ava Schmidt</span>
+              <span aria-hidden="true">Ava Schmidt</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Row One -->
+        <div class="intro-block">
           <div class="left-column" id="about">
             <div class="photo-stack">
               <div class="photo-tooltip">
-                <img src="images/headshot.JPG" alt="headshot" />
-                <span class="tooltip-text"> C&sup2 & UX</span>
-                <p>University of Michigan '25</p>
-              </div>
-
-              <div class="photo-tooltip">
-                <img src="images/prague.jpeg" alt="headshot" />
-                <span class="tooltip-text"> IFSA Tech Career Accelerator</span>
-                <p>Prague, Czech Republic</p>
-              </div>
-
-              <div class="photo-tooltip">
-                <img src="images/draw.jpeg" alt="headshot" />
-                <span class="tooltip-text"> drawing in my sketchbook</span>
-                <p>Sketchbook</p>
-              </div>
-
-              <div class="photo-tooltip">
-                <img src="images/skateboard.jpeg" alt="headshot" />
-                <span class="tooltip-text">down parking structures</span>
-                <p>Skateboarding</p>
-              </div>
-
-              <div class="photo-tooltip">
-                <img src="images/triptonfell.jpeg" alt="headshot" />
-                <span class="tooltip-text">
-                  created an
-                  <a
-                    href="https://open.spotify.com/track/6dJGJmNehWo8j0k0vGBFeF?si=8ef65e585a2244e6"
-                    style="color: white; text-decoration: underline"
-                    >original song</a
-                  ></span
-                >
-                <p>Tripton Fell</p>
+                <img src="static/images/headshot.JPG" alt="headshot" />
+                <span class="tooltip-text"> Umich C&sup2 & UX</span>
               </div>
             </div>
           </div>
 
           <div class="right-column">
-            <div id="intro" class="info">
-              <!-- Horizontal row for name + icons -->
+            <div class="about-text">
+              <p>TL;DR: I like doing a lot. Now I have way too many hobbies.</p>
+            </div>
+            <div class="about-icons">
               <div class="name-row">
-                <h1 class="my-name">Ava Schmidt</h1>
                 <div class="social-icons">
-                  <a href="mailto:avajian@umich.edu" title="Email"
-                    ><i class="fas fa-envelope"></i
-                  ></a>
-                  <a
-                    href="https://linkedin.com/in/ava-jian-schmidt"
-                    target="_blank"
-                    title="LinkedIn"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                  <a
-                    href="https://github.com/avajian"
-                    target="_blank"
-                    title="GitHub"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                  <a
-                    href="https://hot-somersault-eb8.notion.site/My-computer-science-degree-22bee4072937800ead79e49a1dda7e1f?pvs=143"
-                    target="_blank"
-                    title="Notes"
-                    ><i class="fas fa-sticky-note"></i
-                  ></a>
+                  <!-- Chess Icon -->
+                  <div class="icon-container">
+                    <a title="chess"><i class="fas fa-chess"></i></a>
+                    <span class="message-tooltip">I play online chess</span>
+                  </div>
+
+                  <!-- Plane Icon -->
+                  <div class="icon-container">
+                    <a title="paper plane"><i class="fa fa-paper-plane"></i></a>
+                    <span class="message-tooltip"
+                      >I'm learning to fly an airplane</span
+                    >
+                  </div>
+
+                  <!-- Headphones Icon -->
+                  <div class="icon-container">
+                    <a title="paper plane"
+                      ><i class="fa fa-headphones-alt"></i
+                    ></a>
+                    <span class="message-tooltip"
+                      >Always listening to music</span
+                    >
+                  </div>
+
+                  <!-- Running Icon -->
+                  <div class="icon-container">
+                    <a title="running"><i class="fa fa-running"></i></a>
+                    <span class="message-tooltip">I go on runs</span>
+                  </div>
+
+                  <!-- Sketching Icon -->
+                  <div class="icon-container">
+                    <a title="sketching"><i class="fa fa-pencil-alt"></i></a>
+                    <span class="message-tooltip">Sketching</span>
+                  </div>
+
+                  <!--Traveling Icon -->
+                  <div class="icon-container">
+                    <a title="traveling"><i class="fa fa-plane"></i></a>
+                    <span class="message-tooltip">(Solo) traveling</span>
+                  </div>
+
+                  <!--Video editing Icon -->
+                  <div class="icon-container">
+                    <a title="video editing"><i class="fa fa-video"></i></a>
+                    <span class="message-tooltip">Video editing</span>
+                  </div>
+
+                  <!--Journaling Icon -->
+                  <div class="icon-container">
+                    <a title="journaling"><i class="fa fa-book"></i></a>
+                    <span class="message-tooltip">(Junk) journaling</span>
+                  </div>
+
+                  <!--Concerts Icon -->
+                  <div class="icon-container">
+                    <a
+                      href="https://www.notion.so/every-concert-i-ve-ever-been-to-308ee407293780f7a028cbd65aef9a96?source=copy_link"
+                      title="concerts"
+                      ><i class="fa fa-music"></i
+                    ></a>
+                    <span class="message-tooltip">Concerts</span>
+                  </div>
+
+                  <!--House Icon -->
+                  <div class="icon-container">
+                    <a title="house"><i class="fa fa-home"></i></a>
+                    <span class="message-tooltip"
+                      >I've lived in East Lansing, Ann Arbor and Grand Rapids,
+                      MI</span
+                    >
+                  </div>
+
+                  <!--Guitar Icon -->
+                  <div class="icon-container">
+                    <a title="guitar"><i class="fa fa-guitar"></i></a>
+                    <span class="message-tooltip"
+                      >I play the guitar sometimes</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-
-            <section>
-              <p>avajian@umich.edu</p>
-            </section>
-
-            <section id="experience">
-              <h2>Experience</h2>
-
-              <div class="experience-cards">
-                <div class="experience-flip">
-                  <div class="experience-card">
-                    <div class="card-front">
-                      <img
-                        src="images/edustaff.jpg"
-                        alt="edustaff Logo"
-                        class="company-logo"
-                      />
-                      <div class="experience-info">
-                        <h3>Edustaff</h3>
-                        <p>Software Developer</p>
-                      </div>
-                    </div>
-                    <div class="card-back">
-                      <p>
-                        Features and bugs <br />
-                        <br />
-                        2025-present
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="experience-flip">
-                  <div class="experience-card">
-                    <div class="card-front">
-                      <img
-                        src="images/denso-logo.webp"
-                        alt="DENSO Logo"
-                        class="company-logo"
-                      />
-                      <div class="experience-info">
-                        <h3>DENSO North America</h3>
-                        <p>User Experience Intern</p>
-                      </div>
-                    </div>
-                    <div class="card-back">
-                      <p>
-                        Redesigned internal tools for DENSO's product lifecycle
-                        management system <br />
-                        <br />
-                        2024
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="experience-flip">
-                  <div class="experience-card">
-                    <div class="card-front">
-                      <img
-                        src="images/isr-logo.png"
-                        alt="ISR Logo"
-                        class="company-logo"
-                      />
-                      <div class="experience-info">
-                        <h3>Institute for Social Research</h3>
-                        <p>Research Assistant</p>
-                      </div>
-                    </div>
-                    <div class="card-back">
-                      <p>
-                        Dissemination, design, accessibility for the U.S Health
-                        and Retirement Study <br />
-                        <br />
-                        2023 - 2025
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="skills">
-              <h2>Skills</h2>
-
-              <div class="skill-category">
-                <div class="skills-list">
-                  <span class="skill-chip">Python</span>
-                  <span class="skill-chip">C++/C</span>
-                  <span class="skill-chip">HTML/CSS</span>
-                  <span class="skill-chip">Type/JavaScript</span>
-                  <span class="skill-chip">SQL</span>
-                  <span class="skill-chip">Git</span>
-                  <span class="skill-chip">Django</span>
-                  <span class="skill-chip">Flask</span>
-                  <span class="skill-chip">React</span>
-                  <span class="skill-chip">GraphQL</span>
-                </div>
-              </div>
-            </section>
-
-            <section id="csprojects">
-              <h2>CS Projects</h2>
-
-              <div class="project-links">
-                <a
-                  href="https://avajian.pythonanywhere.com"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>Spotify Statistics</h3>
-                  <p class="project-description">
-                    Connect your Spotify and view stats for your top songs and
-                    artists
-                  </p>
-                  <p class="project-tech">
-                    Python, Flask, HTML/CSS, Spotify API
-                  </p>
-                </a>
-              </div>
-
-              <div class="project-links">
-                <a
-                  href="https://eecs485.org/syllabus.html#projects"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>Fullstack Meta Clone</h3>
-                  <p class="project-description">
-                    Features include liking, commenting, following,
-                    posting...etc
-                  </p>
-                  <p class="project-tech">
-                    React, Flask, Python, HTML/CSS, JavaScript, SQLite
-                  </p>
-                </a>
-              </div>
-
-              <div class="project-links">
-                <a
-                  href="https://eecs485staff.github.io/p5-search-engine/"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>Search Engine</h3>
-                  <p class="project-description">
-                    Using google's search algorithm
-                  </p>
-                  <p class="project-tech">
-                    React, Flask, Python, HTML/CSS, JavaScript, SQLite
-                  </p>
-                </a>
-              </div>
-
-              <div class="project-links">
-                <a
-                  href="https://eecs281staff.github.io/eecs281.org/#projects"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>Traveling Salesman</h3>
-                  <p class="project-description">
-                    Implementing optimization algorithms
-                  </p>
-                  <p class="project-tech">C++</p>
-                </a>
-              </div>
-
-              <div class="project-links">
-                <a
-                  href="https://eecs370.github.io/"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>LC2K Assembler, Linker, Cache Simulator</h3>
-                  <p class="project-description">
-                    Implementing optimization algorithms
-                  </p>
-                  <p class="project-tech">C</p>
-                </a>
-              </div>
-            </section>
-
-            <section id="uxprojects">
-              <h2>UX Projects</h2>
-
-              <div class="project-links">
-                <a
-                  href="https://hrs.isr.umich.edu/documentation/new-user-guide"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>HRS User Guide</h3>
-                  <p class="project-description">
-                    30+ figure designs for the U.S Health and Retirement Study
-                  </p>
-                  <p class="project-tech">Adobe Photoshop, Adobe Illustrator</p>
-                </a>
-              </div>
-
-              <div class="project-links">
-                <a
-                  href="https://www.denso.com/us-ca/en/"
-                  class="project-card"
-                  target="_blank"
-                >
-                  <h3>Product Lifecycle Management Forms</h3>
-                  <p class="project-description">
-                    Redesigning cost planning and generate reports forms for
-                    DENSO's product lifecycle management system
-                  </p>
-                  <p class="project-tech">HTML, CSS, JavaScript</p>
-                </a>
-              </div>
-            </section>
           </div>
         </div>
 
+        <!-- Row Two -->
         <section id="places">
           <div class="places-container">
             <a href="places.html" class="map-preview-link">
@@ -350,32 +259,101 @@
           </div>
         </section>
 
-        <section id="FAQs">
-          <div class="faq-container">
-            <h2>Frequently asked Questions</h2>
-            <div class="faq-item">
-              <div class="faq-question">
-                <h3>Michigan or MSU ?</h3>
-                <span class="icon">↘️</span>
+        <!-- Row Three -->
+        <section id="experience">
+          <div class="row-container">
+            <!-- Experience Cards Group -->
+            <div class="experience-cards">
+              <div class="experience-flip">
+                <div class="experience-card">
+                  <div class="card-front">
+                    <img
+                      src="static/images/edustaff.jpg"
+                      alt="edustaff Logo"
+                      class="company-logo"
+                    />
+                  </div>
+                  <div class="card-back">
+                    <h3>Edustaff LLC</h3>
+                    <p>
+                      I work as a software developer to maintain our educational
+                      staffing company's administrative system and tools<br /><br />
+                      July 2025-present
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="faq-answer">
-                <p>I love MSU and East Lansing but U〽️ich all the way</p>
+
+              <div class="experience-flip">
+                <div class="experience-card">
+                  <div class="card-front">
+                    <img
+                      src="static/images/denso-logo.webp"
+                      alt="DENSO Logo"
+                      class="company-logo"
+                    />
+                  </div>
+                  <div class="card-back">
+                    <h3>DENSO</h3>
+                    <p>User Experience Intern</p>
+                    <p>
+                      Redesigned internal tools for DENSO's product lifecycle
+                      management system <br /><br />
+                      2024
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="experience-flip">
+                <div class="experience-card">
+                  <div class="card-front">
+                    <img
+                      src="static/images/isr-logo.png"
+                      alt="ISR Logo"
+                      class="company-logo"
+                    />
+                  </div>
+                  <div class="card-back">
+                    <h3>Institute for Social Research</h3>
+                    <p>Research Assistant</p>
+                    <p>
+                      Dissemination, design, accessibility for the U.S Health
+                      and Retirement Study <br /><br />
+                      2023 - 2025
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="faq-item">
-              <div class="faq-question">
-                <h3>What is C&sup2?</h3>
-                <span class="icon">↘️</span>
-              </div>
-              <div class="faq-answer">
-                <p>Computer science & cognitive science</p>
-              </div>
+
+            <!-- Project Card Links Group with Image Background Style Override -->
+            <div class="project-links">
+              <a
+                href="https://pythonanywhere.com"
+                class="project-card"
+                target="_blank"
+                style="
+                  background-image:
+                    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+                    url(&quot;static/images/spotify-bg.jpg&quot;);
+                "
+              >
+                <h3>Spotify Statistics</h3>
+                <p class="project-description">
+                  Connect your Spotify and view stats for your top songs and
+                  artists
+                </p>
+                <p class="project-tech">Python, Flask, HTML/CSS, Spotify API</p>
+              </a>
             </div>
           </div>
         </section>
       </div>
     </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-    <script src="static/script.js"></script>
+    <script src="static/js/side-menu.js"></script>
+    <script src="static/js/map.js"></script>
+    <script src="static/js/script.js"></script>
   </body>
 </html>
