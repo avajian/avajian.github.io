@@ -6,33 +6,47 @@
     <meta name="viewport" content="width=device-width" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
-    />
-    <link
-      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.0/css/all.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-    />
-    <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/timeline.css" />
-    <link rel="stylesheet" href="static/css/landing-page.css" />
-
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="static/css/theme.css" />
+    <link rel="stylesheet" href="static/css/about.css" />
+    <link rel="stylesheet" href="static/css/landing-page.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <!-- Sidebar -->
     <div id="mySidenav" class="sidenav">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#timeline" class="nav-link">Timeline</a>
+      <ul class="menu-links">
+        <li>
+          <a href="#home" class="nav-link">★ Home</a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link">★ About</a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ava-jian-schmidt"
+            target="_blank"
+            class="nav-link"
+            >★ LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/avajian" target="_blank" class="nav-link"
+            >★ GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/avajian" target="_blank" class="nav-link"
+            >★ Notes</a
+          >
+        </li>
+      </ul>
       <p class="nav-link">© 2026 Ava Schmidt</p>
     </div>
 
@@ -47,41 +61,7 @@
     <!-- <div class="page-wrapper"></div> -->
     <div id="main">
       <div class="main-inner" id="home">
-        <div class="landing-section">
-          <div class="background-landing">
-            <img
-              src="static/images/black_white_yellow.png"
-              alt="graduation on a sunny day"
-            />
-          </div>
-          <div id="intro">
-            <!-- Horizontal row for name + icons -->
-            <div class="name-row">
-              <div class="social-icons">
-                <a href="mailto:avajian@umich.edu" title="Email"
-                  ><i class="fas fa-envelope"></i
-                ></a>
-                <a
-                  href="https://linkedin.com/in/ava-jian-schmidt"
-                  target="_blank"
-                  title="LinkedIn"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-                <a
-                  href="https://github.com/avajian"
-                  target="_blank"
-                  title="GitHub"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a
-                  href="https://hot-somersault-eb8.notion.site/My-computer-science-degree-22bee4072937800ead79e49a1dda7e1f?pvs=143"
-                  target="_blank"
-                  title="Notes"
-                  ><i class="fas fa-sticky-note"></i
-                ></a>
-              </div>
-            </div>
-          </div>
+        <section id="landing-section">
           <div id="sparkle-name" class="sparkle">
             <a href="#">
               <!-- Drop as many sparkles in as you need and scope the speed -->
@@ -140,131 +120,141 @@
               <span aria-hidden="true">Ava Schmidt</span>
             </a>
           </div>
-        </div>
-
-        <!-- Row One -->
-        <div class="intro-block">
-          <div class="left-column" id="about">
-            <div class="photo-stack">
-              <div class="photo-tooltip">
-                <img src="static/images/headshot.JPG" alt="headshot" />
-                <span class="tooltip-text"> Umich C&sup2 & UX</span>
-              </div>
-            </div>
+          <div class="background-landing">
+            <img
+              src="static/images/black_white_yellow.png"
+              alt="graduation on a sunny day"
+            />
           </div>
+        </section>
 
-          <div class="right-column">
-            <div class="about-text">
-              <p>TL;DR: I like doing a lot. Now I have way too many hobbies.</p>
-            </div>
-            <div class="about-icons">
-              <div class="name-row">
-                <div class="social-icons">
-                  <!-- Chess Icon -->
-                  <div class="icon-container">
-                    <a title="chess"><i class="fas fa-chess"></i></a>
-                    <span class="message-tooltip">I play online chess</span>
-                  </div>
+        <section id="about-section">
+          <!-- Row One -->
+          <div id="about" class="intro-block">
+            <div class="row-container">
+              <div class="row-item">
+                <img src="static/images/headshot.JPG" alt="headshot" />
+              </div>
 
-                  <!-- Plane Icon -->
-                  <div class="icon-container">
-                    <a title="paper plane"><i class="fa fa-paper-plane"></i></a>
-                    <span class="message-tooltip"
-                      >I'm learning to fly an airplane</span
-                    >
-                  </div>
+              <div class="row-item border">
+                <div class="about-text">
+                  <p>
+                    TL;DR: I like doing a lot. Now I have way too many hobbies.
+                  </p>
+                </div>
+              </div>
+              <div class="row-item border">
+                <div class="spacing">
+                  <div class="icons">
+                    <!-- Chess Icon -->
+                    <div class="icon-container">
+                      <a title="chess"><i class="fas fa-chess"></i></a>
+                      <span class="message-tooltip">I play online chess</span>
+                    </div>
 
-                  <!-- Headphones Icon -->
-                  <div class="icon-container">
-                    <a title="paper plane"
-                      ><i class="fa fa-headphones-alt"></i
-                    ></a>
-                    <span class="message-tooltip"
-                      >Always listening to music</span
-                    >
-                  </div>
+                    <!-- Plane Icon -->
+                    <div class="icon-container">
+                      <a title="paper plane"
+                        ><i class="fa fa-paper-plane"></i
+                      ></a>
+                      <span class="message-tooltip"
+                        >I'm learning to fly an airplane</span
+                      >
+                    </div>
 
-                  <!-- Running Icon -->
-                  <div class="icon-container">
-                    <a title="running"><i class="fa fa-running"></i></a>
-                    <span class="message-tooltip">I go on runs</span>
-                  </div>
+                    <!-- Headphones Icon -->
+                    <div class="icon-container">
+                      <a title="paper plane"
+                        ><i class="fa fa-headphones-alt"></i
+                      ></a>
+                      <span class="message-tooltip"
+                        >Always listening to music</span
+                      >
+                    </div>
 
-                  <!-- Sketching Icon -->
-                  <div class="icon-container">
-                    <a title="sketching"><i class="fa fa-pencil-alt"></i></a>
-                    <span class="message-tooltip">Sketching</span>
-                  </div>
+                    <!-- Running Icon -->
+                    <div class="icon-container">
+                      <a title="running"><i class="fa fa-running"></i></a>
+                      <span class="message-tooltip">I go on runs</span>
+                    </div>
 
-                  <!--Traveling Icon -->
-                  <div class="icon-container">
-                    <a title="traveling"><i class="fa fa-plane"></i></a>
-                    <span class="message-tooltip">(Solo) traveling</span>
-                  </div>
+                    <!-- Sketching Icon -->
+                    <div class="icon-container">
+                      <a title="sketching"><i class="fa fa-pencil-alt"></i></a>
+                      <span class="message-tooltip">Sketching</span>
+                    </div>
 
-                  <!--Video editing Icon -->
-                  <div class="icon-container">
-                    <a title="video editing"><i class="fa fa-video"></i></a>
-                    <span class="message-tooltip">Video editing</span>
-                  </div>
+                    <!--Traveling Icon -->
+                    <div class="icon-container">
+                      <a title="traveling"><i class="fa fa-plane"></i></a>
+                      <span class="message-tooltip">(Solo) traveling</span>
+                    </div>
 
-                  <!--Journaling Icon -->
-                  <div class="icon-container">
-                    <a title="journaling"><i class="fa fa-book"></i></a>
-                    <span class="message-tooltip">(Junk) journaling</span>
-                  </div>
+                    <!--Video editing Icon -->
+                    <div class="icon-container">
+                      <a title="video editing"><i class="fa fa-video"></i></a>
+                      <span class="message-tooltip">Video editing</span>
+                    </div>
 
-                  <!--Concerts Icon -->
-                  <div class="icon-container">
-                    <a
-                      href="https://www.notion.so/every-concert-i-ve-ever-been-to-308ee407293780f7a028cbd65aef9a96?source=copy_link"
-                      title="concerts"
-                      ><i class="fa fa-music"></i
-                    ></a>
-                    <span class="message-tooltip">Concerts</span>
-                  </div>
+                    <!--Journaling Icon -->
+                    <div class="icon-container">
+                      <a title="journaling"><i class="fa fa-book"></i></a>
+                      <span class="message-tooltip">(Junk) journaling</span>
+                    </div>
 
-                  <!--House Icon -->
-                  <div class="icon-container">
-                    <a title="house"><i class="fa fa-home"></i></a>
-                    <span class="message-tooltip"
-                      >I've lived in East Lansing, Ann Arbor and Grand Rapids,
-                      MI</span
-                    >
-                  </div>
+                    <!--Concerts Icon -->
+                    <div class="icon-container">
+                      <a
+                        href="https://www.notion.so/every-concert-i-ve-ever-been-to-308ee407293780f7a028cbd65aef9a96?source=copy_link"
+                        title="concerts"
+                        ><i class="fa fa-music"></i
+                      ></a>
+                      <span class="message-tooltip">Concerts</span>
+                    </div>
 
-                  <!--Guitar Icon -->
-                  <div class="icon-container">
-                    <a title="guitar"><i class="fa fa-guitar"></i></a>
-                    <span class="message-tooltip"
-                      >I play the guitar sometimes</span
-                    >
+                    <!--House Icon -->
+                    <div class="icon-container">
+                      <a title="house"><i class="fa fa-home"></i></a>
+                      <span class="message-tooltip"
+                        >I've lived in East Lansing, Ann Arbor and Grand Rapids,
+                        MI</span
+                      >
+                    </div>
+
+                    <!--Guitar Icon -->
+                    <div class="icon-container">
+                      <a title="guitar"><i class="fa fa-guitar"></i></a>
+                      <span class="message-tooltip"
+                        >I play the guitar sometimes</span
+                      >
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Row Two -->
-        <section id="places">
-          <div class="places-container">
-            <a href="places.html" class="map-preview-link">
-              <div class="map-preview-wrapper">
-                <div id="map-preview"></div>
-                <div class="map-overlay-left">Places I</div>
-                <div class="map-overlay-right">have been</div>
+          <!-- Row Two -->
+          <div id="places">
+            <div class="row-container">
+              <div class="row-item">
+                <div class="places-container">
+                  <a href="places.html" class="map-preview-link">
+                    <div class="map-preview-wrapper">
+                      <div id="map-preview"></div>
+                      <div class="map-overlay-left">Places I</div>
+                      <div class="map-overlay-right">have been</div>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
-        </section>
 
-        <!-- Row Three -->
-        <section id="experience">
-          <div class="row-container">
-            <!-- Experience Cards Group -->
-            <div class="experience-cards">
-              <div class="experience-flip">
+          <!-- Row Three -->
+          <div id="experience">
+            <div class="row-container">
+              <div class="experience-flip row-item">
                 <div class="experience-card">
                   <div class="card-front">
                     <img
@@ -284,7 +274,7 @@
                 </div>
               </div>
 
-              <div class="experience-flip">
+              <div class="experience-flip row-item">
                 <div class="experience-card">
                   <div class="card-front">
                     <img
@@ -305,7 +295,7 @@
                 </div>
               </div>
 
-              <div class="experience-flip">
+              <div class="experience-flip row-item">
                 <div class="experience-card">
                   <div class="card-front">
                     <img
@@ -325,27 +315,29 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Project Card Links Group with Image Background Style Override -->
-            <div class="project-links">
-              <a
-                href="https://pythonanywhere.com"
-                class="project-card"
-                target="_blank"
-                style="
-                  background-image:
-                    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
-                    url(&quot;static/images/spotify-bg.jpg&quot;);
-                "
-              >
-                <h3>Spotify Statistics</h3>
-                <p class="project-description">
-                  Connect your Spotify and view stats for your top songs and
-                  artists
-                </p>
-                <p class="project-tech">Python, Flask, HTML/CSS, Spotify API</p>
-              </a>
+              <!-- Project Card Links Group with Image Background Style Override -->
+              <div class="project-links row-item">
+                <a
+                  href="https://pythonanywhere.com"
+                  class="project-card"
+                  target="_blank"
+                  style="
+                    background-image:
+                      linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+                      url(&quot;static/images/spotify-bg.jpg&quot;);
+                  "
+                >
+                  <h3>Spotify Statistics</h3>
+                  <p class="project-description">
+                    Connect your Spotify and view stats for your top songs and
+                    artists
+                  </p>
+                  <p class="project-tech">
+                    Python, Flask, HTML/CSS, Spotify API
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </section>
