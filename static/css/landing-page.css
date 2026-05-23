@@ -89,7 +89,7 @@
 }
 
 .sparkle a:hover {
-  background: #00274c;
+  background: #0f1e2c;
   --hover: 1;
   --pos: 1;
 }
@@ -103,7 +103,7 @@
   display: inline-block;
   font-size: calc(var(--font-size) * 1.5);
   font-weight: 900;
-  font-family: "regular-pixel-font", sans-serif; /* <-- ADD THIS LINE */
+  font-family: "regular-pixel-font", sans-serif;
   transition: all 0.2s;
   text-decoration: none;
   text-shadow:

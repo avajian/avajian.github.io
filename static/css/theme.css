@@ -204,7 +204,7 @@ section {
    ========================================================================== */
 
 body.dark-mode {
-  background-color: #00274c;
+  background-color: #0f1e2c;
   transition: background-color 0.3s ease;
   color: white;
   .icons a:hover {
@@ -214,11 +214,11 @@ body.dark-mode {
   .row-item:hover {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
-    background-color: #043563;
+    background-color: #0b2237;
   }
 
   .sidenav {
-    background-color: #00274c;
+    background-color: #101d29;
   }
 
   .sidenav a,
@@ -323,7 +323,7 @@ body.dark-mode {
   }
 
   .sidebar-toggle:hover {
-    background-color: rgb(81, 81, 81);
+    background-color: #ac8a03;
   }
 
   .sidenav.collapsed + .sidebar-toggle {
