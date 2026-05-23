@@ -45,3 +45,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// music player toggle
+
+const drawer = document.getElementById("music-drawer");
+const tab = document.getElementById("drawer-tab");
+
+tab.addEventListener("click", () => {
+  drawer.classList.toggle("open");
+});
