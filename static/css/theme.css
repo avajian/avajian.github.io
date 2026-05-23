@@ -1,3 +1,27 @@
+/* fonts */
+@font-face {
+  font-family: "regular-pixel-font";
+  src: url("../fonts/WEB-FONT/OffBitTrial-101.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "star-pixel-font";
+  src: url("../fonts/WEB-FONT/OffBitTrial-StarBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.offbit-regular-font {
+  font-family: "regular-pixel-font";
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 /* main theme styles */
 
 html {
@@ -161,6 +185,13 @@ section {
 .menu-links {
   line-height: 24px;
   list-style: none;
+}
+
+#menu-text {
+  text-align: center;
+  font-family: "star-pixel-font", sans-serif;
+  color: #a16207;
+  font-size: 48px;
 }
 
 /* ==========================================================================

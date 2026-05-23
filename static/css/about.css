@@ -16,11 +16,6 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-.temp {
-  margin-top: 5%;
-  border: rgb(209, 209, 209) solid 1px;
-}
-
 .stats {
   display: flex;
   gap: 16px;
@@ -154,39 +149,29 @@
 }
 
 .map-preview-wrapper {
-  position: relative; /* allows absolute children */
+  position: relative;
   width: 100%;
-  height: 225px; /* match your preview height */
+  height: 225px;
   overflow: hidden;
 }
 
 #map-preview {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.map-overlay-left {
-  position: absolute;
-  top: 45%; /* center vertically */
-  left: 20%; /* center horizontally */
+.map-overlay {
+  color: white;
   transform: translate(-50%, -50%);
-  color: white; /* text color */
   font-size: 1.5rem;
   font-weight: bold;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* makes text readable */
   pointer-events: none; /* lets clicks go through to the map if needed */
-}
-
-.map-overlay-right {
   position: absolute;
-  top: 45%; /* center vertically */
-  left: 80%; /* center horizontally */
-  transform: translate(-50%, -50%);
-  color: white; /* text color */
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); /* makes text readable */
-  pointer-events: none; /* lets clicks go through to the map if needed */
+  top: 20%;
+  left: 35%;
 }
 
 /* ==========================================
@@ -321,6 +306,7 @@
    ========================================== */
 
 /* Universal mobile styling rules */
+
 @media (max-width: 768px) {
   .row-container {
     flex-direction: column;
@@ -380,17 +366,6 @@
   }
 }
 
-@media (max-width: 640px) {
-  .map-overlay-left {
-    left: 35%;
-    color: rgb(14, 35, 120);
-  }
-  .map-overlay-right {
-    left: 65%;
-    color: rgb(14, 35, 120);
-  }
-}
-
 @media (min-width: 641px) and (max-width: 960px) {
   #main {
     margin-left: 160px;
@@ -401,25 +376,5 @@
   }
   .sidebar-toggle {
     left: 160px;
-  }
-}
-
-@media (max-width: 375px) {
-  .map-overlay-left {
-    left: 45%;
-    font-size: larger;
-  }
-  .map-overlay-right {
-    left: 50%;
-    font-size: larger;
-  }
-}
-
-@media (max-width: 320px) {
-  .map-overlay-left {
-    display: none;
-  }
-  .map-overlay-right {
-    display: none;
   }
 }
