@@ -11,7 +11,9 @@
   position: relative;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .background-landing img {
@@ -20,10 +22,10 @@
   object-fit: cover;
   display: block;
 }
+
 .background-landing:hover {
-  background-color: white;
-  padding: 0.2rem;
-  transition: all 0.2s;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
 }
 
 /* Social media icons */
@@ -55,29 +57,33 @@
   border-radius: 0.25rem;
 }
 
-
-
-
 /* landing page name with sparkles */
 /* adjusted from https://prismic.io/blog/css-animation-examples */
 
+/* Update your existing .sparkle block to center itself */
 .sparkle {
-  --color: #ffcb05; /* Fallback for --yellow-5 */
-  --shadow: #a16207; /* Fallback for --yellow-8 */
+  --color: #ffcb05;
+  --shadow: #a16207;
   --glare: hsl(0 0% 100% / 0.75);
-  --font-size: 3.5rem; /* Fallback for --font-size-fluid-3 */
+  --font-size: 3.5rem;
   --transition: 0.2s;
   box-sizing: border-box;
-  display: inline-block; /* Keeps it from vanishing if parent container is empty */
+
+  /* CENTERING: Converts the block into a flexbox container and centers internal content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 
-/* Scoped anchor styles */
+/* Scoped anchor styles (Unchanged) */
 .sparkle a {
-  --padding: 0.5rem; /* Fallback for --size-2 */
+  --padding: 0.5rem;
   padding: var(--padding);
-  border-radius: 0.5rem; /* Fallback for --size-4 */
+  border-radius: 0.5rem;
   text-decoration: none;
-  color: var(--color); /* CHANGED: Text is now visible by default */
+  color: var(--color);
   position: relative;
   display: inline-block;
   transition: background 0.2s;
@@ -86,7 +92,7 @@
 }
 
 .sparkle a:hover {
-  background: #00274c; /* Fallback for --gray-8 */
+  background: #00274c;
   --hover: 1;
   --pos: 1;
 }
@@ -95,11 +101,11 @@
   --hover: 0;
 }
 
-/* Scoped text spans */
+/* Scoped text spans (Unchanged) */
 .sparkle span {
   display: inline-block;
   font-size: calc(var(--font-size) * 1.5);
-  font-weight: 900; /* Fallback for --font-weight-9 */
+  font-weight: 900;
   transition: all 0.2s;
   text-decoration: none;
   text-shadow:
@@ -121,7 +127,7 @@
   );
 }
 
-/* Scoped text overlay with glare effect */
+/* Scoped text overlay with glare effect (Unchanged) */
 .sparkle span:last-of-type {
   position: absolute;
   inset: var(--padding);
@@ -161,7 +167,7 @@
   --pos: 1;
 }
 
-/* Scoped SVGs and individual positioning steps */
+/* Scoped SVGs and individual positioning steps (Unchanged) */
 .sparkle a svg {
   position: absolute;
   z-index: 3;
@@ -177,12 +183,12 @@
   fill: var(--glare);
 }
 
-/* Sparkle Trigger Animation */
+/* Sparkle Trigger Animation (Unchanged) */
 .sparkle a:hover svg {
   animation: sparkle-effect 0.75s calc((var(--delay-step) * var(--d)) * 1s) both;
 }
 
-/* Specific SVG assignments */
+/* Specific SVG assignments (Unchanged) */
 .sparkle a svg:nth-of-type(1) {
   --x: 0;
   --y: 20;
@@ -214,7 +220,6 @@
   --d: 4;
 }
 
-/* Custom keyframes to prevent global naming conflicts */
 @keyframes sparkle-effect {
   50% {
     transform: translate(-50%, -50%) scale(var(--s, 1));

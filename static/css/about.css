@@ -63,11 +63,11 @@
 }
 
 .about-text ul {
-    list-style-type: circle;
+  list-style-type: circle;
 }
 
 .about-text ul li {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 /* icons */
@@ -230,8 +230,8 @@
 }
 
 .card-front {
-  padding: 0;        
-  overflow: hidden; 
+  padding: 0;
+  overflow: hidden;
 }
 
 .card-back {
@@ -257,7 +257,7 @@
 .company-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   display: block;
 }
 
@@ -334,7 +334,6 @@
     height: auto;
   }
 
-  /* Change this from .row-item img */
   /* To this: protects your company logos from stretching */
   .row-container > .row-item > img,
   .profile-pic {

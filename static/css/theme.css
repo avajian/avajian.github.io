@@ -53,7 +53,6 @@ a:hover {
   box-sizing: border-box;
 }
 
-
 /* useful custom classes */
 
 .stack {
@@ -83,13 +82,12 @@ section {
   margin: 10%;
 }
 
-
 /* side nav  */
 
 .sidenav {
   position: fixed;
   top: 0;
-  left: 0; /* ✅ Visible by default */
+  left: 0;
   width: 175px;
   height: 100%;
   background-color: white;
@@ -104,7 +102,6 @@ section {
   position: absolute;
   bottom: 75px;
   left: 35px;
-  text-align: center;
 }
 
 .sidenav.mobile-open {
@@ -128,10 +125,19 @@ section {
 
 .sidenav a:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  color: #00274c;
 }
 
 .sidenav a {
   font-size: 18px;
+}
+
+.sidenav a.nav-link {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .sidenav.collapsed .nav-link {
@@ -153,14 +159,32 @@ section {
 }
 
 .menu-links {
-    line-height: 24px;
-    list-style: none;
+  line-height: 24px;
+  list-style: none;
 }
 
-.menu-links li a:hover {
-  color: #00274c;
-}
+/* ==========================================================================
+   DARK MODE
+   ========================================================================== */
 
+body.dark-mode {
+  background-color: #00274c;
+  transition: background-color 0.3s ease;
+  color: white;
+  .icons a {
+    color: #ffffff;
+  }
+
+  .icons a:hover {
+    color: #0073e6;
+  }
+
+  .row-item:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    background-color: #043563;
+  }
+}
 
 @media (min-width: 641px) and (max-width: 960px) {
   #main {
@@ -176,7 +200,6 @@ section {
     left: 160px;
   }
 }
-
 
 @media (max-width: 640px) {
   .sidenav {
@@ -203,9 +226,8 @@ section {
 }
 
 @media (min-width: 641px) {
-
   #main {
-    margin-left: 200px; 
+    margin-left: 200px;
     transition: margin-left 0.3s ease;
   }
 
@@ -263,7 +285,6 @@ section {
   }
 }
 @media (min-width: 961px) {
-
   .sidenav {
     width: 250px;
   }
@@ -279,7 +300,6 @@ section {
 }
 
 @media (min-width: 1025px) {
-
   .sidenav p {
     left: 50px;
     font-size: small;
