@@ -1,3 +1,6 @@
+/**
+ * Connect to the GoatCounter API and grab the total visitor count
+ */
 async function loadStats() {
   const totalRes = await fetch(
     "https://avajian.goatcounter.com/counter/TOTAL.json",

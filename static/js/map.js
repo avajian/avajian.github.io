@@ -1,3 +1,9 @@
+/**
+ * Connect to the mapbox API via public access token
+ *
+ * Styles the map and adds animation effect
+ */
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYXZhamlhbiIsImEiOiJjbXBoaWJrcXgxMGtrMnlweXFhaHp5dTVvIn0.CHSelWQsEWlEbJqy7MnRiw";
 const previewMap = new mapboxgl.Map({
@@ -6,17 +12,16 @@ const previewMap = new mapboxgl.Map({
   projection: "globe",
   zoom: 1,
   center: [0, 20],
-  interactive: false, // no zoom/pan in preview
+  interactive: false,
 });
 
 previewMap.on("style.load", () => {
-  previewMap.setFog({}); // globe atmosphere
+  previewMap.setFog({});
 });
 
-// Spin animation
 let spinAngle = 0;
 function spinGlobe() {
-  spinAngle += 0.04; // rotation speed
+  spinAngle += 0.04;
   previewMap.setCenter([spinAngle, 20]);
   requestAnimationFrame(spinGlobe);
 }

@@ -1,3 +1,7 @@
+/**
+ * Toggles between dark and light mode when either the name title
+ * or the dark mode element on the side menu is clicked
+ */
 document
   .querySelector(".sparkle a")
   .addEventListener("click", function (event) {

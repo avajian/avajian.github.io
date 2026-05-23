@@ -1,3 +1,11 @@
+/**
+ * Script to specify how many images are shown on each viewport
+ *
+ * Gets all the images tagged as 'grid-item', then hides or shows
+ * the image based on the current index and items per page. Only
+ * shows the necessary navigation arrows
+ */
+
 const gridItems = document.querySelectorAll(".grid-item");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
@@ -21,7 +29,6 @@ function updateGallery() {
     currentIndex = Math.max(0, gridItems.length - itemsPerPage);
   }
 
-  // Show/Hide items
   gridItems.forEach((item, index) => {
     if (index >= currentIndex && index < currentIndex + itemsPerPage) {
       item.classList.remove("hidden");
@@ -30,23 +37,19 @@ function updateGallery() {
     }
   });
 
-  // 2. Update the counter display
   if (gridItems.length > 0) {
-    // Calculate the end range for the current page
     const displayEnd = Math.min(currentIndex + itemsPerPage, gridItems.length);
     counterEl.textContent = `${currentIndex + 1}-${displayEnd} of ${gridItems.length}`;
   } else {
     counterEl.textContent = "0 of 0";
   }
 
-  // Hide beginning button
   if (currentIndex === 0) {
     prevBtn.classList.add("btn-invisible");
   } else {
     prevBtn.classList.remove("btn-invisible");
   }
 
-  // Hide ending button
   if (currentIndex + itemsPerPage >= gridItems.length) {
     nextBtn.classList.add("btn-invisible");
   } else {

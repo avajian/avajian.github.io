@@ -1,3 +1,7 @@
+/**
+ * Toggle, add and remove CSS classes based
+ * on user action and screen size
+ */
 document.addEventListener("DOMContentLoaded", function () {
   const sidenav = document.getElementById("mySidenav");
   const hamburger = document.getElementById("hamburger-toggle");
