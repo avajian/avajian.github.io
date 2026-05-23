@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="static/css/theme.css" />
     <link rel="stylesheet" href="static/css/about.css" />
     <link rel="stylesheet" href="static/css/landing-page.css" />
-
+    <script
+      src="https://kit.fontawesome.com/f6fba7bed5.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -42,8 +45,11 @@
           >
         </li>
         <li>
-          <a href="https://github.com/avajian" target="_blank" class="nav-link"
-            >★ Notes</a
+          <a
+            href="https://www.instagram.com/bruvava_/"
+            target="_blank"
+            class="nav-link"
+            >★ Instagram</a
           >
         </li>
       </ul>
@@ -132,101 +138,121 @@
           <!-- Row One -->
           <div id="about" class="intro-block">
             <div class="row-container">
-              <div class="row-item">
-                <img src="static/images/headshot.JPG" alt="headshot" />
-              </div>
-
-              <div class="row-item border">
-                <div class="about-text">
-                  <p>
-                    TL;DR: I like doing a lot. Now I have way too many hobbies.
-                  </p>
+              <div class="row-item image-item">
+                <div class="stack">
+                  <img
+                    src="static/images/skateboarding.jpeg"
+                    alt="headshot"
+                    class="profile-pic"
+                  />
+                  <div class="stats stack border margin-top">
+                    <div class="row">
+                      <p>Visits:</p>
+                      <p id="visit-count"></p>
+                    </div>
+                    <div class="row">
+                      <p>Unique Visitors:</p>
+                      <p id="unique-count"></p>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <div class="row-item border">
-                <div class="spacing">
-                  <div class="icons">
-                    <!-- Chess Icon -->
-                    <div class="icon-container">
-                      <a title="chess"><i class="fas fa-chess"></i></a>
-                      <span class="message-tooltip">I play online chess</span>
-                    </div>
+                <div class="stack">
+                  <div class="about-text spacing">
+                    <p>
+                      Hello, welcome to my website! This was created as a school
+                      project in 2023 but have since updated it more. Read more
+                      about me <a href="">here</a>!
+                    </p>
+                    <p>Some quick facts:</p>
+                    <ul>
+                      <li>
+                        I was born in China but adopted when I was 11 months and
+                        moved to the US
+                      </li>
+                      <li>Currently residing in Michigan</li>
+                      <li>
+                        I work as a software developer and mostly use Python and
+                        Typescript
+                      </li>
+                      <li>I spend most of my time doing sidequests</li>
+                      <li>I love spontaneity and being outside</li>
+                      <li>I do a lot of things and have a lot of hobbies</li>
+                    </ul>
+                    <p>
+                      My email is <a>avajian@umich.edu</a> but feel free to
+                      contact any of my socials!
+                    </p>
+                  </div>
+                  <div class="spacing">
+                    <div class="icons">
+                      <!-- Chess Icon -->
+                      <div class="icon-container">
+                        <a title="chess"><i class="fas fa-chess"></i></a>
+                        <span class="message-tooltip">I play online chess</span>
+                      </div>
 
-                    <!-- Plane Icon -->
-                    <div class="icon-container">
-                      <a title="paper plane"
-                        ><i class="fa fa-paper-plane"></i
-                      ></a>
-                      <span class="message-tooltip"
-                        >I'm learning to fly an airplane</span
-                      >
-                    </div>
+                      <!-- Plane Icon -->
+                      <div class="icon-container">
+                        <a title="paper plane"
+                          ><i class="fa fa-paper-plane"></i
+                        ></a>
+                        <span class="message-tooltip"
+                          >I'm learning to fly an airplane</span
+                        >
+                      </div>
 
-                    <!-- Headphones Icon -->
-                    <div class="icon-container">
-                      <a title="paper plane"
-                        ><i class="fa fa-headphones-alt"></i
-                      ></a>
-                      <span class="message-tooltip"
-                        >Always listening to music</span
-                      >
-                    </div>
+                      <!-- Headphones Icon -->
+                      <div class="icon-container">
+                        <a title="paper plane"
+                          ><i class="fa fa-headphones-alt"></i
+                        ></a>
+                        <span class="message-tooltip"
+                          >Always listening to music</span
+                        >
+                      </div>
 
-                    <!-- Running Icon -->
-                    <div class="icon-container">
-                      <a title="running"><i class="fa fa-running"></i></a>
-                      <span class="message-tooltip">I go on runs</span>
-                    </div>
+                      <!-- Running Icon -->
+                      <div class="icon-container">
+                        <a title="running"><i class="fa fa-running"></i></a>
+                        <span class="message-tooltip">I go on runs</span>
+                      </div>
 
-                    <!-- Sketching Icon -->
-                    <div class="icon-container">
-                      <a title="sketching"><i class="fa fa-pencil-alt"></i></a>
-                      <span class="message-tooltip">Sketching</span>
-                    </div>
+                      <!-- Sketching Icon -->
+                      <div class="icon-container">
+                        <a title="sketching"
+                          ><i class="fa fa-pencil-alt"></i
+                        ></a>
+                        <span class="message-tooltip">Sketching</span>
+                      </div>
 
-                    <!--Traveling Icon -->
-                    <div class="icon-container">
-                      <a title="traveling"><i class="fa fa-plane"></i></a>
-                      <span class="message-tooltip">(Solo) traveling</span>
-                    </div>
+                      <!--Traveling Icon -->
+                      <div class="icon-container">
+                        <a title="traveling"><i class="fa fa-plane"></i></a>
+                        <span class="message-tooltip">(Solo) traveling</span>
+                      </div>
 
-                    <!--Video editing Icon -->
-                    <div class="icon-container">
-                      <a title="video editing"><i class="fa fa-video"></i></a>
-                      <span class="message-tooltip">Video editing</span>
-                    </div>
+                      <!--Video editing Icon -->
+                      <div class="icon-container">
+                        <a title="video editing"><i class="fa fa-video"></i></a>
+                        <span class="message-tooltip">Video editing</span>
+                      </div>
 
-                    <!--Journaling Icon -->
-                    <div class="icon-container">
-                      <a title="journaling"><i class="fa fa-book"></i></a>
-                      <span class="message-tooltip">(Junk) journaling</span>
-                    </div>
+                      <!--Journaling Icon -->
+                      <div class="icon-container">
+                        <a title="journaling"><i class="fa fa-book"></i></a>
+                        <span class="message-tooltip">(Junk) journaling</span>
+                      </div>
 
-                    <!--Concerts Icon -->
-                    <div class="icon-container">
-                      <a
-                        href="https://www.notion.so/every-concert-i-ve-ever-been-to-308ee407293780f7a028cbd65aef9a96?source=copy_link"
-                        title="concerts"
-                        ><i class="fa fa-music"></i
-                      ></a>
-                      <span class="message-tooltip">Concerts</span>
-                    </div>
-
-                    <!--House Icon -->
-                    <div class="icon-container">
-                      <a title="house"><i class="fa fa-home"></i></a>
-                      <span class="message-tooltip"
-                        >I've lived in East Lansing, Ann Arbor and Grand Rapids,
-                        MI</span
-                      >
-                    </div>
-
-                    <!--Guitar Icon -->
-                    <div class="icon-container">
-                      <a title="guitar"><i class="fa fa-guitar"></i></a>
-                      <span class="message-tooltip"
-                        >I play the guitar sometimes</span
-                      >
+                      <!--Guitar Icon -->
+                      <div class="icon-container">
+                        <a title="guitar"><i class="fa fa-guitar"></i></a>
+                        <span class="message-tooltip"
+                          >I play the guitar sometimes</span
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -346,6 +372,11 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <script src="static/js/side-menu.js"></script>
     <script src="static/js/map.js"></script>
-    <script src="static/js/script.js"></script>
+    <script src="static/js/goat-counter.js"></script>
+    <script
+      data-goatcounter="https://avajian.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
   </body>
 </html>
