@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="static/css/theme.css" />
     <link rel="stylesheet" href="static/css/about.css" />
+    <link rel="stylesheet" href="static/css/gallery.css" />
     <link rel="stylesheet" href="static/css/landing-page.css" />
     <script
       src="https://kit.fontawesome.com/f6fba7bed5.js"
@@ -31,6 +32,9 @@
         </li>
         <li>
           <a href="#about" class="nav-link">⭐ About</a>
+        </li>
+        <li>
+          <a href="#gallery" class="nav-link">⭐ Gallery</a>
         </li>
         <li>
           <a
@@ -182,7 +186,7 @@
                       <li>Currently residing in Michigan</li>
                       <li>
                         I studied computer science and cognitive science in
-                        university
+                        university (I also minored in UX design).
                       </li>
                       <li>
                         I work as a software developer and mostly use Python and
@@ -211,7 +215,7 @@
                           ><i class="fa fa-paper-plane"></i
                         ></a>
                         <span class="message-tooltip"
-                          >I'm learning to fly an airplane</span
+                          >I'm learning how to fly an airplane</span
                         >
                       </div>
 
@@ -295,7 +299,7 @@
                 <div class="experience-card">
                   <div class="card-front">
                     <img
-                      src="static/images/edustaff.jpg"
+                      src="static/images/logos/edustaff.jpg"
                       alt="edustaff Logo"
                       class="company-logo"
                     />
@@ -315,7 +319,7 @@
                 <div class="experience-card">
                   <div class="card-front">
                     <img
-                      src="static/images/denso-logo.webp"
+                      src="static/images/logos/denso-logo.webp"
                       alt="DENSO Logo"
                       class="company-logo"
                     />
@@ -336,7 +340,7 @@
                 <div class="experience-card">
                   <div class="card-front">
                     <img
-                      src="static/images/isr-logo.png"
+                      src="static/images/logos/isr-logo.png"
                       alt="ISR Logo"
                       class="company-logo"
                     />
@@ -378,6 +382,63 @@
             </div>
           </div>
         </section>
+        <section id="gallery">
+          <!-- Wrapped header elements to position arrows left & right -->
+          <div class="gallery-header">
+            <button class="nav-btn prev-btn">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 8L8 12M8 12L12 16M8 12H16M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <h3 class="gallery-title offbit-star-pixel-font">Gallery</h3>
+            <button class="nav-btn next-btn">
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 16L16 12M16 12L12 8M16 12H8M7.8 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="grid">
+            <!-- Keep your .grid-item elements exactly as they are -->
+            <div class="grid-item">
+              <img src="static/images/gallery/headshot.JPG" alt="Rome" />
+              <p>April 25, 2025</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/waving.jpeg" alt="Rome" />
+              <p>March 28, 2024</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/trees.jpeg" alt="Rome" />
+              <p>March 28, 2024</p>
+            </div>
+          </div>
+          <div class="gallery-counter"></div>
+        </section>
       </div>
     </div>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
@@ -385,6 +446,7 @@
     <script src="static/js/map.js"></script>
     <script src="static/js/goat-counter.js"></script>
     <script src="static/js/dark-mode.js"></script>
+    <script src="static/js/gallery.js"></script>
     <script
       data-goatcounter="https://avajian.goatcounter.com/count"
       async
