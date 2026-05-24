@@ -2,6 +2,7 @@
 
 - fix: make the flippable experience cards a square (they are too short right now)
 - fix: the hamburger menu for desktop still shows up on the mobile screens
+- fix: make the margins less on mobile (it looks weird)
 
 ### music player
 

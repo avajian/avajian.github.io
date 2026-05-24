@@ -67,7 +67,7 @@ a:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
   background-color: #ffffff;
-    transition:
+  transition:
     box-shadow 0.3s ease,
     transform 0.3s ease,
     background-color 0.3s ease;
@@ -317,7 +317,7 @@ body.dark-mode {
     color: rgb(202, 202, 202);
   }
 
-    .nav-btn:hover {
+  .nav-btn:hover {
     color: #ffcb05;
   }
 }
@@ -325,7 +325,7 @@ body.dark-mode {
 @media (min-width: 641px) and (max-width: 960px) {
   #main {
     margin-left: 160px;
-    paddingrgb(255, 255, 255)px;
+    padding: rgb(255, 255, 255) px;
   }
 
   .sidenav {
