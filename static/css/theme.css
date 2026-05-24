@@ -63,6 +63,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.expand-hover:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  background-color: #ffffff;
+    transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
 #main {
   margin: 2.5% auto 0 auto;
   margin-left: 0;
@@ -274,7 +284,7 @@ body.dark-mode {
     color: #0073e6;
   }
 
-  .row-item:hover {
+  .expand-hover:hover {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     transform: translateY(-3px);
     background-color: #0b2237;

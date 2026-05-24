@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="static/css/about.css" />
     <link rel="stylesheet" href="static/css/gallery.css" />
     <link rel="stylesheet" href="static/css/landing-page.css" />
+    <link rel="icon" href="static/images/tab_icon.png" />
+
     <script
       src="https://kit.fontawesome.com/f6fba7bed5.js"
       crossorigin="anonymous"
@@ -197,18 +199,25 @@
                   <img
                     src="static/images/skateboarding.jpeg"
                     alt="headshot"
-                    class="profile-pic"
+                    class="profile-pic expand-hover"
                   />
-                  <div class="stats stack border margin-top">
-                    <div class="row">
+                  <div class="stats stack margin-top">
+                    <div class="row border expand-hover">
                       <p>Visits:</p>
                       <p id="visit-count"></p>
+                    </div>
+                    <div class="plants-container border expand-hover">
+                      <img
+                        src="static/images/plants.png"
+                        alt="plants"
+                        id="plant-icon"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="row-item border">
+              <div class="row-item border expand-hover">
                 <div class="stack">
                   <div class="about-text spacing">
                     <h3 class="offbit-regular-font">
@@ -233,12 +242,15 @@
                         university (I also minored in UX design).
                       </li>
                       <li>
-                        I work as a software developer and mostly use Python and
-                        Typescript
+                        I work as a software developer at a staffing company and
+                        mostly use Python and Typescript
                       </li>
                       <li>I spend most of my time doing sidequests</li>
                       <li>I love spontaneity and being outside</li>
-                      <li>I do a lot of things and have a lot of hobbies</li>
+                      <li>
+                        I do a lot of things and have a lot of hobbies
+                        (click/hover on the icons below for more)
+                      </li>
                     </ul>
                     <p>
                       My email is <a>avajian@umich.edu</a> but feel free to
@@ -322,7 +334,7 @@
           <!-- Row Two -->
           <div id="places">
             <div class="row-container">
-              <div class="row-item">
+              <div class="row-item expand-hover">
                 <div class="places-container">
                   <a href="places.html" class="map-preview-link">
                     <div class="map-preview-wrapper">
@@ -339,7 +351,7 @@
           <!-- Row Three -->
           <div id="experience">
             <div class="row-container">
-              <div class="experience-flip row-item">
+              <div class="experience-flip row-item expand-hover">
                 <div class="experience-card">
                   <div class="card-front">
                     <img
@@ -359,7 +371,7 @@
                 </div>
               </div>
 
-              <div class="experience-flip row-item">
+              <div class="experience-flip row-item expand-hover">
                 <div class="experience-card">
                   <div class="card-front">
                     <img
@@ -380,7 +392,7 @@
                 </div>
               </div>
 
-              <div class="experience-flip row-item">
+              <div class="experience-flip row-item expand-hover">
                 <div class="experience-card">
                   <div class="card-front">
                     <img
@@ -401,8 +413,7 @@
                 </div>
               </div>
 
-              <!-- Project Card Links Group with Image Background Style Override -->
-              <div class="project-links row-item">
+              <div class="project-links row-item expand-hover">
                 <a
                   href="https://github.com/avajian/Spotify-Stats"
                   class="project-card"
@@ -626,7 +637,112 @@
             </div>
             <div class="grid-item">
               <img src="static/images/gallery/driving.jpeg" alt="driving" />
-              <p>Ann Arbor, MI - 2023</p>
+              <p>Ann Arbor, MI - Dec, 2023</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/michigan_football.jpeg"
+                alt="michigan_football"
+              />
+              <p>Ann Arbor, MI - Sep, 2023</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/between_friends.jpeg"
+                alt="between friends"
+              />
+              <p>Detroit, MI - Oct, 2023</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/sunset_roof.jpeg"
+                alt="sunset_roof"
+              />
+              <p>Ann Arbor, MI - Aug, 2023</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/puerto_rico.jpeg"
+                alt="puerto_rico"
+              />
+              <p>San Juan, PR - June, 2023</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/santafe.jpeg" alt="santa_fe" />
+              <p>Santa Fe, NM - May, 2023</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/pickelball.jpeg"
+                alt="pickelball"
+              />
+              <p>East Lansing, MI - July, 2022</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/pickelball_skateboarding.jpeg"
+                alt="pickelball"
+              />
+              <p>East Lansing, MI - July, 2022</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/tripton_fell.jpeg"
+                alt="tripton_fell"
+              />
+              <p>East Lansing, MI - May, 2022</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/out_west_car.jpeg" alt="out" />
+              <p>Arizona - Feb, 2022</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/out_west_vegas.jpeg" alt="out" />
+              <p>Las Vegas, NV - Feb, 2022</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/ann_arbor.jpeg"
+                alt="law school"
+              />
+              <p>Ann Arbor, MI - 2021</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/chicago.jpeg" alt="chicago" />
+              <p>Chicago, IL - Jul, 2021</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/tripton_fell_blue.jpeg"
+                alt="tripton_fell_blue"
+              />
+              <p>East Lansing, MI - Jun, 2021</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/tripton_fell_roof.jpeg"
+                alt="tripton_fell_roof"
+              />
+              <p>East Lansing, MI - Jun, 2021</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/hammocks.jpeg" alt="hammocks" />
+              <p>Traverse City, MI - Apr, 2021</p>
+            </div>
+            <div class="grid-item">
+              <img
+                src="static/images/gallery/asian_grandma.jpeg"
+                alt="asian_grandma"
+              />
+              <p>East Lansing, MI - Mar, 2021</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/sledding.jpeg" alt="sledding" />
+              <p>East Lansing, MI - Feb, 2021</p>
+            </div>
+            <div class="grid-item">
+              <img src="static/images/gallery/winter.jpeg" alt="winter" />
+              <p>East Lansing, MI - Feb, 2021</p>
             </div>
           </div>
           <div class="gallery-counter"></div>
