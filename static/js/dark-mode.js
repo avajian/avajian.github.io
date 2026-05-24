@@ -19,8 +19,8 @@ document
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
-      this.textContent = "⭐ Light mode";
+      this.textContent = "✰ Light mode";
     } else {
-      this.textContent = "⭐ Dark mode";
+      this.textContent = "✰ Dark mode";
     }
   });
