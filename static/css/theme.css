@@ -239,6 +239,10 @@ section {
   cursor: pointer;
 }
 
+#drawer-tab:hover {
+  color: #ffcb05;
+}
+
 #music-drawer.open {
   transform: translateX(0);
 }
